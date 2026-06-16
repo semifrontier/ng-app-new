@@ -1,0 +1,98 @@
+{
+  "generatedAt": "2026-06-14T21:01:56.924Z",
+  "baseURL": "http://127.0.0.1:5173",
+  "consoleErrors": [],
+  "pageErrors": [],
+  "results": [
+    {
+      "tool": "dns-checker",
+      "check": "API sanitizes URL input and returns A records",
+      "status": "pass",
+      "detail": "{\"status\":200,\"domain\":\"example.com\",\"records\":2}"
+    },
+    {
+      "tool": "dns-checker",
+      "check": "API rejects unsupported record type",
+      "status": "pass",
+      "detail": "{\"status\":400,\"error\":\"Unsupported record type.\"}"
+    },
+    {
+      "tool": "dns-checker",
+      "check": "API rejects missing domain",
+      "status": "pass",
+      "detail": "{\"status\":400,\"error\":\"A valid domain is required.\"}"
+    },
+    {
+      "tool": "dns-checker",
+      "check": "UI completes twelve resolver sweep",
+      "status": "pass",
+      "detail": "completed stat reached 12/12"
+    },
+    {
+      "tool": "dns-checker",
+      "check": "UI normalizes submitted domain in input",
+      "status": "pass",
+      "detail": "value=example.com"
+    },
+    {
+      "tool": "dns-checker",
+      "check": "UI shows resolver records or errors",
+      "status": "pass",
+      "detail": "records and error states visible"
+    },
+    {
+      "tool": "redirect-analyzer",
+      "check": "API normalizes missing scheme",
+      "status": "pass",
+      "detail": "{\"status\":200,\"initialUrl\":\"http://example.com/\",\"finalStatus\":200}"
+    },
+    {
+      "tool": "redirect-analyzer",
+      "check": "API rejects missing URL",
+      "status": "pass",
+      "detail": "{\"status\":400,\"error\":\"A domain or URL is required.\"}"
+    },
+    {
+      "tool": "redirect-analyzer",
+      "check": "UI renders redirect result timeline",
+      "status": "pass",
+      "detail": "timeline visible"
+    },
+    {
+      "tool": "redirect-analyzer",
+      "check": "UI renders summary metrics",
+      "status": "pass",
+      "detail": "summary cards visible"
+    },
+    {
+      "tool": "dictate",
+      "check": "Route renders dictation workspace",
+      "status": "pass",
+      "detail": "workspace visible"
+    },
+    {
+      "tool": "dictate",
+      "check": "Speech support state is explicit",
+      "status": "pass",
+      "detail": "ready state visible"
+    },
+    {
+      "tool": "dictate",
+      "check": "Editor accepts typing and replace-all updates text",
+      "status": "pass",
+      "detail": "editor=gamma beta gamma"
+    },
+    {
+      "tool": "dictate",
+      "check": "Clear button enables after text entry",
+      "status": "pass",
+      "detail": "enabled=true"
+    },
+    {
+      "tool": "dictate",
+      "check": "Font size control increments",
+      "status": "pass",
+      "detail": "size=20px"
+    }
+  ]
+}

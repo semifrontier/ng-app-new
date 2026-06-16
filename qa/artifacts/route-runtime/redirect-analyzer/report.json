@@ -1,0 +1,10 @@
+{
+  "slug": "redirect-analyzer",
+  "route": "/tools/redirect-analyzer",
+  "shell": "full_layout",
+  "priority": "high",
+  "simplification": "keep",
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

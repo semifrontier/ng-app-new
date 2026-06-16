@@ -156,6 +156,19 @@
     ]
   },
   {
+    "slug": "heatmap-tracker",
+    "title": "Heatmap Tracker",
+    "route": "/tools/heatmap-tracker",
+    "shell": "full_layout",
+    "priority": "medium",
+    "simplification": "prototype_keep",
+    "review_focus": [
+      "click recording and heat overlay behavior",
+      "screenshot upload and canvas scaling",
+      "demo data, reset, and JSON export flow"
+    ]
+  },
+  {
     "slug": "dictate",
     "title": "Dictate",
     "route": "/tools/dictate",

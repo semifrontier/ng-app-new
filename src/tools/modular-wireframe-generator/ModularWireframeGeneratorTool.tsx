@@ -1,20 +1,33 @@
 
 import React, { useState, useRef, useEffect } from 'react';
+import {
+  ArrowDown,
+  ArrowUp,
+  ChevronLeft,
+  ChevronRight,
+  FileCode,
+  FileText,
+  Image,
+  Redo2,
+  Trash2,
+  Undo2,
+} from 'lucide-react';
 import { SECTION_TYPES, SECTION_STYLE_MAP } from './constants';
 import { SectionData, SectionType } from './types';
 import { WireframeRenderer } from './components/WireframeRenderer';
 
 // Icons
-const ArrowUpIcon = () => <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" /></svg>;
-const ArrowDownIcon = () => <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>;
-const TrashIcon = () => <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>;
-const UndoIcon = () => <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" /></svg>;
-const RedoIcon = () => <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 10h-10a8 8 0 00-8 8v2M21 10l-6 6m6-6l-6-6" /></svg>;
-const ChevronLeftIcon = () => <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>;
-const ChevronRightIcon = () => <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>;
-const PhotoIcon = () => <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>;
-const DocumentIcon = () => <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>;
-const FileCodeIcon = () => <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>;
+const iconProps = { className: 'w-4 h-4', strokeWidth: 2 };
+const ArrowUpIcon = () => <ArrowUp {...iconProps} />;
+const ArrowDownIcon = () => <ArrowDown {...iconProps} />;
+const TrashIcon = () => <Trash2 {...iconProps} />;
+const UndoIcon = () => <Undo2 {...iconProps} className="w-4 h-4 mr-1" />;
+const RedoIcon = () => <Redo2 {...iconProps} className="w-4 h-4 mr-1" />;
+const ChevronLeftIcon = () => <ChevronLeft {...iconProps} />;
+const ChevronRightIcon = () => <ChevronRight {...iconProps} />;
+const PhotoIcon = () => <Image {...iconProps} />;
+const DocumentIcon = () => <FileText {...iconProps} />;
+const FileCodeIcon = () => <FileCode {...iconProps} />;
 
 let html2canvasLoader: Promise<typeof import('html2canvas')> | null = null;
 let pdfLoader: Promise<typeof import('jspdf')> | null = null;

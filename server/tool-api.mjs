@@ -6,7 +6,7 @@ const REDIRECT_USER_AGENT =
   "NoGatekeepingBot/1.0 (+https://nogatekeeping.com)";
 
 const sanitizeDomain = (input = "") => {
-  let value = String(input).trim().toLowerCase();
+  let value = input == null ? "" : String(input).trim().toLowerCase();
 
   if (value.startsWith("http://")) value = value.slice(7);
   if (value.startsWith("https://")) value = value.slice(8);
@@ -18,7 +18,7 @@ const sanitizeDomain = (input = "") => {
 };
 
 const normalizeTargetUrl = (input = "") => {
-  const value = String(input).trim();
+  const value = input == null ? "" : String(input).trim();
   if (!value) {
     throw new Error("A domain or URL is required.");
   }
@@ -29,8 +29,8 @@ const normalizeTargetUrl = (input = "") => {
 
 export const lookupDnsRecords = async ({ domain, type, server }) => {
   const cleanDomain = sanitizeDomain(domain);
-  const cleanType = String(type || "").trim().toUpperCase();
-  const cleanServer = String(server || "").trim();
+  const cleanType = type == null ? "" : String(type).trim().toUpperCase();
+  const cleanServer = server == null ? "" : String(server).trim();
 
   if (!cleanDomain) {
     throw new Error("A valid domain is required.");
@@ -96,7 +96,16 @@ export const lookupDnsRecords = async ({ domain, type, server }) => {
       }
     }
 
-    throw error;
+    return {
+      domain: cleanDomain,
+      type: cleanType,
+      server: cleanServer,
+      records: [],
+      error:
+        error instanceof Error
+          ? error.message
+          : "DNS lookup failed.",
+    };
   }
 };
 

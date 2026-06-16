@@ -1,4 +1,25 @@
 import React, { useEffect, useMemo, useState } from "react";
+import {
+  ChartNoAxesColumn,
+  FileSearch,
+  FileText,
+  Grid3X3,
+  ImageDown,
+  LayoutPanelTop,
+  Library,
+  Link as LinkIcon,
+  Mic,
+  Minimize2,
+  MousePointerClick,
+  Palette,
+  Pipette,
+  Route,
+  Scaling,
+  Server,
+  Tags,
+  Type,
+  type LucideIcon,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 import SiteFooter from "../components/SiteFooter";
 import { TOOL_CATALOG, type ToolCardIcon } from "../tools/catalog";
@@ -12,111 +33,30 @@ const HERO_CHAIN_COLUMNS = 3;
 const HERO_CHAIN_STARTS = [0, 4, 8];
 type ChainPhase = "idle" | "animating" | "resetting";
 
-function IconSVG({ kind }: { kind: ToolCardIcon }) {
-  const common = {
-    stroke: "currentColor",
-    fill: "none",
-    strokeWidth: 1.8,
-    strokeLinecap: "square" as const,
-    strokeLinejoin: "miter" as const,
-  };
+const TOOL_CARD_ICONS: Record<ToolCardIcon, LucideIcon> = {
+  chart: ChartNoAxesColumn,
+  "file-search": FileSearch,
+  "image-down": ImageDown,
+  pipette: Pipette,
+  type: Type,
+  mic: Mic,
+  scaling: Scaling,
+  file: FileText,
+  minimize: Minimize2,
+  palette: Palette,
+  grid: Grid3X3,
+  library: Library,
+  link: LinkIcon,
+  layout: LayoutPanelTop,
+  "mouse-click": MousePointerClick,
+  route: Route,
+  server: Server,
+  tags: Tags,
+};
 
-  switch (kind) {
-    case "pipette":
-      return (
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path {...common} d="M14 4l6 6M8 10l6 6M3 21l6-6m-2-2l5-5 4 4-5 5H7z" />
-          <path {...common} d="M16 8l-6 6" />
-        </svg>
-      );
-    case "type":
-      return (
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path {...common} d="M4 7V5h16v2" />
-          <path {...common} d="M9 19h6" />
-          <path {...common} d="M12 5v14" />
-        </svg>
-      );
-    case "mic":
-      return (
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path {...common} d="M12 15a4 4 0 0 0 4-4V7a4 4 0 1 0-8 0v4a4 4 0 0 0 4 4z" />
-          <path {...common} d="M19 11a7 7 0 0 1-14 0" />
-          <path {...common} d="M12 18v4" />
-          <path {...common} d="M8 22h8" />
-        </svg>
-      );
-    case "scaling":
-      return (
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path {...common} d="M4 20V4h16v16H4z" />
-          <path {...common} d="M7 17l10-10" />
-          <path {...common} d="M14 7h3v3" />
-        </svg>
-      );
-    case "file":
-      return (
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path {...common} d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-          <path {...common} d="M14 2v6h6" />
-          <path {...common} d="M8 13h8" />
-          <path {...common} d="M8 17h8" />
-        </svg>
-      );
-    case "minimize":
-      return (
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path {...common} d="M8 3H3v5" />
-          <path {...common} d="M21 16v5h-5" />
-          <path {...common} d="M3 8l7-7" />
-          <path {...common} d="M21 16l-7 7" />
-        </svg>
-      );
-    case "palette":
-      return (
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path {...common} d="M12 22a10 10 0 1 1 0-20c5.5 0 10 3.6 10 8 0 2.2-1.8 4-4 4h-1a2 2 0 0 0-2 2c0 1.1-.9 2-2 2z" />
-          <path {...common} d="M7.5 10.5h.01" />
-          <path {...common} d="M9.5 7.5h.01" />
-          <path {...common} d="M14.5 7.5h.01" />
-          <path {...common} d="M16.5 10.5h.01" />
-        </svg>
-      );
-    case "grid":
-      return (
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path {...common} d="M4 4h7v7H4z" />
-          <path {...common} d="M13 4h7v7h-7z" />
-          <path {...common} d="M4 13h7v7H4z" />
-          <path {...common} d="M13 13h7v7h-7z" />
-        </svg>
-      );
-    case "library":
-      return (
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path {...common} d="M5 19V5h5v14H5z" />
-          <path {...common} d="M10 19V8h4v11h-4z" />
-          <path {...common} d="M14 19V10h5v9h-5z" />
-        </svg>
-      );
-    case "graph":
-      return (
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path {...common} d="M4 19h16" />
-          <path {...common} d="M7 16l4-4 3 2 4-6" />
-          <path {...common} d="M18 8h2v2" />
-        </svg>
-      );
-    case "layout":
-    default:
-      return (
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path {...common} d="M4 4h16v16H4z" />
-          <path {...common} d="M4 9h16" />
-          <path {...common} d="M9 9v11" />
-        </svg>
-      );
-  }
+function IconSVG({ kind }: { kind: ToolCardIcon }) {
+  const Icon = TOOL_CARD_ICONS[kind] ?? LayoutPanelTop;
+  return <Icon aria-hidden="true" strokeWidth={1.8} />;
 }
 
 export default function Home() {

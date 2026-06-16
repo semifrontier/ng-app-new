@@ -1,0 +1,10 @@
+{
+  "slug": "dictate",
+  "route": "/tools/dictate",
+  "shell": "full_layout",
+  "priority": "high",
+  "simplification": "keep",
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

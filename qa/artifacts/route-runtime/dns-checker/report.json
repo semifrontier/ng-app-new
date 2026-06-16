@@ -1,0 +1,10 @@
+{
+  "slug": "dns-checker",
+  "route": "/tools/dns-checker",
+  "shell": "full_layout",
+  "priority": "high",
+  "simplification": "keep",
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

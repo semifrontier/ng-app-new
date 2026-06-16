@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { ArrowUpDown, Check, Copy, X } from 'lucide-react';
 import ToolLayout from "../../components/ToolLayout";
 import { DimensionInput } from './components/DimensionInput';
 import { RatioDisplay } from './components/RatioDisplay';
@@ -6,40 +7,10 @@ import { roundValue, isValidNumber } from './utils/math';
 import { toolMeta } from './meta';
 
 // Icons
-const SwapIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M17 4v16M17 4l-4 4M17 4l4 4M7 20V4M7 20l-4-4M7 20l4-4" />
-  </svg>
-);
-
-const CopyIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <rect width="14" height="14" x="8" y="8" rx="0" ry="0" /><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
-  </svg>
-);
-
-const CheckIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg
-    {...props}
-    xmlns="http://www.w3.org/2000/svg"
-    width="18"
-    height="18"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="3"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <polyline points="20 6 9 17 4 12" />
-  </svg>
-);
-
-const ClearIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M18 6 6 18" /><path d="m6 6 12 12" />
-  </svg>
-);
+const SwapIcon = () => <ArrowUpDown className="h-6 w-6" strokeWidth={2} />;
+const CopyIcon = () => <Copy className="h-[18px] w-[18px]" strokeWidth={2} />;
+const CheckIcon = () => <Check className="h-[18px] w-[18px]" strokeWidth={3} />;
+const ClearIcon = () => <X className="h-[18px] w-[18px]" strokeWidth={2} />;
 
 export default function ProportionScalerTool() {
   // State

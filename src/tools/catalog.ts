@@ -1,6 +1,9 @@
 import { TOOLS as REGISTERED_TOOLS } from "./registry";
 
 export type ToolCardIcon =
+  | "chart"
+  | "file-search"
+  | "image-down"
   | "pipette"
   | "type"
   | "mic"
@@ -10,8 +13,12 @@ export type ToolCardIcon =
   | "palette"
   | "grid"
   | "library"
-  | "graph"
-  | "layout";
+  | "link"
+  | "layout"
+  | "mouse-click"
+  | "route"
+  | "server"
+  | "tags";
 
 export type ToolPresentation = {
   id: string;
@@ -49,14 +56,14 @@ const DEFAULT_VISUALS: Record<string, ToolVisualConfig> = {
   URLs: {
     bg: "#1982c4",
     fg: "#ffffff",
-    icon: "graph",
+    icon: "route",
     col: 1,
     row: 1,
   },
   SEO: {
     bg: "#1982c4",
     fg: "#ffffff",
-    icon: "graph",
+    icon: "file-search",
     col: 1,
     row: 1,
   },
@@ -80,7 +87,7 @@ const TOOL_VISUALS: Record<string, ToolVisualConfig> = {
   "campaign-url-architect": {
     bg: "#1982c4",
     fg: "#ffffff",
-    icon: "graph",
+    icon: "tags",
   },
   "case-converter": {
     bg: "#5dcbf0",
@@ -108,12 +115,17 @@ const TOOL_VISUALS: Record<string, ToolVisualConfig> = {
   "dns-checker": {
     bg: "#1982c4",
     fg: "#ffffff",
-    icon: "graph",
+    icon: "server",
   },
   "font-converter": {
     bg: "#ef476f",
     fg: "#ffffff",
     icon: "type",
+  },
+  "heatmap-tracker": {
+    bg: "#ef476f",
+    fg: "#ffffff",
+    icon: "mouse-click",
   },
   "image-compressor": {
     bg: "#6a4c93",
@@ -128,7 +140,7 @@ const TOOL_VISUALS: Record<string, ToolVisualConfig> = {
   "image-extractor": {
     bg: "#43aa8b",
     fg: "#ffffff",
-    icon: "graph",
+    icon: "image-down",
   },
   "image-to-text": {
     bg: "#8ac926",
@@ -154,12 +166,12 @@ const TOOL_VISUALS: Record<string, ToolVisualConfig> = {
   "redirect-analyzer": {
     bg: "#577590",
     fg: "#ffffff",
-    icon: "graph",
+    icon: "route",
   },
   "sitemap-robots-explorer": {
     bg: "#1982c4",
     fg: "#ffffff",
-    icon: "graph",
+    icon: "file-search",
   },
   vectorvault: {
     bg: "#ffca3a",
@@ -184,6 +196,7 @@ const TOOL_ORDER = [
   "image-converter",
   "image-extractor",
   "font-converter",
+  "heatmap-tracker",
   "dictate",
   "campaign-url-architect",
   "lorem-ipsum-generator",

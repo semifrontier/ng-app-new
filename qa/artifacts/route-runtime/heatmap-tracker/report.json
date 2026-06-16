@@ -1,0 +1,10 @@
+{
+  "slug": "heatmap-tracker",
+  "route": "/tools/heatmap-tracker",
+  "shell": "full_layout",
+  "priority": "medium",
+  "simplification": "prototype_keep",
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

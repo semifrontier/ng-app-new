@@ -1,0 +1,16 @@
+{
+  "consoleErrors": [],
+  "pageErrors": [],
+  "desktopCounts": {
+    "toolCards": 18,
+    "toolIcons": 18,
+    "heroIcons": 6,
+    "hiddenFallbacks": 0
+  },
+  "mobileCounts": {
+    "toolCards": 18,
+    "toolIcons": 18,
+    "heroIcons": 6,
+    "hiddenFallbacks": 0
+  }
+}

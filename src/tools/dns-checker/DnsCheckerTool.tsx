@@ -13,6 +13,11 @@ type ServerResult = {
   latency?: number;
 };
 
+type DnsLookupResponse = {
+  records?: unknown[];
+  error?: string;
+};
+
 function sanitizeDomain(input: string) {
   let value = input.trim().toLowerCase();
   if (value.startsWith("http://")) value = value.slice(7);
@@ -91,11 +96,15 @@ export default function DnsCheckerTool() {
           const response = await fetch(
             `/api/dns-check?domain=${encodeURIComponent(cleanDomain)}&type=${recordType}&server=${encodeURIComponent(server.ip)}`,
           );
-          const data = await response.json();
+          const data = (await response.json()) as DnsLookupResponse;
           const latency = Math.round(performance.now() - start);
 
           if (!response.ok) {
             throw new Error(data.error || "Lookup failed.");
+          }
+
+          if (data.error) {
+            throw new Error(data.error);
           }
 
           setResults((current) => ({

@@ -10,6 +10,7 @@ import { toolMeta as colorPaletteGenerator } from "./color-palette-generator/met
 import { toolMeta as dictate } from "./dictate/meta";
 import { toolMeta as dnsChecker } from "./dns-checker/meta";
 import { toolMeta as fontConverter } from "./font-converter/meta";
+import { toolMeta as heatmapTracker } from "./heatmap-tracker/meta";
 import { toolMeta as imageCompressor } from "./image-compressor/meta";
 import { toolMeta as imageExtractor } from "./image-extractor/meta";
 import { toolMeta as imageToTextGenerator } from "./image-to-text-converter/meta";
@@ -87,6 +88,11 @@ const FontConverterTool = lazyTool(
   "FontConverterTool",
 );
 
+const HeatmapTrackerTool = lazyTool(
+  () => import("./heatmap-tracker/HeatmapTrackerTool"),
+  "HeatmapTrackerTool",
+);
+
 const DictateTool = lazyTool(
   () => import("./dictate/DictateTool"),
   "DictateTool",
@@ -151,6 +157,7 @@ export const TOOLS: ToolDefinition[] = [
   { meta: dictate, Component: DictateTool },
   { meta: dnsChecker, Component: DnsCheckerTool },
   { meta: fontConverter, Component: FontConverterTool },
+  { meta: heatmapTracker, Component: HeatmapTrackerTool },
   { meta: imageCompressor, Component: ImageCompressorTool },
   { meta: imageExtractor, Component: ImageExtractorTool },
   { meta: imageToTextGenerator, Component: ImageToTextGeneratorTool },
