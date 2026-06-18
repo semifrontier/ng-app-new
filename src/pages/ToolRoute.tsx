@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import { useParams, Link } from "react-router-dom";
 import SiteFooter from "../components/SiteFooter";
 import SiteTopNav from "../components/SiteTopNav";
+import ToolLandingContent from "../components/ToolLandingContent";
 import { TOOLS_BY_SLUG } from "../tools/registry";
 
 export default function ToolRoute() {
@@ -42,6 +43,7 @@ export default function ToolRoute() {
       >
         <Tool />
       </Suspense>
+      <ToolLandingContent meta={entry.meta} />
       <SiteFooter />
     </div>
   );

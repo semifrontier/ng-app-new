@@ -4,6 +4,6 @@ export const toolMeta: ToolMeta = {
   slug: "dictate",
   title: "Dictate",
   description:
-    "Capture speech to text, edit the transcript, and play it back with a clean dictation workspace.",
+    "Dictate notes in the browser, edit the transcript, keep local history, and play text back aloud.",
   category: "Text",
 };

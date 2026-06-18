@@ -4,6 +4,6 @@ export const toolMeta = {
   slug: "image-extractor",
   title: "Image Extractor",
   description:
-    "Extract images from any webpage and download them individually or as a ZIP.",
+    "Extract images from a webpage, review the discovered assets, and download individual files or a ZIP.",
   category: "Images",
 } satisfies ToolMeta;

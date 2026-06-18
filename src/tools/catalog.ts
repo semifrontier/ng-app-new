@@ -1,4 +1,4 @@
-import { TOOLS as REGISTERED_TOOLS } from "./registry";
+import { TOOL_METAS } from "./metaRegistry";
 
 export type ToolCardIcon =
   | "chart"
@@ -202,16 +202,16 @@ const TOOL_ORDER = [
   "lorem-ipsum-generator",
 ];
 
-export const TOOL_CATALOG: ToolPresentation[] = [...REGISTERED_TOOLS]
+export const TOOL_CATALOG: ToolPresentation[] = [...TOOL_METAS]
   .sort((a, b) => {
-    const aIndex = TOOL_ORDER.indexOf(a.meta.slug);
-    const bIndex = TOOL_ORDER.indexOf(b.meta.slug);
+    const aIndex = TOOL_ORDER.indexOf(a.slug);
+    const bIndex = TOOL_ORDER.indexOf(b.slug);
     const safeA = aIndex === -1 ? TOOL_ORDER.length : aIndex;
     const safeB = bIndex === -1 ? TOOL_ORDER.length : bIndex;
 
-    return safeA - safeB || a.meta.title.localeCompare(b.meta.title);
+    return safeA - safeB || a.title.localeCompare(b.title);
   })
-  .map(({ meta }) => {
+  .map((meta) => {
     const visuals = TOOL_VISUALS[meta.slug] ?? DEFAULT_VISUALS[meta.category];
 
     return {

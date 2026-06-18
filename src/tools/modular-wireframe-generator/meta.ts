@@ -4,6 +4,6 @@ export const toolMeta = {
   slug: "modular-wireframe-generator",
   title: "Modular Wireframe Generator",
   description:
-    "Generate wireframes effortlessly to speed up your web design process.",
+    "Compose modular website wireframes, cycle section variations, and export layouts for design planning.",
   category: "Design",
 } satisfies ToolMeta;
