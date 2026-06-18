@@ -25,7 +25,7 @@ export default function ToolsIndex() {
                 Browse Every Tool
               </h1>
               <p className="max-w-2xl text-base leading-7 text-[var(--ng-text-muted)] sm:text-lg">
-                A full index of all No Gatekeeping utilities, organized for fast scanning and direct access.
+                Browse every No Gatekeeping utility for image conversion, text cleanup, SEO checks, design systems, URL work, and local productivity.
               </p>
 
               <div className="flex flex-wrap gap-3">
@@ -67,7 +67,7 @@ export default function ToolsIndex() {
                 </h2>
               </div>
               <p className="max-w-xl text-sm leading-6 text-[var(--ng-text-muted)] sm:text-base">
-                Styled to match the homepage system: hard borders, strong typography, zero-radius cards, and quick route access.
+                Every card links directly to a working browser tool with a short description, category, and route.
               </p>
             </div>
 

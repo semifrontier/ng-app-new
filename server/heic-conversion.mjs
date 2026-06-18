@@ -95,22 +95,18 @@ export const isHeicLikeFile = ({ filename = "", mimeType = "" }) => {
 };
 
 const renderWithSharp = async (inputBuffer, targetFormat) => {
-  try {
-    const image = sharp(inputBuffer, { limitInputPixels: false }).rotate();
+  const image = sharp(inputBuffer, { limitInputPixels: false }).rotate();
 
-    if (targetFormat === "jpeg") {
-      return image.jpeg({ quality: 92 }).toBuffer();
-    }
+  if (targetFormat === "jpeg") {
+    return image.jpeg({ quality: 92 }).toBuffer();
+  }
 
-    if (targetFormat === "png") {
-      return image.png().toBuffer();
-    }
+  if (targetFormat === "png") {
+    return image.png().toBuffer();
+  }
 
-    if (targetFormat === "webp") {
-      return image.webp({ quality: 92 }).toBuffer();
-    }
-  } catch (error) {
-    throw error;
+  if (targetFormat === "webp") {
+    return image.webp({ quality: 92 }).toBuffer();
   }
 
   throw new Error(`Unsupported target format: ${targetFormat}`);

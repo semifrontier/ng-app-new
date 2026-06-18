@@ -166,8 +166,8 @@ export default function Home() {
                 <span>GATEKEEPING</span>
               </h1>
               <p className="hero-kicker">
-                Fast, direct utilities for image, text, SEO, design, and workflow cleanup.
-                Everything is built to get people into a tool quickly.
+                Fast, free browser utilities for image, text, SEO, design, and workflow cleanup.
+                Everything is built to get people into a useful tool quickly, without signup gates.
               </p>
 
               <div className="hero-actions">
@@ -263,8 +263,8 @@ export default function Home() {
             </div>
 
             <p>
-              Search by name or category, then jump straight into the tool you need without
-              friction.
+              Search by name or category, then jump into workflows for images, text, SEO checks,
+              design systems, conversion, extraction, and everyday cleanup.
             </p>
           </div>
 

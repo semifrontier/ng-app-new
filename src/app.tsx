@@ -1,13 +1,12 @@
 import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import ToolsIndex from "./pages/ToolsIndex";
 import ToolRoute from "./pages/ToolRoute";
 import ToolRedirect from "./pages/ToolRedirect";
-
-
+import HeadManager from "./seo/HeadManager";
 
 function NotFound() {
   return (
@@ -30,21 +29,24 @@ function NotFound() {
 
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
+    <>
+      <HeadManager />
+      <Routes>
+        <Route path="/" element={<Home />} />
 
-      <Route path="/blog" element={<Blog />} />
+        <Route path="/blog" element={<Blog />} />
 
-      {/* Optional tools index route */}
-      <Route path="/tools" element={<ToolsIndex />} />
+        {/* Optional tools index route */}
+        <Route path="/tools" element={<ToolsIndex />} />
 
-      <Route path="/tool/:slug" element={<ToolRedirect />} />
+        <Route path="/tool/:slug" element={<ToolRedirect />} />
 
-      {/* Tool routes */}
-      <Route path="/tools/:slug" element={<ToolRoute />} />
+        {/* Tool routes */}
+        <Route path="/tools/:slug" element={<ToolRoute />} />
 
-      {/* Catch-all */}
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+        {/* Catch-all */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
   );
 }

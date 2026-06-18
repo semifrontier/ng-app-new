@@ -5,11 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && node scripts/generate-sitemap.mjs && vite build && node scripts/prerender-seo.mjs",
     "preview": "vite preview",
     "lint": "eslint .",
+    "sitemap": "node scripts/generate-sitemap.mjs",
+    "prerender:seo": "node scripts/prerender-seo.mjs",
     "qa:routes": "node scripts/route-runtime-qa.mjs",
-    "qa:routes:browser": "playwright test tests/route-runtime.spec.ts"
+    "qa:routes:browser": "playwright test tests/route-runtime.spec.ts",
+    "qa:seo": "npm run build && playwright test tests/seo-metadata.spec.ts"
   },
   "dependencies": {
     "@google/genai": "^1.49.0",

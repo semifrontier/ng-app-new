@@ -35,7 +35,7 @@ export default function Blog() {
                 The Blog
               </h1>
               <p className="max-w-2xl text-base leading-7 text-[var(--ng-text-muted)] sm:text-lg">
-                A structured post feed for product notes, workflow breakdowns, and practical design-tool writing.
+                Product notes, workflow breakdowns, and practical writing about browser tools, design utilities, SEO checks, and faster everyday work.
               </p>
             </div>
 

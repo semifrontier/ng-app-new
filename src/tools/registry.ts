@@ -1,25 +1,6 @@
 import React from "react";
 import type { ToolMeta } from "./types";
-
-// meta imports (cheap, sync)
-import { toolMeta as caseConverter } from "./case-converter/meta";
-import { toolMeta as imageConverter } from "./image-converter/meta";
-import { toolMeta as campaignUrlArchitect } from "./campaign-url-architect/meta";
-import { toolMeta as colorPicker } from "./color-picker/meta";
-import { toolMeta as colorPaletteGenerator } from "./color-palette-generator/meta";
-import { toolMeta as dictate } from "./dictate/meta";
-import { toolMeta as dnsChecker } from "./dns-checker/meta";
-import { toolMeta as fontConverter } from "./font-converter/meta";
-import { toolMeta as heatmapTracker } from "./heatmap-tracker/meta";
-import { toolMeta as imageCompressor } from "./image-compressor/meta";
-import { toolMeta as imageExtractor } from "./image-extractor/meta";
-import { toolMeta as imageToTextGenerator } from "./image-to-text-converter/meta";
-import { toolMeta as loremIpsumGenerator } from "./lorem-ipsum-generator/meta";
-import { toolMeta as modularWireframeGenerator } from "./modular-wireframe-generator/meta";
-import { toolMeta as proportionScaler } from "./proportion-scaler/meta";
-import { toolMeta as redirectAnalyzer } from "./redirect-analyzer/meta";
-import { toolMeta as sitemapRobotsExplorer } from "./sitemap-robots-explorer/meta";
-import { toolMeta as vectorVault } from "./vectorvault/meta";
+import { TOOL_META_BY_SLUG } from "./metaRegistry";
 
 export type ToolDefinition = {
   meta: ToolMeta;
@@ -149,24 +130,24 @@ const VectorVaultTool = lazyTool(
 );
 
 export const TOOLS: ToolDefinition[] = [
-  { meta: imageConverter, Component: ImageConverterTool },
-  { meta: campaignUrlArchitect, Component: CampaignUrlArchitectTool },
-  { meta: caseConverter, Component: CaseConverterTool },
-  { meta: colorPicker, Component: ColorPickerTool },
-  { meta: colorPaletteGenerator, Component: ColorPaletteGeneratorTool },
-  { meta: dictate, Component: DictateTool },
-  { meta: dnsChecker, Component: DnsCheckerTool },
-  { meta: fontConverter, Component: FontConverterTool },
-  { meta: heatmapTracker, Component: HeatmapTrackerTool },
-  { meta: imageCompressor, Component: ImageCompressorTool },
-  { meta: imageExtractor, Component: ImageExtractorTool },
-  { meta: imageToTextGenerator, Component: ImageToTextGeneratorTool },
-  { meta: loremIpsumGenerator, Component: LoremIpsumGeneratorTool },
-  { meta: modularWireframeGenerator, Component: ModularWireframeGeneratorTool },
-  { meta: proportionScaler, Component: ProportionScalerTool },
-  { meta: redirectAnalyzer, Component: RedirectAnalyzerTool },
-  { meta: sitemapRobotsExplorer, Component: SitemapRobotsExplorerTool },
-  { meta: vectorVault, Component: VectorVaultTool },
+  { meta: TOOL_META_BY_SLUG["image-converter"], Component: ImageConverterTool },
+  { meta: TOOL_META_BY_SLUG["campaign-url-architect"], Component: CampaignUrlArchitectTool },
+  { meta: TOOL_META_BY_SLUG["case-converter"], Component: CaseConverterTool },
+  { meta: TOOL_META_BY_SLUG["color-picker"], Component: ColorPickerTool },
+  { meta: TOOL_META_BY_SLUG["color-palette-generator"], Component: ColorPaletteGeneratorTool },
+  { meta: TOOL_META_BY_SLUG.dictate, Component: DictateTool },
+  { meta: TOOL_META_BY_SLUG["dns-checker"], Component: DnsCheckerTool },
+  { meta: TOOL_META_BY_SLUG["font-converter"], Component: FontConverterTool },
+  { meta: TOOL_META_BY_SLUG["heatmap-tracker"], Component: HeatmapTrackerTool },
+  { meta: TOOL_META_BY_SLUG["image-compressor"], Component: ImageCompressorTool },
+  { meta: TOOL_META_BY_SLUG["image-extractor"], Component: ImageExtractorTool },
+  { meta: TOOL_META_BY_SLUG["image-to-text"], Component: ImageToTextGeneratorTool },
+  { meta: TOOL_META_BY_SLUG["lorem-ipsum-generator"], Component: LoremIpsumGeneratorTool },
+  { meta: TOOL_META_BY_SLUG["modular-wireframe-generator"], Component: ModularWireframeGeneratorTool },
+  { meta: TOOL_META_BY_SLUG["proportion-scaler"], Component: ProportionScalerTool },
+  { meta: TOOL_META_BY_SLUG["redirect-analyzer"], Component: RedirectAnalyzerTool },
+  { meta: TOOL_META_BY_SLUG["sitemap-robots-explorer"], Component: SitemapRobotsExplorerTool },
+  { meta: TOOL_META_BY_SLUG.vectorvault, Component: VectorVaultTool },
 ];
 
 export const TOOLS_BY_SLUG = Object.fromEntries(

@@ -4,6 +4,6 @@ export const toolMeta = {
   slug: "dns-checker",
   title: "DNS Checker",
   description:
-    "Check global DNS propagation across multiple public resolvers.",
+    "Check DNS records across public resolvers to compare propagation, response details, and lookup speed.",
   category: "SEO",
 } satisfies ToolMeta;

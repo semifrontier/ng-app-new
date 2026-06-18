@@ -4,6 +4,6 @@ export const toolMeta = {
   slug: "proportion-scaler",
   title: "Proportion Scaler",
   description:
-    "Convert any aspect ratio or dimensions proportionally and copy easily.",
+    "Scale dimensions proportionally, preserve aspect ratios, and copy resized width and height values.",
   category: "Other",
 } satisfies ToolMeta;
