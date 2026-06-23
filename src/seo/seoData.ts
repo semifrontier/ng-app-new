@@ -1,3 +1,8 @@
+import {
+  PUBLISHED_BLOG_POSTS,
+  getBlogPostPath,
+  type PublishedBlogPost,
+} from "../blog/posts";
 import { TOOL_CATALOG } from "../tools/catalog";
 import { TOOL_META_BY_SLUG } from "../tools/metaRegistry";
 import type { ToolCategory, ToolMeta } from "../tools/types";
@@ -261,6 +266,12 @@ function blogSchema(
         name: "No Gatekeeping Blog",
         description: descriptor.description,
         url,
+        blogPost: PUBLISHED_BLOG_POSTS.map((post) => ({
+          "@type": "BlogPosting",
+          "@id": `${absoluteUrl(getBlogPostPath(post), siteUrl)}#blog-post`,
+          headline: post.title,
+          url: absoluteUrl(getBlogPostPath(post), siteUrl),
+        })),
         publisher: {
           "@id": `${siteUrl}/#organization`,
         },
@@ -270,6 +281,51 @@ function blogSchema(
         [
           { name: "Home", path: "/" },
           { name: "Blog", path: "/blog" },
+        ],
+        siteUrl,
+      ),
+    ],
+    siteUrl,
+  );
+}
+
+function blogPostSchema(
+  descriptor: SeoDescriptor,
+  post: PublishedBlogPost,
+  siteUrl: string,
+): JsonLdDocument {
+  const url = absoluteUrl(descriptor.canonicalPath, siteUrl);
+  const postId = `${url}#blog-post`;
+
+  return schemaGraph(
+    [
+      webpageNode(descriptor, "WebPage", siteUrl, { "@id": postId }),
+      {
+        "@type": "BlogPosting",
+        "@id": postId,
+        headline: post.title,
+        description: post.excerpt,
+        image: [absoluteUrl(post.article.heroImage.src, siteUrl)],
+        datePublished: post.article.publishedDate,
+        dateModified: post.article.modifiedDate,
+        author: {
+          "@type": "Organization",
+          "@id": `${siteUrl}/#organization`,
+          name: post.article.author,
+        },
+        publisher: {
+          "@id": `${siteUrl}/#organization`,
+        },
+        mainEntityOfPage: {
+          "@id": `${url}#webpage`,
+        },
+      },
+      breadcrumbNode(
+        `${url}#breadcrumb`,
+        [
+          { name: "Home", path: "/" },
+          { name: "Blog", path: "/blog" },
+          { name: post.title, path: getBlogPostPath(post) },
         ],
         siteUrl,
       ),
@@ -317,6 +373,22 @@ function toolDescriptor(meta: ToolMeta, siteUrl: string): SeoDescriptor {
   };
 }
 
+function blogPostDescriptor(
+  post: PublishedBlogPost,
+  siteUrl: string,
+): SeoDescriptor {
+  const descriptor = {
+    title: `${post.title} - No Gatekeeping`,
+    description: post.excerpt,
+    canonicalPath: getBlogPostPath(post),
+  };
+
+  return {
+    ...descriptor,
+    schema: blogPostSchema(descriptor, post, siteUrl),
+  };
+}
+
 export function getSeoDescriptor(
   pathname: string,
   siteUrl = DEFAULT_SITE_URL,
@@ -345,6 +417,14 @@ export function getSeoDescriptor(
     };
   }
 
+  const blogPostMatch = pathnameWithoutTrailingSlash.match(/^\/blog\/([^/]+)$/);
+  if (blogPostMatch) {
+    const post = PUBLISHED_BLOG_POSTS.find(
+      (item) => item.slug === blogPostMatch[1],
+    );
+    if (post) return blogPostDescriptor(post, normalizedSiteUrl);
+  }
+
   const toolMatch = pathnameWithoutTrailingSlash.match(/^\/tools\/([^/]+)$/);
   if (toolMatch) {
     const entry = TOOL_META_BY_SLUG[toolMatch[1]];
@@ -363,10 +443,14 @@ export function getSeoDescriptor(
 export function getSeoPrerenderRoutes(
   siteUrl = DEFAULT_SITE_URL,
 ): SeoRoute[] {
-  return ["/", "/tools", "/blog", ...TOOL_CATALOG.map((tool) => tool.route)].map(
-    (path) => ({
-      path,
-      descriptor: getSeoDescriptor(path, siteUrl),
-    }),
-  );
+  return [
+    "/",
+    "/tools",
+    "/blog",
+    ...PUBLISHED_BLOG_POSTS.map((post) => getBlogPostPath(post)),
+    ...TOOL_CATALOG.map((tool) => tool.route),
+  ].map((path) => ({
+    path,
+    descriptor: getSeoDescriptor(path, siteUrl),
+  }));
 }

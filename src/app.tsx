@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
+import BlogPostRoute from "./pages/BlogPostRoute";
 import ToolsIndex from "./pages/ToolsIndex";
 import ToolRoute from "./pages/ToolRoute";
 import ToolRedirect from "./pages/ToolRedirect";
@@ -35,6 +36,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
 
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPostRoute />} />
 
         {/* Optional tools index route */}
         <Route path="/tools" element={<ToolsIndex />} />
