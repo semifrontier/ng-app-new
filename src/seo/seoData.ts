@@ -42,7 +42,7 @@ export const PAGE_CONTENT = {
   blog: {
     title: "Blog - No Gatekeeping",
     description:
-      "Product notes, workflow breakdowns, and practical writing about browser tools, design utilities, SEO checks, and faster everyday work.",
+      "Read No Gatekeeping field notes about SEO preflights, image cleanup, text utilities, design handoffs, URL workflows, and faster browser-tool work.",
     canonicalPath: "/blog",
   },
   notFound: {
