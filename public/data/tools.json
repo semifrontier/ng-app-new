@@ -1,0 +1,239 @@
+{
+  "type": "NoGatekeepingToolCatalog",
+  "tools": [
+    {
+      "id": "color-picker",
+      "title": "Color Picker",
+      "category": "Design",
+      "url": "/tools/color-picker",
+      "description": "Sample HEX, RGB, and HSL values from uploaded images with a zoomed picker and one-click copy.",
+      "summary": "Color Picker samples HEX, RGB, and HSL values from uploaded images with a zoomed canvas so reference colors can move straight into design or development.",
+      "useCases": [
+        "Matching a color from a screenshot, logo, product photo, or moodboard.",
+        "Checking nearby pixels with a magnified view before copying the final value.",
+        "Translating visual references into usable CSS or design-token color formats."
+      ]
+    },
+    {
+      "id": "case-converter",
+      "title": "Case Converter",
+      "category": "Text",
+      "url": "/tools/case-converter",
+      "description": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
+      "summary": "Case Converter reformats pasted text into common casing styles for labels, filenames, headings, code-adjacent strings, and content cleanup work.",
+      "useCases": [
+        "Turning rough notes into title case, sentence case, camel case, or slug-ready text.",
+        "Normalizing lists of labels before moving them into a CMS, design file, or codebase.",
+        "Quickly removing casing inconsistencies from copied content."
+      ]
+    },
+    {
+      "id": "proportion-scaler",
+      "title": "Proportion Scaler",
+      "category": "Other",
+      "url": "/tools/proportion-scaler",
+      "description": "Scale dimensions proportionally, preserve aspect ratios, and copy resized width and height values.",
+      "summary": "Proportion Scaler calculates proportional width and height values from an original size, making aspect-ratio math quick and copyable.",
+      "useCases": [
+        "Resizing images, embeds, canvases, videos, or design frames without distortion.",
+        "Finding a matching dimension when only one side is known.",
+        "Checking common ratios before exporting or implementing fixed-format assets."
+      ]
+    },
+    {
+      "id": "image-to-text",
+      "title": "Image to Text",
+      "category": "Images",
+      "url": "/tools/image-to-text",
+      "description": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
+      "summary": "Image to Text runs OCR locally in the browser, then provides confidence details, copy controls, and downloads for extracted text.",
+      "useCases": [
+        "Pulling text from screenshots, scanned notes, labels, or image-based documents.",
+        "Checking OCR confidence before reusing the extracted result.",
+        "Keeping sensitive image-to-text work local to the browser session."
+      ]
+    },
+    {
+      "id": "image-compressor",
+      "title": "Image Compressor",
+      "category": "Images",
+      "url": "/tools/image-compressor",
+      "description": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
+      "summary": "Image Compressor processes image batches in the browser, compares savings, and exports individual files or a ZIP for faster pages and cleaner asset delivery.",
+      "useCases": [
+        "Reducing large images before publishing them to a website or CMS.",
+        "Compressing a batch of screenshots, product images, or content assets together.",
+        "Checking size savings before deciding which output files to keep."
+      ]
+    },
+    {
+      "id": "color-palette-generator",
+      "title": "Color Palette Generator",
+      "category": "Design",
+      "url": "/tools/color-palette-generator",
+      "description": "Generate, tune, preview, and export color palettes for brand systems, mockups, and design projects.",
+      "summary": "Color Palette Generator helps explore color combinations, contrast, gradients, mockups, image inspiration, and saved palettes from one browser workspace.",
+      "useCases": [
+        "Starting brand, landing page, dashboard, or campaign color exploration.",
+        "Previewing how a palette behaves in realistic UI and visual compositions.",
+        "Exporting reusable color values once the direction feels right."
+      ]
+    },
+    {
+      "id": "vectorvault",
+      "title": "Vector Vault",
+      "category": "Design",
+      "url": "/tools/vectorvault",
+      "description": "Search, preview, edit, upload, and export SVG icons from a local vector library.",
+      "summary": "Vector Vault provides search, preview, editing, upload, and export flows for SVG icons without turning icon cleanup into a larger asset-management task.",
+      "useCases": [
+        "Finding and copying reusable SVG icons during interface design or development.",
+        "Editing icon details before export or handoff.",
+        "Keeping a practical local icon library for repeated project work."
+      ]
+    },
+    {
+      "id": "dns-checker",
+      "title": "DNS Checker",
+      "category": "SEO",
+      "url": "/tools/dns-checker",
+      "description": "Check DNS records across public resolvers to compare propagation, response details, and lookup speed.",
+      "summary": "DNS Checker queries public resolvers in parallel so domain changes can be compared across record types, response values, and lookup timing.",
+      "useCases": [
+        "Verifying A, AAAA, MX, TXT, CNAME, or NS records after a DNS change.",
+        "Comparing resolver responses when a domain works in one place but not another.",
+        "Spotting propagation gaps before debugging hosting, email, or verification issues."
+      ]
+    },
+    {
+      "id": "redirect-analyzer",
+      "title": "Redirect Analyzer",
+      "category": "SEO",
+      "url": "/tools/redirect-analyzer",
+      "description": "Trace URL redirect chains, status codes, final destinations, and HTTP-to-HTTPS upgrade behavior.",
+      "summary": "Redirect Analyzer follows a URL through status codes, hops, final destinations, and protocol changes so redirect behavior is easier to debug.",
+      "useCases": [
+        "Checking whether a campaign, affiliate, or migrated URL lands in the right place.",
+        "Finding extra redirect hops that slow down a page or obscure the final URL.",
+        "Confirming HTTP-to-HTTPS upgrades and status codes during SEO cleanup."
+      ]
+    },
+    {
+      "id": "sitemap-robots-explorer",
+      "title": "Sitemap Robots Explorer",
+      "category": "SEO",
+      "url": "/tools/sitemap-robots-explorer",
+      "description": "Explore robots.txt, discover sitemap files, scan URLs, and categorize site structure from one input.",
+      "summary": "Sitemap Robots Explorer reads a site entry point, discovers sitemap references, scans URLs, and groups discovered paths into useful categories.",
+      "useCases": [
+        "Getting a fast view of a website's public URL structure.",
+        "Checking whether robots.txt exposes expected sitemap locations.",
+        "Categorizing discovered URLs before a content audit, migration, or technical SEO review."
+      ]
+    },
+    {
+      "id": "modular-wireframe-generator",
+      "title": "Modular Wireframe Generator",
+      "category": "Design",
+      "url": "/tools/modular-wireframe-generator",
+      "description": "Compose modular website wireframes, cycle section variations, and export layouts for design planning.",
+      "summary": "Modular Wireframe Generator combines common website sections, variation controls, and export options for fast planning of page layouts.",
+      "useCases": [
+        "Exploring landing page, pricing, feature, gallery, contact, or testimonial structures.",
+        "Comparing section variations before committing to a full design pass.",
+        "Exporting a rough layout for discussion, documentation, or next-step design work."
+      ]
+    },
+    {
+      "id": "image-converter",
+      "title": "Image Converter",
+      "category": "Images",
+      "url": "/tools/image-converter",
+      "description": "Convert images to JPG, PNG, WebP, or PDF directly in the browser with batch controls and downloads.",
+      "summary": "Image Converter changes images into JPG, PNG, WebP, or PDF outputs with batch controls, file previews, and downloadable results.",
+      "useCases": [
+        "Preparing images for a platform that requires a specific file type.",
+        "Converting several design, screenshot, or content assets in one pass.",
+        "Creating PDFs from image files for sharing, archiving, or quick review."
+      ]
+    },
+    {
+      "id": "image-extractor",
+      "title": "Image Extractor",
+      "category": "Images",
+      "url": "/tools/image-extractor",
+      "description": "Extract images from a webpage, review the discovered assets, and download individual files or a ZIP.",
+      "summary": "Image Extractor scans a webpage URL for discoverable image assets, groups useful results, and supports single-file or ZIP downloads.",
+      "useCases": [
+        "Reviewing page imagery during content, migration, or redesign work.",
+        "Finding source image URLs without manually inspecting markup.",
+        "Collecting visible page assets for local analysis or cleanup."
+      ]
+    },
+    {
+      "id": "font-converter",
+      "title": "Font Converter",
+      "category": "Design",
+      "url": "/tools/font-converter",
+      "description": "Convert font files in bulk between web and desktop formats, then download ready-to-use outputs.",
+      "summary": "Font Converter batches font uploads, processes supported formats, and produces ready-to-download outputs for front-end builds, design handoff, or asset cleanup.",
+      "useCases": [
+        "Preparing font assets for web projects that need browser-friendly formats.",
+        "Converting several font files at once instead of running one-off exports.",
+        "Organizing delivered typography assets before adding them to a project."
+      ]
+    },
+    {
+      "id": "heatmap-tracker",
+      "title": "Heatmap Tracker",
+      "category": "Design",
+      "url": "/tools/heatmap-tracker",
+      "description": "Prototype click heatmaps locally by placing hotspots on screenshots, seeding demo data, and exporting JSON.",
+      "summary": "Heatmap Tracker lets you place and export local click hotspots on a screenshot, making it useful for demos, design reviews, and early analytics planning.",
+      "useCases": [
+        "Mocking up how click activity could look on a page or product screen.",
+        "Annotating a screenshot with interaction hotspots during UX review.",
+        "Exporting local heatmap point data for a prototype or proof of concept."
+      ]
+    },
+    {
+      "id": "dictate",
+      "title": "Dictate",
+      "category": "Text",
+      "url": "/tools/dictate",
+      "description": "Dictate notes in the browser, edit the transcript, keep local history, and play text back aloud.",
+      "summary": "Dictate provides a local speech-to-text workspace with editable transcripts, playback, and saved history for drafting notes without opening a heavier writing app.",
+      "useCases": [
+        "Drafting rough notes, outlines, messages, or reminders by voice.",
+        "Reviewing dictated text, making edits, and listening back for flow.",
+        "Keeping short local transcript history for follow-up work."
+      ]
+    },
+    {
+      "id": "campaign-url-architect",
+      "title": "Campaign URL Architect",
+      "category": "SEO",
+      "url": "/tools/campaign-url-architect",
+      "description": "Build clean UTM-tagged campaign URLs, preview every parameter, and keep a local history for reuse.",
+      "summary": "Campaign URL Architect turns a destination URL and campaign details into a clean tracked link, then keeps recent links in local history so recurring campaigns stay consistent.",
+      "useCases": [
+        "Preparing paid, email, social, or partner campaign URLs before launch.",
+        "Checking that UTM values are present, readable, and free of stray spaces.",
+        "Reusing previous campaign structures without keeping a separate spreadsheet open."
+      ]
+    },
+    {
+      "id": "lorem-ipsum-generator",
+      "title": "Lorem Ipsum Generator",
+      "category": "Text",
+      "url": "/tools/lorem-ipsum-generator",
+      "description": "Generate Lorem Ipsum placeholder text by paragraph, sentence, or word count and copy it quickly.",
+      "summary": "Lorem Ipsum Generator creates filler text by paragraph, sentence, or word count so mockups and content slots can be tested quickly.",
+      "useCases": [
+        "Filling design comps, wireframes, and prototypes with realistic text volume.",
+        "Testing layout behavior for short blurbs, long paragraphs, or repeated sections.",
+        "Copying placeholder text without opening a separate document or generator site."
+      ]
+    }
+  ]
+}

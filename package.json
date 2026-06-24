@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && node scripts/generate-sitemap.mjs && vite build && node scripts/prerender-seo.mjs",
+    "build": "tsc -b && node scripts/generate-sitemap.mjs && node scripts/generate-public-data.mjs && vite build && node scripts/prerender-seo.mjs",
     "preview": "vite preview",
     "lint": "eslint .",
     "sitemap": "node scripts/generate-sitemap.mjs",
+    "data:public": "node scripts/generate-public-data.mjs",
     "prerender:seo": "node scripts/prerender-seo.mjs",
     "qa:routes": "node scripts/route-runtime-qa.mjs",
     "qa:routes:browser": "playwright test tests/route-runtime.spec.ts",

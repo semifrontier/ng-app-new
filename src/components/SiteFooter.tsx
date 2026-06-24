@@ -58,6 +58,23 @@ export default function SiteFooter({
           <div className={`grid gap-3 text-sm leading-6 ${mutedClass}`}>
             <p>About: no-gatekeeping utilities for practical everyday work.</p>
             <p>Contact: blog and site contact details can live here next.</p>
+            <div className="grid gap-2">
+              <span className="text-xs font-black uppercase tracking-[0.18em]">
+                Public data
+              </span>
+              <a className={linkClass} href="/data/tools.json">
+                Tools JSON
+              </a>
+              <a className={linkClass} href="/data/tools.csv">
+                Tools CSV
+              </a>
+              <a className={linkClass} href="/data/blog-posts.json">
+                Blog JSON
+              </a>
+              <a className={linkClass} href="/data/blog-posts.csv">
+                Blog CSV
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -11,6 +11,20 @@ export default function ToolLandingContent({ meta }: ToolLandingContentProps) {
   if (!content) return null;
 
   const headingId = `tool-content-${meta.slug}`;
+  const faqItems = [
+    {
+      question: `What does ${meta.title} do?`,
+      answer: content.summary,
+    },
+    {
+      question: `When should I use ${meta.title}?`,
+      answer: content.useCases.join(" "),
+    },
+    {
+      question: `Who is ${meta.title} for?`,
+      answer: `${meta.title} is for people who need a focused ${meta.category.toLowerCase()} workflow in the browser without opening a heavier app.`,
+    },
+  ];
 
   return (
     <section
@@ -50,6 +64,27 @@ export default function ToolLandingContent({ meta }: ToolLandingContentProps) {
               </li>
             ))}
           </ul>
+
+          <div className="space-y-3 border-t-2 border-[var(--ng-border)] pt-6">
+            <h3 className="text-sm font-black uppercase tracking-[0.18em]">
+              Questions people ask
+            </h3>
+            <div className="grid gap-3">
+              {faqItems.map((item) => (
+                <details
+                  key={item.question}
+                  className="border-2 border-[var(--ng-border)] bg-white p-4"
+                >
+                  <summary className="cursor-pointer text-sm font-black uppercase leading-5 tracking-[0.08em] text-[var(--ng-primary)]">
+                    {item.question}
+                  </summary>
+                  <p className="mt-3 text-sm font-medium leading-6 text-[var(--ng-text-muted)]">
+                    {item.answer}
+                  </p>
+                </details>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

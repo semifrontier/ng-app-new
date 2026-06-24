@@ -1,6 +1,7 @@
 import {
   PUBLISHED_BLOG_POSTS,
   getBlogPostPath,
+  type BlogImage,
   type PublishedBlogPost,
 } from "../blog/posts";
 import { TOOL_CATALOG } from "../tools/catalog";
@@ -203,6 +204,39 @@ function breadcrumbNode(
   };
 }
 
+function blogImageObjectId(pageUrl: string, index: number) {
+  return `${pageUrl}#image-${index + 1}`;
+}
+
+function blogImageObjectNode(
+  image: BlogImage,
+  pageUrl: string,
+  siteUrl: string,
+  index: number,
+): JsonLdNode {
+  const contentUrl = absoluteUrl(image.src, siteUrl);
+
+  return {
+    "@type": "ImageObject",
+    "@id": blogImageObjectId(pageUrl, index),
+    url: contentUrl,
+    contentUrl,
+    name: image.alt,
+    description: image.alt,
+    ...(image.caption ? { caption: image.caption } : {}),
+    ...(image.credit ? { creditText: image.credit } : {}),
+  };
+}
+
+function blogPostImages(post: PublishedBlogPost) {
+  return [
+    post.article.heroImage,
+    ...post.article.sections.flatMap((section) =>
+      section.image ? [section.image] : [],
+    ),
+  ];
+}
+
 function schemaGraph(nodes: JsonLdNode[], siteUrl: string): JsonLdDocument {
   return {
     "@context": "https://schema.org",
@@ -296,6 +330,9 @@ function blogPostSchema(
 ): JsonLdDocument {
   const url = absoluteUrl(descriptor.canonicalPath, siteUrl);
   const postId = `${url}#blog-post`;
+  const imageNodes = blogPostImages(post).map((image, index) =>
+    blogImageObjectNode(image, url, siteUrl, index),
+  );
 
   return schemaGraph(
     [
@@ -305,7 +342,9 @@ function blogPostSchema(
         "@id": postId,
         headline: post.title,
         description: post.excerpt,
-        image: [absoluteUrl(post.article.heroImage.src, siteUrl)],
+        image: imageNodes.map((_, index) => ({
+          "@id": blogImageObjectId(url, index),
+        })),
         datePublished: post.article.publishedDate,
         dateModified: post.article.modifiedDate,
         author: {
@@ -320,6 +359,7 @@ function blogPostSchema(
           "@id": `${url}#webpage`,
         },
       },
+      ...imageNodes,
       breadcrumbNode(
         `${url}#breadcrumb`,
         [

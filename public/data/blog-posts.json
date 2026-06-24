@@ -1,0 +1,54 @@
+{
+  "type": "NoGatekeepingBlogPostCatalog",
+  "posts": [
+    {
+      "slug": "ai-in-graphic-design-keeping-the-human-touch",
+      "title": "AI in Graphic Design: Keeping the Human Touch",
+      "category": "Design",
+      "url": "/blog/ai-in-graphic-design-keeping-the-human-touch",
+      "description": "AI can speed up creative work, but designers still need to own the judgment, typography, brand meaning, and human touch that make design valuable.",
+      "date": "Jun 23, 2026",
+      "readTime": "9 min read",
+      "publishedDate": "2026-06-23",
+      "modifiedDate": "2026-06-23",
+      "sectionHeadings": [
+        "Why AI in Graphic Design Is Everywhere Right Now",
+        "What Designers Are Actually Afraid of Losing",
+        "AI as a Partner, Not a Replacement",
+        "What AI Should Never Replace in Graphic Design",
+        "Where AI and Human Creativity Are Heading Together",
+        "The Line Designers Need to Draw"
+      ],
+      "images": [
+        {
+          "src": "/blog/ai-in-graphic-design/hero.webp",
+          "alt": "Designer sketching interface ideas on a tablet beside a desktop monitor.",
+          "credit": "Photo by Mahmudul Hasan on Unsplash"
+        },
+        {
+          "src": "/blog/ai-in-graphic-design/wireframe.webp",
+          "alt": "Hands drawing a website wireframe on paper.",
+          "caption": "AI can help with early structure, but a designer still has to decide what the work should communicate.",
+          "credit": "Photo by Juno Jo on Unsplash"
+        },
+        {
+          "src": "/blog/ai-in-graphic-design/human-touch.webp",
+          "alt": "Close-up portrait lit with dramatic shadow.",
+          "caption": "The human touch shows up in judgment, taste, restraint, and knowing when not to generate more.",
+          "credit": "Photo by Korie Cull on Unsplash"
+        },
+        {
+          "src": "/blog/ai-in-graphic-design/designer-screen.webp",
+          "alt": "Designer reviewing mobile interface mockups on a desktop screen.",
+          "caption": "Designers who learn where AI fits can move faster without giving up ownership of the final result.",
+          "credit": "Photo by Nubelson Fernandes on Unsplash"
+        },
+        {
+          "src": "/blog/ai-in-graphic-design/studio.webp",
+          "alt": "Creative studio desk with laptop, monitor, plants, and sketch paper.",
+          "credit": "Photo by Olena Bohovyk on Unsplash"
+        }
+      ]
+    }
+  ]
+}
