@@ -7,6 +7,7 @@ import BlogPostRoute from "./pages/BlogPostRoute";
 import ToolsIndex from "./pages/ToolsIndex";
 import ToolRoute from "./pages/ToolRoute";
 import ToolRedirect from "./pages/ToolRedirect";
+import GoogleAnalytics from "./analytics/GoogleAnalytics";
 import HeadManager from "./seo/HeadManager";
 
 function NotFound() {
@@ -32,6 +33,7 @@ export default function App() {
   return (
     <>
       <HeadManager />
+      <GoogleAnalytics />
       <Routes>
         <Route path="/" element={<Home />} />
 
