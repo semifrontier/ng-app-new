@@ -29,6 +29,8 @@ No Gatekeeping is a collection of browser-based tools and field notes. The site 
 ## Notes For AI Assistants
 
 - Prefer canonical `/tools/{slug}` URLs for tool pages.
-- Legacy `/tool/{slug}` and `/all-tools/{slug}` URLs redirect to canonical `/tools/{slug}` pages.
+- Canonical URLs do not use trailing slashes.
+- Legacy `/tool/{slug}`, `/all-tools/{slug}`, and `/design-tools/{slug}` URLs redirect to canonical `/tools/{slug}` pages.
+- Legacy `/design-tools` and `/category/design-tools` URLs redirect to the canonical tools directory.
 - Public JSON and CSV exports are generated from the same source data used by the website.
 - The tools run in the browser unless a page explicitly says otherwise.

@@ -34,6 +34,32 @@ const HYDRATION_SMOKE_PATHS = [
   "/blog",
   "/tools/dns-checker",
 ];
+const LEGACY_ROUTE_REDIRECTS = [
+  {
+    from: "/all-tools/color-picker",
+    to: "/tools/color-picker",
+  },
+  {
+    from: "/design-tools",
+    to: "/tools",
+  },
+  {
+    from: "/category/design-tools",
+    to: "/tools",
+  },
+  {
+    from: "/design-tools/image-compressor",
+    to: "/tools/image-compressor",
+  },
+  {
+    from: "/design-tools/color-picker/",
+    to: "/tools/color-picker",
+  },
+  {
+    from: "/design-tools/how-to-get-hex-code-from-image",
+    to: "/tools/color-picker",
+  },
+] as const;
 const TOOL_CONTENT_ROUTES = SEO_ROUTES.filter((route) =>
   route.path.startsWith("/tools/"),
 );
@@ -181,6 +207,16 @@ test.describe("SEO metadata and schema", () => {
     });
   }
 
+  for (const redirect of LEGACY_ROUTE_REDIRECTS) {
+    test(`${redirect.from} hydrates to canonical ${redirect.to}`, async ({
+      page,
+    }) => {
+      await page.goto(redirect.from, { waitUntil: "domcontentloaded" });
+
+      await expect(page).toHaveURL(new RegExp(`${redirect.to}$`));
+    });
+  }
+
   for (const route of TOOL_CONTENT_ROUTES) {
     test(`${route.path} renders visible tool landing content`, async ({
       page,
@@ -242,7 +278,9 @@ test.describe("SEO metadata and schema", () => {
     expect(body).toContain("## Core Pages");
     expect(body).toContain("## Tool Data");
     expect(body).toContain("https://nogatekeeping.com/tools/color-picker");
-    expect(body).toContain("Legacy `/tool/{slug}` and `/all-tools/{slug}` URLs redirect");
+    expect(body).toContain(
+      "Legacy `/tool/{slug}`, `/all-tools/{slug}`, and `/design-tools/{slug}` URLs redirect",
+    );
   });
 
   test("deployment config avoids soft-404 catch-all behavior", async () => {
@@ -251,14 +289,36 @@ test.describe("SEO metadata and schema", () => {
     ) as {
       redirects?: Array<Record<string, unknown>>;
       rewrites?: Array<Record<string, unknown>>;
+      trailingSlash?: boolean;
     };
     const notFoundHtml = await readFile(
       new URL("../public/404.html", import.meta.url),
       "utf8",
     );
 
+    expect(vercelConfig.trailingSlash).toBe(false);
     expect(vercelConfig.redirects).toEqual(
       expect.arrayContaining([
+        expect.objectContaining({
+          source: "/design-tools/how-to-get-hex-code-from-image",
+          destination: "/tools/color-picker",
+          permanent: true,
+        }),
+        expect.objectContaining({
+          source: "/design-tools/:slug",
+          destination: "/tools/:slug",
+          permanent: true,
+        }),
+        expect.objectContaining({
+          source: "/design-tools",
+          destination: "/tools",
+          permanent: true,
+        }),
+        expect.objectContaining({
+          source: "/category/design-tools",
+          destination: "/tools",
+          permanent: true,
+        }),
         expect.objectContaining({
           source: "/tool/:slug",
           destination: "/tools/:slug",

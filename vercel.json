@@ -1,6 +1,27 @@
 {
   "cleanUrls": true,
+  "trailingSlash": false,
   "redirects": [
+    {
+      "source": "/design-tools/how-to-get-hex-code-from-image",
+      "destination": "/tools/color-picker",
+      "permanent": true
+    },
+    {
+      "source": "/design-tools/:slug",
+      "destination": "/tools/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/design-tools",
+      "destination": "/tools",
+      "permanent": true
+    },
+    {
+      "source": "/category/design-tools",
+      "destination": "/tools",
+      "permanent": true
+    },
     {
       "source": "/tool/:slug",
       "destination": "/tools/:slug",

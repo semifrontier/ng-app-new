@@ -43,6 +43,11 @@ export default function App() {
         {/* Optional tools index route */}
         <Route path="/tools" element={<ToolsIndex />} />
 
+        <Route path="/all-tools" element={<ToolRedirect />} />
+        <Route path="/all-tools/:slug" element={<ToolRedirect />} />
+        <Route path="/design-tools" element={<ToolRedirect />} />
+        <Route path="/design-tools/:slug" element={<ToolRedirect />} />
+        <Route path="/category/design-tools" element={<ToolRedirect />} />
         <Route path="/tool/:slug" element={<ToolRedirect />} />
 
         {/* Tool routes */}
