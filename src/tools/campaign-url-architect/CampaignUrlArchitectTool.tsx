@@ -18,6 +18,166 @@ const Tooltip: React.FC<{ text: string }> = ({ text }) => (
 
 const STORAGE_KEY = "ng_tool_campaign_url_architect_history";
 
+const CAMPAIGN_VALUE_FIELDS = new Set<keyof UTMParameters>([
+  'campaignId',
+  'campaignSource',
+  'campaignMedium',
+  'campaignName',
+  'campaignTerm',
+  'campaignContent',
+]);
+
+const MANAGED_UTM_KEYS = [
+  'utm_id',
+  'utm_source',
+  'utm_medium',
+  'utm_campaign',
+  'utm_term',
+  'utm_content',
+  'utm_name',
+] as const;
+
+const BLOCKED_CUSTOM_KEYS = new Set([
+  ...MANAGED_UTM_KEYS,
+  'gclid',
+  'gbraid',
+  'wbraid',
+]);
+
+const MEDIUM_EXAMPLES = [
+  'email',
+  'cpc',
+  'ppc',
+  'paidsearch',
+  'paid-social',
+  'social',
+  'social-network',
+  'social-media',
+  'organic',
+  'referral',
+  'display',
+  'banner',
+  'affiliate',
+  'sms',
+  'ai-assistant',
+];
+
+const EXACT_GA4_MEDIUMS = new Set([
+  'email',
+  'e-mail',
+  'e_mail',
+  'social',
+  'social-network',
+  'social-media',
+  'sm',
+  'social_network',
+  'social_media',
+  'organic',
+  'display',
+  'banner',
+  'expandable',
+  'interstitial',
+  'cpm',
+  'referral',
+  'app',
+  'link',
+  'affiliate',
+  'audio',
+  'sms',
+  'ai-assistant',
+]);
+
+const normalizeCampaignValue = (value: string) =>
+  value.trim().toLowerCase().replace(/\s+/g, '_');
+
+const normalizeCustomParamKey = (value: string) =>
+  value.trim().toLowerCase().replace(/\s+/g, '_');
+
+const hasValue = (value: string) => normalizeCampaignValue(value).length > 0;
+
+const getUrlWithScheme = (value: string) =>
+  /^https?:\/\//i.test(value) ? value : `https://${value}`;
+
+const isGa4RecognizedMedium = (value: string) => {
+  const medium = normalizeCampaignValue(value);
+
+  return (
+    EXACT_GA4_MEDIUMS.has(medium) ||
+    /^(.*cp.*|ppc|retargeting|paid.*)$/.test(medium) ||
+    /video/.test(medium) ||
+    medium.endsWith('push') ||
+    medium.includes('mobile') ||
+    medium.includes('notification')
+  );
+};
+
+const normalizeUtmParams = (input: UTMParameters): UTMParameters => ({
+  websiteUrl: input.websiteUrl,
+  campaignId: normalizeCampaignValue(input.campaignId || ''),
+  campaignSource: normalizeCampaignValue(input.campaignSource || ''),
+  campaignMedium: normalizeCampaignValue(input.campaignMedium || ''),
+  campaignName: normalizeCampaignValue(input.campaignName || ''),
+  campaignTerm: normalizeCampaignValue(input.campaignTerm || ''),
+  campaignContent: normalizeCampaignValue(input.campaignContent || ''),
+  customParams: (input.customParams || []).map((param) => {
+    const key = normalizeCustomParamKey(param.key || '');
+
+    return {
+      id: param.id,
+      key,
+      value: key.startsWith('utm_') ? normalizeCampaignValue(param.value || '') : (param.value || '').trim(),
+    };
+  }),
+});
+
+const buildCampaignUrl = (input: UTMParameters) => {
+  const params = normalizeUtmParams(input);
+
+  try {
+    const url = new URL(getUrlWithScheme(params.websiteUrl));
+    const searchParams = new URLSearchParams(url.search);
+
+    MANAGED_UTM_KEYS.forEach((key) => searchParams.delete(key));
+
+    if (hasValue(params.campaignId)) searchParams.set('utm_id', params.campaignId);
+    if (hasValue(params.campaignSource)) searchParams.set('utm_source', params.campaignSource);
+    if (hasValue(params.campaignMedium)) searchParams.set('utm_medium', params.campaignMedium);
+    if (hasValue(params.campaignName)) searchParams.set('utm_campaign', params.campaignName);
+    if (hasValue(params.campaignTerm)) searchParams.set('utm_term', params.campaignTerm);
+    if (hasValue(params.campaignContent)) searchParams.set('utm_content', params.campaignContent);
+
+    params.customParams.forEach((param) => {
+      if (param.key && param.value && !BLOCKED_CUSTOM_KEYS.has(param.key)) {
+        searchParams.set(param.key, param.value);
+      }
+    });
+
+    url.search = searchParams.toString();
+    return url.toString();
+  } catch (error) {
+    return '';
+  }
+};
+
+const normalizeSavedLink = (link: SavedLink): SavedLink => {
+  const params = normalizeUtmParams({
+    websiteUrl: link.websiteUrl || '',
+    campaignId: link.campaignId || '',
+    campaignSource: link.campaignSource || '',
+    campaignMedium: link.campaignMedium || '',
+    campaignName: link.campaignName || '',
+    campaignTerm: link.campaignTerm || '',
+    campaignContent: link.campaignContent || '',
+    customParams: link.customParams || [],
+  });
+
+  return {
+    ...link,
+    ...params,
+    fullUrl: buildCampaignUrl(params) || link.fullUrl,
+  };
+};
+
 const LabelBadge: React.FC<{ required?: boolean; hasError?: boolean; showStatus?: boolean }> = ({ required, hasError, showStatus }) => (
   <span className={`text-[9px] font-extrabold px-1.5 py-0.5 rounded-none ml-2 uppercase tracking-tighter border transition-colors ${
     showStatus && hasError 
@@ -40,7 +200,7 @@ const ErrorMessage: React.FC<{ message?: string; visible: boolean }> = ({ messag
 };
 
 export default function CampaignUrlArchitectTool() {
-  const [params, setParams] = useState<UTMParameters>(INITIAL_UTM as any);
+  const [params, setParams] = useState<UTMParameters>(INITIAL_UTM);
   const [history, setHistory] = useState<SavedLink[]>([]);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [didTryCopy, setDidTryCopy] = useState(false);
@@ -48,7 +208,14 @@ export default function CampaignUrlArchitectTool() {
 
     useEffect(() => {
         const saved = localStorage.getItem(STORAGE_KEY);
-        if (saved) setHistory(JSON.parse(saved));
+        if (!saved) return;
+
+        try {
+          const savedLinks = JSON.parse(saved) as SavedLink[];
+          setHistory(savedLinks.map(normalizeSavedLink));
+        } catch (error) {
+          localStorage.removeItem(STORAGE_KEY);
+        }
     }, []);
 
     useEffect(() => {
@@ -65,9 +232,9 @@ export default function CampaignUrlArchitectTool() {
       newErrors.websiteUrl = 'URL is required';
     } else {
       try {
-        const urlString = params.websiteUrl.startsWith('http') ? params.websiteUrl : `https://${params.websiteUrl}`;
+        const urlString = getUrlWithScheme(params.websiteUrl);
         const u = new URL(urlString);
-        if (!params.websiteUrl.includes('.') || u.hostname === '') {
+        if (!u.hostname.includes('.')) {
           newErrors.websiteUrl = 'Invalid domain format';
         }
       } catch (e) {
@@ -75,29 +242,29 @@ export default function CampaignUrlArchitectTool() {
       }
     }
 
-    // Campaign Source Validation
-    if (!params.campaignSource) {
+    if (!hasValue(params.campaignSource)) {
       newErrors.campaignSource = 'Source is required';
     }
 
-    const validateFormat = (val: string, key: string) => {
-      if (val && /\s/.test(val)) {
-        newErrors[key] = 'Avoid spaces in UTM values';
-      }
-    };
+    if (!hasValue(params.campaignMedium)) {
+      newErrors.campaignMedium = 'Medium is required';
+    } else if (!isGa4RecognizedMedium(params.campaignMedium)) {
+      newErrors.campaignMedium = 'Use a GA4 channel medium like email, cpc, paid-social, social, or referral';
+    }
 
-    validateFormat(params.campaignSource, 'campaignSource');
-    validateFormat(params.campaignMedium, 'campaignMedium');
-    validateFormat(params.campaignName, 'campaignName');
-    validateFormat(params.campaignId, 'campaignId');
-    validateFormat(params.campaignTerm, 'campaignTerm');
-    validateFormat(params.campaignContent, 'campaignContent');
+    if (!hasValue(params.campaignName)) {
+      newErrors.campaignName = 'Campaign is required';
+    }
 
     params.customParams.forEach(cp => {
-      if (!cp.key || cp.key === 'utm_') {
+      const key = normalizeCustomParamKey(cp.key);
+
+      if (!key || key === 'utm_') {
         newErrors[`custom_key_${cp.id}`] = 'Key required';
+      } else if (BLOCKED_CUSTOM_KEYS.has(key)) {
+        newErrors[`custom_key_${cp.id}`] = 'Use the dedicated field for this parameter';
       }
-      if (!cp.value) {
+      if (!cp.value.trim()) {
         newErrors[`custom_val_${cp.id}`] = 'Value required';
       }
     });
@@ -106,42 +273,37 @@ export default function CampaignUrlArchitectTool() {
   }, [params]);
 
   const generatedUrl = useMemo(() => {
-    if (!params.websiteUrl || (errors.websiteUrl && errors.websiteUrl === 'Invalid URL format')) return '';
-    try {
-      const url = new URL(params.websiteUrl.startsWith('http') ? params.websiteUrl : `https://${params.websiteUrl}`);
-      const searchParams = new URLSearchParams(url.search);
-
-      if (params.campaignId) searchParams.set('utm_id', params.campaignId);
-      if (params.campaignSource) searchParams.set('utm_source', params.campaignSource);
-      if (params.campaignMedium) searchParams.set('utm_medium', params.campaignMedium);
-      if (params.campaignName) searchParams.set('utm_name', params.campaignName);
-      if (params.campaignTerm) searchParams.set('utm_term', params.campaignTerm);
-      if (params.campaignContent) searchParams.set('utm_content', params.campaignContent);
-
-      if (params.customParams) {
-        params.customParams.forEach(cp => {
-          if (cp.key && cp.value) {
-            searchParams.set(cp.key, cp.value);
-          }
-        });
-      }
-
-      url.search = searchParams.toString();
-      return url.toString();
-    } catch (e) {
-      return '';
-    }
+    if (!params.websiteUrl || errors.websiteUrl) return '';
+    return buildCampaignUrl(params);
   }, [params, errors.websiteUrl]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    setParams(prev => ({ ...prev, [name]: value }));
+    const key = name as keyof UTMParameters;
+
+    if (CAMPAIGN_VALUE_FIELDS.has(key)) {
+      setParams(prev => ({ ...prev, [key]: normalizeCampaignValue(value) }));
+      return;
+    }
+
+    setParams(prev => ({ ...prev, websiteUrl: value }));
   };
 
   const handleCustomParamChange = (id: string, field: 'key' | 'value', value: string) => {
     setParams(prev => ({
       ...prev,
-      customParams: prev.customParams.map(cp => cp.id === id ? { ...cp, [field]: value } : cp)
+      customParams: prev.customParams.map(cp => {
+        if (cp.id !== id) return cp;
+
+        if (field === 'key') {
+          return { ...cp, key: normalizeCustomParamKey(value) };
+        }
+
+        return {
+          ...cp,
+          value: cp.key.startsWith('utm_') ? normalizeCampaignValue(value) : value
+        };
+      })
     }));
   };
 
@@ -186,7 +348,7 @@ export default function CampaignUrlArchitectTool() {
   };
 
   const handleClear = () => {
-    setParams(INITIAL_UTM as any);
+    setParams(INITIAL_UTM);
     setErrors({});
     setDidTryCopy(false);
   };
@@ -233,7 +395,7 @@ export default function CampaignUrlArchitectTool() {
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center">
                     <label className="text-xs font-black uppercase tracking-widest text-slate-500">Website URL</label>
-                    <Tooltip text="The full website URL. Required to generate the base link." />
+                    <Tooltip text="Use the final destination URL, including https:// and any fragment." />
                   </div>
                   <LabelBadge required hasError={!!errors.websiteUrl} showStatus={isErrorVisible('websiteUrl')} />
                 </div>
@@ -271,7 +433,7 @@ export default function CampaignUrlArchitectTool() {
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center">
                     <label className="text-xs font-black uppercase tracking-widest text-slate-500">Campaign Source</label>
-                    <Tooltip text="The referrer (e.g. google, newsletter). Required." />
+                    <Tooltip text="The referrer, such as newsletter, google, facebook, or linkedin." />
                   </div>
                   <LabelBadge required hasError={!!errors.campaignSource} showStatus={isErrorVisible('campaignSource')} />
                 </div>
@@ -290,18 +452,24 @@ export default function CampaignUrlArchitectTool() {
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center">
                     <label className="text-xs font-black uppercase tracking-widest text-slate-500">Campaign Medium</label>
-                    <Tooltip text="Marketing medium (e.g. cpc, banner, email)." />
+                    <Tooltip text="Use GA4 channel-friendly values such as email, cpc, paid-social, social, or referral." />
                   </div>
-                  <LabelBadge hasError={!!errors.campaignMedium} showStatus={isErrorVisible('campaignMedium')} />
+                  <LabelBadge required hasError={!!errors.campaignMedium} showStatus={isErrorVisible('campaignMedium')} />
                 </div>
                 <input 
                   type="text" 
                   name="campaignMedium"
                   value={params.campaignMedium}
                   onChange={handleInputChange}
-                  placeholder="cpc, banner"
+                  list="campaign-medium-options"
+                  placeholder="email, cpc"
                   className={inputClasses('campaignMedium')}
                 />
+                <datalist id="campaign-medium-options">
+                  {MEDIUM_EXAMPLES.map((medium) => (
+                    <option key={medium} value={medium} />
+                  ))}
+                </datalist>
                 <ErrorMessage message={errors.campaignMedium} visible={isErrorVisible('campaignMedium')} />
               </div>
 
@@ -309,9 +477,9 @@ export default function CampaignUrlArchitectTool() {
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center">
                     <label className="text-xs font-black uppercase tracking-widest text-slate-500">Campaign Name</label>
-                    <Tooltip text="Product, promo code, or slogan (e.g. spring_sale)." />
+                    <Tooltip text="The GA4 utm_campaign value, such as a launch, promo, or audience campaign." />
                   </div>
-                  <LabelBadge hasError={!!errors.campaignName} showStatus={isErrorVisible('campaignName')} />
+                  <LabelBadge required hasError={!!errors.campaignName} showStatus={isErrorVisible('campaignName')} />
                 </div>
                 <input 
                   type="text" 
@@ -468,7 +636,7 @@ export default function CampaignUrlArchitectTool() {
             {!params.websiteUrl && !didTryCopy && (
               <div className="mt-6 p-4 bg-secondary2/5 border-l-4 border-secondary2 flex gap-4 text-secondary2 text-xs font-bold leading-relaxed">
                 <div className="shrink-0 mt-0.5">TIP:</div>
-                <p>Start by entering a Website URL and Campaign Source to generate your tracking link.</p>
+                <p>Start with a Website URL, Source, Medium, and Campaign to generate a GA4-ready tracking link.</p>
               </div>
             )}
           </div>

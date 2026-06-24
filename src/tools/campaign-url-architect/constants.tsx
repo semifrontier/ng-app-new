@@ -8,7 +8,9 @@ import {
   Trash2,
 } from 'lucide-react';
 
-export const INITIAL_UTM = {
+import type { UTMParameters } from './types';
+
+export const INITIAL_UTM: UTMParameters = {
   websiteUrl: '',
   campaignId: '',
   campaignSource: '',
