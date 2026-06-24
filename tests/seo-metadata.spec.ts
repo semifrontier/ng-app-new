@@ -1,3 +1,4 @@
+import { readFile } from "node:fs/promises";
 import { expect, test } from "@playwright/test";
 import {
   absoluteUrl,
@@ -228,5 +229,62 @@ test.describe("SEO metadata and schema", () => {
     expect(robotsResponse.status()).toBe(200);
     expect(robotsTxt).toContain("User-agent: *");
     expect(robotsTxt).toContain(`Sitemap: ${SITE_URL}/sitemap.xml`);
+  });
+
+  test("llms.txt exposes canonical AI-readable site context", async ({
+    request,
+  }) => {
+    const response = await request.get("/llms.txt");
+    const body = await response.text();
+
+    expect(response.status()).toBe(200);
+    expect(body).toContain("# No Gatekeeping");
+    expect(body).toContain("## Core Pages");
+    expect(body).toContain("## Tool Data");
+    expect(body).toContain("https://nogatekeeping.com/tools/color-picker");
+    expect(body).toContain("Legacy `/tool/{slug}` and `/all-tools/{slug}` URLs redirect");
+  });
+
+  test("deployment config avoids soft-404 catch-all behavior", async () => {
+    const vercelConfig = JSON.parse(
+      await readFile(new URL("../vercel.json", import.meta.url), "utf8"),
+    ) as {
+      redirects?: Array<Record<string, unknown>>;
+      rewrites?: Array<Record<string, unknown>>;
+    };
+    const notFoundHtml = await readFile(
+      new URL("../public/404.html", import.meta.url),
+      "utf8",
+    );
+
+    expect(vercelConfig.redirects).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          source: "/tool/:slug",
+          destination: "/tools/:slug",
+          permanent: true,
+        }),
+        expect.objectContaining({
+          source: "/all-tools/:slug",
+          destination: "/tools/:slug",
+          permanent: true,
+        }),
+        expect.objectContaining({
+          source: "/all-tools",
+          destination: "/tools",
+          permanent: true,
+        }),
+      ]),
+    );
+    expect(vercelConfig.rewrites ?? []).not.toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          source: "/(.*)",
+          destination: "/index.html",
+        }),
+      ]),
+    );
+    expect(notFoundHtml).toContain('name="robots" content="noindex,follow"');
+    expect(notFoundHtml).toContain("Page Not Found - No Gatekeeping");
   });
 });

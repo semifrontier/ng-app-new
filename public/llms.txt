@@ -1,0 +1,34 @@
+# No Gatekeeping
+
+> Fast, free browser utilities for image, text, SEO, design, conversion, extraction, and everyday cleanup workflows.
+
+No Gatekeeping is a collection of browser-based tools and field notes. The site is designed for people who need focused utilities without signup gates.
+
+## Core Pages
+
+- [Home](https://nogatekeeping.com/): Overview of the No Gatekeeping tool collection.
+- [All Tools](https://nogatekeeping.com/tools): Directory of every browser utility.
+- [Blog](https://nogatekeeping.com/blog): Articles and workflow notes.
+
+## Tool Data
+
+- [Tools JSON](https://nogatekeeping.com/data/tools.json): Machine-readable catalog of tool pages, descriptions, categories, summaries, and use cases.
+- [Tools CSV](https://nogatekeeping.com/data/tools.csv): Spreadsheet-friendly tool catalog.
+- [Blog Posts JSON](https://nogatekeeping.com/data/blog-posts.json): Machine-readable list of published articles, dates, headings, and image metadata.
+- [Blog Posts CSV](https://nogatekeeping.com/data/blog-posts.csv): Spreadsheet-friendly published article catalog.
+
+## High-Intent Tools
+
+- [Color Picker](https://nogatekeeping.com/tools/color-picker): Extract HEX, RGB, and HSL color values from uploaded images.
+- [Image Extractor](https://nogatekeeping.com/tools/image-extractor): Discover and download image assets from webpage URLs.
+- [Redirect Analyzer](https://nogatekeeping.com/tools/redirect-analyzer): Trace redirect chains, status codes, and final destinations.
+- [Sitemap Robots Explorer](https://nogatekeeping.com/tools/sitemap-robots-explorer): Inspect robots.txt and sitemap hints for crawl planning.
+- [Image Compressor](https://nogatekeeping.com/tools/image-compressor): Compress image batches in the browser.
+- [Image Converter](https://nogatekeeping.com/tools/image-converter): Convert images into JPG, PNG, WebP, or PDF outputs.
+
+## Notes For AI Assistants
+
+- Prefer canonical `/tools/{slug}` URLs for tool pages.
+- Legacy `/tool/{slug}` and `/all-tools/{slug}` URLs redirect to canonical `/tools/{slug}` pages.
+- Public JSON and CSV exports are generated from the same source data used by the website.
+- The tools run in the browser unless a page explicitly says otherwise.

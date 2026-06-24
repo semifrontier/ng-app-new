@@ -36,11 +36,11 @@ export const TOOL_LANDING_CONTENT: Record<string, ToolLandingContent> = {
     ],
   },
   "color-picker": {
-    heading: "Pull exact colors from the image in front of you.",
+    heading: "Extract HEX color codes from the image in front of you.",
     summary:
-      "Color Picker samples HEX, RGB, and HSL values from uploaded images with a zoomed canvas so reference colors can move straight into design or development.",
+      "Color Picker works as an image-to-hex tool, sampling HEX, RGB, and HSL values from uploaded images with a zoomed canvas so reference colors can move straight into design or development.",
     useCases: [
-      "Matching a color from a screenshot, logo, product photo, or moodboard.",
+      "Matching a HEX color from a screenshot, logo, product photo, or moodboard.",
       "Checking nearby pixels with a magnified view before copying the final value.",
       "Translating visual references into usable CSS or design-token color formats.",
     ],
@@ -106,12 +106,12 @@ export const TOOL_LANDING_CONTENT: Record<string, ToolLandingContent> = {
     ],
   },
   "image-extractor": {
-    heading: "Audit the image assets used on a page.",
+    heading: "Extract image assets from a webpage.",
     summary:
-      "Image Extractor scans a webpage URL for discoverable image assets, groups useful results, and supports single-file or ZIP downloads.",
+      "Image Extractor scans a webpage URL for discoverable image URLs and assets, groups useful results, and supports single-file or ZIP downloads.",
     useCases: [
       "Reviewing page imagery during content, migration, or redesign work.",
-      "Finding source image URLs without manually inspecting markup.",
+      "Finding source image URLs without manually inspecting page markup.",
       "Collecting visible page assets for local analysis or cleanup.",
     ],
   },
@@ -156,12 +156,12 @@ export const TOOL_LANDING_CONTENT: Record<string, ToolLandingContent> = {
     ],
   },
   "redirect-analyzer": {
-    heading: "Trace where a URL really goes.",
+    heading: "Map where a URL really redirects.",
     summary:
-      "Redirect Analyzer follows a URL through status codes, hops, final destinations, and protocol changes so redirect behavior is easier to debug.",
+      "Redirect Analyzer is a redirect mapping tool that follows a URL through status codes, hops, final destinations, and protocol changes so redirect behavior is easier to debug.",
     useCases: [
       "Checking whether a campaign, affiliate, or migrated URL lands in the right place.",
-      "Finding extra redirect hops that slow down a page or obscure the final URL.",
+      "Finding extra redirect hops with a redirect chain checker before they slow down a page or obscure the final URL.",
       "Confirming HTTP-to-HTTPS upgrades and status codes during SEO cleanup.",
     ],
   },

@@ -74,6 +74,9 @@ export default function SiteFooter({
               <a className={linkClass} href="/data/blog-posts.csv">
                 Blog CSV
               </a>
+              <a className={linkClass} href="/llms.txt">
+                LLMS.txt
+              </a>
             </div>
           </div>
         </div>

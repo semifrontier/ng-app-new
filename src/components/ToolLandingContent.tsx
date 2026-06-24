@@ -1,16 +1,67 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import type { ToolMeta } from "../tools/types";
+import { TOOL_CATALOG, type ToolPresentation } from "../tools/catalog";
 import { TOOL_LANDING_CONTENT } from "../tools/landingContent";
 
 type ToolLandingContentProps = {
   meta: ToolMeta;
 };
 
+const RELATED_TOOL_SLUGS: Record<string, string[]> = {
+  "color-picker": [
+    "color-palette-generator",
+    "image-extractor",
+    "image-compressor",
+  ],
+  "image-extractor": [
+    "image-compressor",
+    "image-converter",
+    "color-picker",
+  ],
+  "redirect-analyzer": [
+    "sitemap-robots-explorer",
+    "dns-checker",
+    "campaign-url-architect",
+  ],
+  "sitemap-robots-explorer": [
+    "redirect-analyzer",
+    "dns-checker",
+    "campaign-url-architect",
+  ],
+  "dns-checker": [
+    "redirect-analyzer",
+    "sitemap-robots-explorer",
+    "campaign-url-architect",
+  ],
+};
+
+function getRelatedTools(meta: ToolMeta) {
+  const explicitSlugs = RELATED_TOOL_SLUGS[meta.slug] ?? [];
+  const byId = new Map(TOOL_CATALOG.map((tool) => [tool.id, tool]));
+  const explicitTools = explicitSlugs
+    .map((slug) => byId.get(slug))
+    .filter(
+      (tool): tool is ToolPresentation =>
+        Boolean(tool) && tool?.id !== meta.slug,
+    );
+
+  const categoryTools = TOOL_CATALOG.filter(
+    (tool) =>
+      tool.id !== meta.slug &&
+      tool.category === meta.category &&
+      !explicitSlugs.includes(tool.id),
+  );
+
+  return [...explicitTools, ...categoryTools].slice(0, 3);
+}
+
 export default function ToolLandingContent({ meta }: ToolLandingContentProps) {
   const content = TOOL_LANDING_CONTENT[meta.slug];
   if (!content) return null;
 
   const headingId = `tool-content-${meta.slug}`;
+  const relatedTools = getRelatedTools(meta);
   const faqItems = [
     {
       question: `What does ${meta.title} do?`,
@@ -85,6 +136,36 @@ export default function ToolLandingContent({ meta }: ToolLandingContentProps) {
               ))}
             </div>
           </div>
+
+          {relatedTools.length > 0 ? (
+            <div className="space-y-3 border-t-2 border-[var(--ng-border)] pt-6">
+              <h3 className="text-sm font-black uppercase tracking-[0.18em]">
+                Related tools
+              </h3>
+              <nav
+                aria-label={`Related tools for ${meta.title}`}
+                className="grid gap-3"
+              >
+                {relatedTools.map((tool) => (
+                  <Link
+                    key={tool.id}
+                    className="group grid gap-2 border-2 border-[var(--ng-border)] bg-white p-4 text-left transition-colors hover:bg-[var(--ng-accent-yellow)]"
+                    to={tool.route}
+                  >
+                    <span className="text-xs font-black uppercase tracking-[0.16em] text-[var(--ng-text-muted)]">
+                      {tool.category}
+                    </span>
+                    <span className="text-base font-black uppercase leading-5 text-[var(--ng-primary)] group-hover:text-[var(--ng-text)]">
+                      {tool.title}
+                    </span>
+                    <span className="text-sm font-medium leading-6 text-[var(--ng-text-muted)]">
+                      {tool.desc}
+                    </span>
+                  </Link>
+                ))}
+              </nav>
+            </div>
+          ) : null}
         </div>
       </div>
     </section>
