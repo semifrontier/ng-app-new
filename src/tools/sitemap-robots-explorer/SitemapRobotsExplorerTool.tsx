@@ -191,7 +191,7 @@ export default function SitemapRobotsExplorerTool() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-5xl font-extrabold text-brand-blue mb-4 tracking-tight">
-            Sitemap <span className="text-brand-red">&</span> Robots
+            Sitemap Robots Explorer
           </h1>
           <p className="text-xl text-gray-500 max-w-2xl mx-auto">
             Instantly visualize any website's structure. Enter a URL to fetch the robots.txt, parse sitemaps, and discover hidden pages.

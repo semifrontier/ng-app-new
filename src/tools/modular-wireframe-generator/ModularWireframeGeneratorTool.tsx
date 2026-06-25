@@ -277,7 +277,8 @@ export default function ModularWireframeGeneratorTool() {
       <aside className="w-full md:w-80 bg-white border-r border-gray-200 flex flex-col shadow-lg z-20">
         <div className="p-6 border-b border-gray-100">
           <h1 className="text-xl font-bold text-gray-800 flex items-center gap-2">
-            <span className="text-[#ff595e]">●</span> Wireframer
+            <span className="text-[#ff595e]" aria-hidden="true">●</span>
+            Modular Wireframe Generator
           </h1>
           <p className="text-xs text-gray-400 mt-1">Modular Low-Fi Generator</p>
         </div>

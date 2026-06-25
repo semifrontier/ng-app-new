@@ -19,6 +19,11 @@ const RELATED_TOOL_SLUGS: Record<string, string[]> = {
     "image-converter",
     "color-picker",
   ],
+  "proportion-scaler": [
+    "image-converter",
+    "image-compressor",
+    "modular-wireframe-generator",
+  ],
   "redirect-analyzer": [
     "sitemap-robots-explorer",
     "dns-checker",

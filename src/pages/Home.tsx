@@ -163,6 +163,7 @@ export default function Home() {
               <div className="eyebrow">Utility Artboard / 2026</div>
               <h1 className="hero-title">
                 <span>NO</span>
+                {" "}
                 <span>GATEKEEPING</span>
               </h1>
               <p className="hero-kicker">
@@ -259,7 +260,7 @@ export default function Home() {
           <div className="section-head">
             <div>
               <div className="eyebrow">Filterable Tool Matrix</div>
-              <h1>Browse the entire No Gatekeeping stack.</h1>
+              <h2>Browse the entire No Gatekeeping stack.</h2>
             </div>
 
             <p>

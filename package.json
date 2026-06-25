@@ -13,7 +13,8 @@
     "prerender:seo": "node scripts/prerender-seo.mjs",
     "qa:routes": "node scripts/route-runtime-qa.mjs",
     "qa:routes:browser": "playwright test tests/route-runtime.spec.ts",
-    "qa:seo": "npm run build && playwright test tests/seo-metadata.spec.ts"
+    "qa:seo": "npm run build && playwright test tests/seo-metadata.spec.ts",
+    "audit:seo": "npm run build && node scripts/audit-seo.mjs"
   },
   "dependencies": {
     "@google/genai": "^1.49.0",
