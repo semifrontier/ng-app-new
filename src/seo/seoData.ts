@@ -30,12 +30,13 @@ export type SeoRoute = {
 
 export const SITE_NAME = "No Gatekeeping";
 export const DEFAULT_SITE_URL = "https://nogatekeeping.com";
+export const MAX_RECOMMENDED_TITLE_LENGTH = 60;
 export const SITE_DESCRIPTION =
   "Fast, free browser utilities for images, text, SEO checks, design workflows, conversions, extraction, and everyday cleanup.";
 
 export const PAGE_CONTENT = {
   home: {
-    title: "No Gatekeeping - Free Browser Tools for Image, Text, SEO, and Design",
+    title: "No Gatekeeping - Free Image, Text, and SEO Tools",
     description: SITE_DESCRIPTION,
     canonicalPath: "/",
   },
@@ -138,6 +139,14 @@ function toolUrl(tool: Pick<ToolMeta, "slug">, siteUrl: string) {
 
 function toolApplicationId(tool: Pick<ToolMeta, "slug">, siteUrl: string) {
   return `${toolUrl(tool, siteUrl)}#web-application`;
+}
+
+function appendTitleSuffix(title: string, suffix: string) {
+  const titleWithSuffix = `${title}${suffix}`;
+
+  return titleWithSuffix.length <= MAX_RECOMMENDED_TITLE_LENGTH
+    ? titleWithSuffix
+    : title;
 }
 
 function toolApplicationNode(meta: ToolMeta, siteUrl: string): JsonLdNode {
@@ -402,7 +411,7 @@ function toolSchema(
 
 function toolDescriptor(meta: ToolMeta, siteUrl: string): SeoDescriptor {
   const descriptor = {
-    title: `${meta.title} - Free Browser Tool - No Gatekeeping`,
+    title: appendTitleSuffix(meta.title, " - Free Tool - No Gatekeeping"),
     description: meta.description,
     canonicalPath: `/tools/${meta.slug}`,
   };
@@ -418,7 +427,7 @@ function blogPostDescriptor(
   siteUrl: string,
 ): SeoDescriptor {
   const descriptor = {
-    title: `${post.title} - No Gatekeeping`,
+    title: appendTitleSuffix(post.title, " - No Gatekeeping"),
     description: post.excerpt,
     canonicalPath: getBlogPostPath(post),
   };

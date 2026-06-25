@@ -3,6 +3,7 @@ import { expect, test } from "@playwright/test";
 import {
   absoluteUrl,
   DEFAULT_SITE_URL,
+  MAX_RECOMMENDED_TITLE_LENGTH,
   getSeoPrerenderRoutes,
   SITE_NAME,
   type JsonLdDocument,
@@ -152,6 +153,16 @@ function snapshotFromHtml(html: string): HeadSnapshot {
 }
 
 test.describe("SEO metadata and schema", () => {
+  test("route titles stay within recommended search result length", () => {
+    const longTitles = SEO_ROUTES.map((route) => ({
+      path: route.path,
+      length: route.descriptor.title.length,
+      title: route.descriptor.title,
+    })).filter((route) => route.length > MAX_RECOMMENDED_TITLE_LENGTH);
+
+    expect(longTitles).toEqual([]);
+  });
+
   for (const route of SEO_ROUTES) {
     test(`${route.path} has prerendered metadata and JSON-LD`, async ({
       request,
