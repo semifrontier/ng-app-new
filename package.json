@@ -14,7 +14,8 @@
     "qa:routes": "node scripts/route-runtime-qa.mjs",
     "qa:routes:browser": "playwright test tests/route-runtime.spec.ts",
     "qa:seo": "npm run build && playwright test tests/seo-metadata.spec.ts",
-    "audit:seo": "npm run build && node scripts/audit-seo.mjs"
+    "audit:seo": "npm run build && node scripts/audit-seo.mjs",
+    "audit:seo:ci": "npm run build && node scripts/audit-seo.mjs --fail-on-warn"
   },
   "dependencies": {
     "@google/genai": "^1.49.0",

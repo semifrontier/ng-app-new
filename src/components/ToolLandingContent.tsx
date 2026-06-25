@@ -67,7 +67,7 @@ export default function ToolLandingContent({ meta }: ToolLandingContentProps) {
 
   const headingId = `tool-content-${meta.slug}`;
   const relatedTools = getRelatedTools(meta);
-  const faqItems = [
+  const faqItems = content.faqs ?? [
     {
       question: `What does ${meta.title} do?`,
       answer: content.summary,
@@ -120,6 +120,27 @@ export default function ToolLandingContent({ meta }: ToolLandingContentProps) {
               </li>
             ))}
           </ul>
+
+          {content.workflowSteps?.length ? (
+            <div className="space-y-3 border-t-2 border-[var(--ng-border)] pt-6">
+              <h3 className="text-sm font-black uppercase tracking-[0.18em]">
+                Simple workflow
+              </h3>
+              <ol className="grid gap-3">
+                {content.workflowSteps.map((step, index) => (
+                  <li
+                    key={step}
+                    className="grid gap-3 border-2 border-[var(--ng-border)] bg-white p-4 text-sm font-medium leading-6 text-[var(--ng-text-muted)] sm:grid-cols-[2rem_minmax(0,1fr)]"
+                  >
+                    <span className="grid h-8 w-8 place-items-center bg-[var(--ng-primary)] text-xs font-black text-white">
+                      {index + 1}
+                    </span>
+                    <span>{step}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          ) : null}
 
           <div className="space-y-3 border-t-2 border-[var(--ng-border)] pt-6">
             <h3 className="text-sm font-black uppercase tracking-[0.18em]">

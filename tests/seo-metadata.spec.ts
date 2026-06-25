@@ -7,6 +7,7 @@ import {
   getSeoPrerenderRoutes,
   SITE_NAME,
   type JsonLdDocument,
+  type JsonLdNode,
   type SeoDescriptor,
 } from "../src/seo/seoData";
 import { TOOL_LANDING_CONTENT } from "../src/tools/landingContent";
@@ -152,6 +153,15 @@ function snapshotFromHtml(html: string): HeadSnapshot {
   };
 }
 
+function graphNodeByType(schema: JsonLdDocument | undefined, type: string) {
+  return schema?.["@graph"].find((node) => node["@type"] === type);
+}
+
+function asArray<T>(value: T | T[] | undefined) {
+  if (!value) return [];
+  return Array.isArray(value) ? value : [value];
+}
+
 test.describe("SEO metadata and schema", () => {
   test("route titles stay within recommended search result length", () => {
     const longTitles = SEO_ROUTES.map((route) => ({
@@ -249,6 +259,53 @@ test.describe("SEO metadata and schema", () => {
       for (const useCase of content.useCases) {
         await expect(section).toContainText(useCase);
       }
+
+      for (const workflowStep of content.workflowSteps ?? []) {
+        await expect(section).toContainText(workflowStep);
+      }
+
+      for (const faq of content.faqs ?? []) {
+        await expect(section).toContainText(faq.question);
+        await expect(section).toContainText(faq.answer);
+      }
+    });
+  }
+
+  for (const route of TOOL_CONTENT_ROUTES) {
+    test(`${route.path} FAQ schema matches visible landing content`, () => {
+      const slug = route.path.split("/").at(-1);
+      expect(slug, `Could not parse tool slug from ${route.path}`).toBeTruthy();
+
+      const content = TOOL_LANDING_CONTENT[slug!];
+      expect(content?.faqs, `Missing FAQ content for ${route.path}`).toBeTruthy();
+
+      const faqNode = graphNodeByType(route.descriptor.schema, "FAQPage");
+      expect(faqNode, `Missing FAQPage node for ${route.path}`).toBeTruthy();
+      expect(faqNode?.["@id"]).toBe(
+        `${getExpectedCanonical(route.descriptor)}#faq`,
+      );
+
+      const questions = asArray(
+        faqNode?.mainEntity as JsonLdNode | JsonLdNode[] | undefined,
+      );
+
+      expect(questions).toHaveLength(content.faqs?.length ?? 0);
+      expect(
+        questions.map((question) => ({
+          question: question.name,
+          answer: (question.acceptedAnswer as JsonLdNode | undefined)?.text,
+        })),
+      ).toEqual(
+        content.faqs?.map((faq) => ({
+          question: faq.question,
+          answer: faq.answer,
+        })),
+      );
+
+      const webpageNode = graphNodeByType(route.descriptor.schema, "WebPage");
+      expect((webpageNode?.hasPart as JsonLdNode | undefined)?.["@id"]).toBe(
+        faqNode?.["@id"],
+      );
     });
   }
 

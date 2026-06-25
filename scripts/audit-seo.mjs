@@ -25,6 +25,7 @@ const DESCRIPTION_WARN_MIN = 80;
 const DESCRIPTION_FAIL_MIN = 50;
 const DESCRIPTION_WARN_MAX = 170;
 const DESCRIPTION_FAIL_MAX = 190;
+const FAIL_ON_WARN = process.argv.includes("--fail-on-warn");
 
 const MIME_TYPES = {
   ".css": "text/css; charset=utf-8",
@@ -174,12 +175,19 @@ function routeType(pathname) {
   return "other";
 }
 
-function expectedSchemaTypes(type) {
+function expectedSchemaTypes(type, route, toolDataByPath) {
   if (type === "home") return ["WebPage", "ItemList"];
   if (type === "tools-index") return ["CollectionPage", "ItemList", "BreadcrumbList"];
   if (type === "blog-index") return ["CollectionPage", "Blog", "BreadcrumbList"];
   if (type === "blog-post") return ["WebPage", "BlogPosting", "ImageObject", "BreadcrumbList"];
-  if (type === "tool") return ["WebPage", "WebApplication", "BreadcrumbList"];
+  if (type === "tool") {
+    return [
+      "WebPage",
+      "WebApplication",
+      ...(toolDataByPath?.get(route.path)?.faqs?.length ? ["FAQPage"] : []),
+      "BreadcrumbList",
+    ];
+  }
   return ["WebPage"];
 }
 
@@ -249,6 +257,7 @@ function descriptorChecks({
   siteUrl,
   seoMod,
   sitemapUrls,
+  toolDataByPath,
   titleCounts,
   descriptionCounts,
 }) {
@@ -258,7 +267,7 @@ function descriptorChecks({
   const titleLength = descriptor.title.length;
   const descriptionLength = descriptor.description.length;
   const types = schemaTypes(descriptor);
-  const expectedTypes = expectedSchemaTypes(type);
+  const expectedTypes = expectedSchemaTypes(type, route, toolDataByPath);
   const missingTypes = expectedTypes.filter((expectedType) => !types.includes(expectedType));
   const normalizedCanonicalPath = seoMod.normalizePathname(descriptor.canonicalPath);
   const normalizedRoutePath = seoMod.normalizePathname(route.path);
@@ -851,6 +860,7 @@ async function main() {
           siteUrl,
           seoMod,
           sitemapUrls,
+          toolDataByPath,
           titleCounts,
           descriptionCounts,
         }),
@@ -908,6 +918,18 @@ async function main() {
     );
     console.log(`Wrote ${path.relative(PROJECT_ROOT, DOCS_REPORT_PATH)}`);
     console.log(`Wrote ${path.relative(PROJECT_ROOT, JSON_REPORT_PATH)}`);
+
+    if (report.summary.checks.fail > 0) {
+      process.exitCode = 1;
+      console.error(
+        `SEO audit failed with ${report.summary.checks.fail} failing checks.`,
+      );
+    } else if (FAIL_ON_WARN && report.summary.checks.warn > 0) {
+      process.exitCode = 1;
+      console.error(
+        `SEO audit failed with ${report.summary.checks.warn} warnings because --fail-on-warn was set.`,
+      );
+    }
   } finally {
     await Promise.all([cleanupSeo(), cleanupPublicData()]);
   }

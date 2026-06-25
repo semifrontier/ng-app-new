@@ -13,6 +13,8 @@ export const PUBLIC_TOOLS_DATA = TOOL_CATALOG.map((tool) => {
     description: tool.desc,
     summary: content?.summary ?? tool.desc,
     useCases: content?.useCases ?? [],
+    workflowSteps: content?.workflowSteps ?? [],
+    faqs: content?.faqs ?? [],
   };
 });
 

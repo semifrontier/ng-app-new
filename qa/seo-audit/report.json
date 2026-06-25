@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T01:39:51.040Z",
+  "generatedAt": "2026-06-25T15:12:15.158Z",
   "siteUrl": "https://nogatekeeping.com",
   "summary": {
     "routes": 22,
@@ -3332,6 +3332,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/color-picker#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/color-picker#faq"
               }
             },
             {
@@ -3352,6 +3355,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/color-picker#faq",
+              "name": "Color Picker FAQ",
+              "url": "https://nogatekeeping.com/tools/color-picker",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/color-picker#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Can Color Picker pull a HEX code from a screenshot?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Upload the screenshot, sample the target pixel, and copy the HEX value for design or front-end use."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why does one image area produce slightly different colors?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Anti-aliasing, shadows, compression, and gradients can change nearby pixels. The zoomed picker helps compare those pixels before copying the final value."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -3385,6 +3415,7 @@
         "WebSite",
         "WebPage",
         "WebApplication",
+        "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
@@ -3433,6 +3464,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/color-picker#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/color-picker#faq"
               }
             },
             {
@@ -3453,6 +3487,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/color-picker#faq",
+              "name": "Color Picker FAQ",
+              "url": "https://nogatekeeping.com/tools/color-picker",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/color-picker#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Can Color Picker pull a HEX code from a screenshot?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Upload the screenshot, sample the target pixel, and copy the HEX value for design or front-end use."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why does one image area produce slightly different colors?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Anti-aliasing, shadows, compression, and gradients can change nearby pixels. The zoomed picker helps compare those pixels before copying the final value."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -3527,6 +3588,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/color-picker#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/color-picker#faq"
               }
             },
             {
@@ -3547,6 +3611,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/color-picker#faq",
+              "name": "Color Picker FAQ",
+              "url": "https://nogatekeeping.com/tools/color-picker",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/color-picker#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Can Color Picker pull a HEX code from a screenshot?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Upload the screenshot, sample the target pixel, and copy the HEX value for design or front-end use."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why does one image area produce slightly different colors?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Anti-aliasing, shadows, compression, and gradients can change nearby pixels. The zoomed picker helps compare those pixels before copying the final value."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -3583,10 +3674,11 @@
         "h3s": [
           "UPLOAD A FILE",
           "When to use Color Picker",
+          "Simple workflow",
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 270,
+        "wordCount": 319,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -3651,13 +3743,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, BreadcrumbList"
+          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -3699,7 +3791,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "270 visible words; threshold 220."
+          "detail": "319 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -3768,6 +3860,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/case-converter#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/case-converter#faq"
               }
             },
             {
@@ -3788,6 +3883,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/case-converter#faq",
+              "name": "Case Converter FAQ",
+              "url": "https://nogatekeeping.com/tools/case-converter",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/case-converter#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What casing formats are best for content cleanup?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sentence case and title case are useful for visible copy, while camel case, pascal case, kebab case, and snake case work better for code-adjacent strings and filenames."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Does Case Converter change the meaning of the text?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. It reformats casing and spacing so copied text can move into another tool without a manual cleanup pass."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -3821,6 +3943,7 @@
         "WebSite",
         "WebPage",
         "WebApplication",
+        "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
@@ -3869,6 +3992,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/case-converter#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/case-converter#faq"
               }
             },
             {
@@ -3889,6 +4015,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/case-converter#faq",
+              "name": "Case Converter FAQ",
+              "url": "https://nogatekeeping.com/tools/case-converter",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/case-converter#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What casing formats are best for content cleanup?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sentence case and title case are useful for visible copy, while camel case, pascal case, kebab case, and snake case work better for code-adjacent strings and filenames."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Does Case Converter change the meaning of the text?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. It reformats casing and spacing so copied text can move into another tool without a manual cleanup pass."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -3963,6 +4116,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/case-converter#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/case-converter#faq"
               }
             },
             {
@@ -3983,6 +4139,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/case-converter#faq",
+              "name": "Case Converter FAQ",
+              "url": "https://nogatekeeping.com/tools/case-converter",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/case-converter#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What casing formats are best for content cleanup?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sentence case and title case are useful for visible copy, while camel case, pascal case, kebab case, and snake case work better for code-adjacent strings and filenames."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Does Case Converter change the meaning of the text?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. It reformats casing and spacing so copied text can move into another tool without a manual cleanup pass."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -4019,10 +4202,11 @@
         ],
         "h3s": [
           "When to use Case Converter",
+          "Simple workflow",
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 250,
+        "wordCount": 295,
         "internalLinkCount": 12,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -4087,13 +4271,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, BreadcrumbList"
+          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -4135,7 +4319,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "250 visible words; threshold 220."
+          "detail": "295 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -4204,6 +4388,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/proportion-scaler#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/proportion-scaler#faq"
               }
             },
             {
@@ -4224,6 +4411,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/proportion-scaler#faq",
+              "name": "Proportion Scaler FAQ",
+              "url": "https://nogatekeeping.com/tools/proportion-scaler",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/proportion-scaler#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What is Proportion Scaler best for?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It is best for resizing images, videos, canvases, embeds, thumbnails, and design frames while preserving the original aspect ratio."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why preserve aspect ratio?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Preserving aspect ratio prevents stretching and keeps fixed-format assets looking correct across exports, embeds, and responsive layouts."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -4257,6 +4471,7 @@
         "WebSite",
         "WebPage",
         "WebApplication",
+        "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
@@ -4305,6 +4520,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/proportion-scaler#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/proportion-scaler#faq"
               }
             },
             {
@@ -4325,6 +4543,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/proportion-scaler#faq",
+              "name": "Proportion Scaler FAQ",
+              "url": "https://nogatekeeping.com/tools/proportion-scaler",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/proportion-scaler#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What is Proportion Scaler best for?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It is best for resizing images, videos, canvases, embeds, thumbnails, and design frames while preserving the original aspect ratio."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why preserve aspect ratio?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Preserving aspect ratio prevents stretching and keeps fixed-format assets looking correct across exports, embeds, and responsive layouts."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -4399,6 +4644,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/proportion-scaler#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/proportion-scaler#faq"
               }
             },
             {
@@ -4419,6 +4667,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/proportion-scaler#faq",
+              "name": "Proportion Scaler FAQ",
+              "url": "https://nogatekeeping.com/tools/proportion-scaler",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/proportion-scaler#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What is Proportion Scaler best for?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It is best for resizing images, videos, canvases, embeds, thumbnails, and design frames while preserving the original aspect ratio."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why preserve aspect ratio?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Preserving aspect ratio prevents stretching and keeps fixed-format assets looking correct across exports, embeds, and responsive layouts."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -4457,10 +4732,11 @@
           "Original Dimensions",
           "New Dimensions",
           "When to use Proportion Scaler",
+          "Simple workflow",
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 263,
+        "wordCount": 297,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -4525,13 +4801,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, BreadcrumbList"
+          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -4573,7 +4849,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "263 visible words; threshold 220."
+          "detail": "297 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -4642,6 +4918,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/image-to-text#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/image-to-text#faq"
               }
             },
             {
@@ -4662,6 +4941,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/image-to-text#faq",
+              "name": "Image to Text FAQ",
+              "url": "https://nogatekeeping.com/tools/image-to-text",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/image-to-text#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What kinds of images work best for OCR?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Clear screenshots, scans, labels, and high-contrast text images usually produce better results than blurry, skewed, or heavily stylized text."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why check OCR confidence?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Confidence helps flag areas that may need manual review before the extracted text is reused in content, documentation, or data entry."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -4695,6 +5001,7 @@
         "WebSite",
         "WebPage",
         "WebApplication",
+        "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
@@ -4743,6 +5050,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/image-to-text#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/image-to-text#faq"
               }
             },
             {
@@ -4763,6 +5073,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/image-to-text#faq",
+              "name": "Image to Text FAQ",
+              "url": "https://nogatekeeping.com/tools/image-to-text",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/image-to-text#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What kinds of images work best for OCR?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Clear screenshots, scans, labels, and high-contrast text images usually produce better results than blurry, skewed, or heavily stylized text."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why check OCR confidence?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Confidence helps flag areas that may need manual review before the extracted text is reused in content, documentation, or data entry."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -4837,6 +5174,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/image-to-text#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/image-to-text#faq"
               }
             },
             {
@@ -4857,6 +5197,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/image-to-text#faq",
+              "name": "Image to Text FAQ",
+              "url": "https://nogatekeeping.com/tools/image-to-text",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/image-to-text#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What kinds of images work best for OCR?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Clear screenshots, scans, labels, and high-contrast text images usually produce better results than blurry, skewed, or heavily stylized text."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why check OCR confidence?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Confidence helps flag areas that may need manual review before the extracted text is reused in content, documentation, or data entry."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -4893,10 +5260,11 @@
         "h3s": [
           "Image to Text Converter",
           "When to use Image to Text",
+          "Simple workflow",
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 274,
+        "wordCount": 304,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -4961,13 +5329,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, BreadcrumbList"
+          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -5009,7 +5377,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "274 visible words; threshold 220."
+          "detail": "304 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -5078,6 +5446,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/image-compressor#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/image-compressor#faq"
               }
             },
             {
@@ -5098,6 +5469,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/image-compressor#faq",
+              "name": "Image Compressor FAQ",
+              "url": "https://nogatekeeping.com/tools/image-compressor",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/image-compressor#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "When should I compress images?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Compress images before publishing, uploading to a CMS, sending a handoff, or adding large screenshots to a page where weight matters."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I compress more than one image at once?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Image Compressor supports batch workflows and ZIP export so related assets can stay together."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -5131,6 +5529,7 @@
         "WebSite",
         "WebPage",
         "WebApplication",
+        "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
@@ -5179,6 +5578,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/image-compressor#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/image-compressor#faq"
               }
             },
             {
@@ -5199,6 +5601,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/image-compressor#faq",
+              "name": "Image Compressor FAQ",
+              "url": "https://nogatekeeping.com/tools/image-compressor",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/image-compressor#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "When should I compress images?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Compress images before publishing, uploading to a CMS, sending a handoff, or adding large screenshots to a page where weight matters."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I compress more than one image at once?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Image Compressor supports batch workflows and ZIP export so related assets can stay together."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -5273,6 +5702,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/image-compressor#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/image-compressor#faq"
               }
             },
             {
@@ -5293,6 +5725,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/image-compressor#faq",
+              "name": "Image Compressor FAQ",
+              "url": "https://nogatekeeping.com/tools/image-compressor",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/image-compressor#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "When should I compress images?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Compress images before publishing, uploading to a CMS, sending a handoff, or adding large screenshots to a page where weight matters."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I compress more than one image at once?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Image Compressor supports batch workflows and ZIP export so related assets can stay together."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -5328,10 +5787,11 @@
         ],
         "h3s": [
           "When to use Image Compressor",
+          "Simple workflow",
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 263,
+        "wordCount": 302,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -5396,13 +5856,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, BreadcrumbList"
+          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -5444,7 +5904,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "263 visible words; threshold 220."
+          "detail": "302 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -5513,6 +5973,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/color-palette-generator#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/color-palette-generator#faq"
               }
             },
             {
@@ -5533,6 +5996,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/color-palette-generator#faq",
+              "name": "Color Palette Generator FAQ",
+              "url": "https://nogatekeeping.com/tools/color-palette-generator",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/color-palette-generator#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Can Color Palette Generator help with brand palettes?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. It is built for early palette exploration, contrast review, mockup previewing, and exporting reusable color values once the direction is ready."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "When should I use the mockup views?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Use mockup views before final export to see whether the palette still works in interface, marketing, and visual contexts instead of only as isolated swatches."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -5566,6 +6056,7 @@
         "WebSite",
         "WebPage",
         "WebApplication",
+        "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
@@ -5614,6 +6105,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/color-palette-generator#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/color-palette-generator#faq"
               }
             },
             {
@@ -5634,6 +6128,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/color-palette-generator#faq",
+              "name": "Color Palette Generator FAQ",
+              "url": "https://nogatekeeping.com/tools/color-palette-generator",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/color-palette-generator#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Can Color Palette Generator help with brand palettes?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. It is built for early palette exploration, contrast review, mockup previewing, and exporting reusable color values once the direction is ready."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "When should I use the mockup views?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Use mockup views before final export to see whether the palette still works in interface, marketing, and visual contexts instead of only as isolated swatches."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -5708,6 +6229,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/color-palette-generator#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/color-palette-generator#faq"
               }
             },
             {
@@ -5728,6 +6252,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/color-palette-generator#faq",
+              "name": "Color Palette Generator FAQ",
+              "url": "https://nogatekeeping.com/tools/color-palette-generator",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/color-palette-generator#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Can Color Palette Generator help with brand palettes?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. It is built for early palette exploration, contrast review, mockup previewing, and exporting reusable color values once the direction is ready."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "When should I use the mockup views?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Use mockup views before final export to see whether the palette still works in interface, marketing, and visual contexts instead of only as isolated swatches."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -5759,16 +6310,17 @@
           "Color Palette Generator"
         ],
         "h2s": [
-          "#4b577d",
+          "#ca6473",
           "Shape a palette before committing it to a design system."
         ],
         "h3s": [
-          "monochromatic",
+          "splitcomplement",
           "When to use Color Palette Generator",
+          "Simple workflow",
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 287,
+        "wordCount": 324,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -5833,13 +6385,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, BreadcrumbList"
+          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -5881,7 +6433,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "287 visible words; threshold 220."
+          "detail": "324 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -5950,6 +6502,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/vectorvault#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/vectorvault#faq"
               }
             },
             {
@@ -5970,6 +6525,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/vectorvault#faq",
+              "name": "Vector Vault FAQ",
+              "url": "https://nogatekeeping.com/tools/vectorvault",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/vectorvault#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What is Vector Vault for?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Vector Vault is for keeping a lightweight local SVG library searchable, editable, and ready for repeated design and development work."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I edit icons before export?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. The workflow supports previewing, editing, uploading, and exporting SVG icons so cleanup can happen before handoff."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -6003,6 +6585,7 @@
         "WebSite",
         "WebPage",
         "WebApplication",
+        "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
@@ -6051,6 +6634,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/vectorvault#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/vectorvault#faq"
               }
             },
             {
@@ -6071,6 +6657,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/vectorvault#faq",
+              "name": "Vector Vault FAQ",
+              "url": "https://nogatekeeping.com/tools/vectorvault",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/vectorvault#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What is Vector Vault for?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Vector Vault is for keeping a lightweight local SVG library searchable, editable, and ready for repeated design and development work."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I edit icons before export?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. The workflow supports previewing, editing, uploading, and exporting SVG icons so cleanup can happen before handoff."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -6145,6 +6758,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/vectorvault#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/vectorvault#faq"
               }
             },
             {
@@ -6165,6 +6781,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/vectorvault#faq",
+              "name": "Vector Vault FAQ",
+              "url": "https://nogatekeeping.com/tools/vectorvault",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/vectorvault#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What is Vector Vault for?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Vector Vault is for keeping a lightweight local SVG library searchable, editable, and ready for repeated design and development work."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I edit icons before export?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. The workflow supports previewing, editing, uploading, and exporting SVG icons so cleanup can happen before handoff."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -6201,10 +6844,11 @@
         ],
         "h3s": [
           "When to use Vector Vault",
+          "Simple workflow",
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 228,
+        "wordCount": 262,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -6269,13 +6913,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, BreadcrumbList"
+          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -6317,7 +6961,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "228 visible words; threshold 220."
+          "detail": "262 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -6386,6 +7030,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/dns-checker#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/dns-checker#faq"
               }
             },
             {
@@ -6406,6 +7053,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/dns-checker#faq",
+              "name": "DNS Checker FAQ",
+              "url": "https://nogatekeeping.com/tools/dns-checker",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/dns-checker#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Which DNS records can I check?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "DNS Checker is designed for common launch and verification records including A, AAAA, MX, TXT, CNAME, and NS records."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why do different resolvers show different answers?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Resolver caches can update at different times. Comparing them helps separate normal propagation delay from a real configuration issue."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -6439,6 +7113,7 @@
         "WebSite",
         "WebPage",
         "WebApplication",
+        "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
@@ -6487,6 +7162,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/dns-checker#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/dns-checker#faq"
               }
             },
             {
@@ -6507,6 +7185,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/dns-checker#faq",
+              "name": "DNS Checker FAQ",
+              "url": "https://nogatekeeping.com/tools/dns-checker",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/dns-checker#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Which DNS records can I check?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "DNS Checker is designed for common launch and verification records including A, AAAA, MX, TXT, CNAME, and NS records."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why do different resolvers show different answers?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Resolver caches can update at different times. Comparing them helps separate normal propagation delay from a real configuration issue."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -6581,6 +7286,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/dns-checker#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/dns-checker#faq"
               }
             },
             {
@@ -6601,6 +7309,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/dns-checker#faq",
+              "name": "DNS Checker FAQ",
+              "url": "https://nogatekeeping.com/tools/dns-checker",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/dns-checker#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Which DNS records can I check?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "DNS Checker is designed for common launch and verification records including A, AAAA, MX, TXT, CNAME, and NS records."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why do different resolvers show different answers?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Resolver caches can update at different times. Comparing them helps separate normal propagation delay from a real configuration issue."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -6649,10 +7384,11 @@
           "CIRA",
           "UncensoredDNS",
           "When to use DNS Checker",
+          "Simple workflow",
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 355,
+        "wordCount": 402,
         "internalLinkCount": 12,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -6717,13 +7453,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, BreadcrumbList"
+          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -6765,7 +7501,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "355 visible words; threshold 220."
+          "detail": "402 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -6834,6 +7570,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/redirect-analyzer#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/redirect-analyzer#faq"
               }
             },
             {
@@ -6854,6 +7593,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/redirect-analyzer#faq",
+              "name": "Redirect Analyzer FAQ",
+              "url": "https://nogatekeeping.com/tools/redirect-analyzer",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/redirect-analyzer#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Why audit redirect chains?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Redirect chains can slow pages, hide final destinations, break tracking, or preserve old migration mistakes. Mapping the hops makes those issues easier to fix."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What should a clean redirect look like?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A clean redirect usually reaches the intended HTTPS destination with as few hops as possible and with a status code that matches the purpose of the redirect."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -6887,6 +7653,7 @@
         "WebSite",
         "WebPage",
         "WebApplication",
+        "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
@@ -6935,6 +7702,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/redirect-analyzer#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/redirect-analyzer#faq"
               }
             },
             {
@@ -6955,6 +7725,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/redirect-analyzer#faq",
+              "name": "Redirect Analyzer FAQ",
+              "url": "https://nogatekeeping.com/tools/redirect-analyzer",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/redirect-analyzer#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Why audit redirect chains?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Redirect chains can slow pages, hide final destinations, break tracking, or preserve old migration mistakes. Mapping the hops makes those issues easier to fix."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What should a clean redirect look like?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A clean redirect usually reaches the intended HTTPS destination with as few hops as possible and with a status code that matches the purpose of the redirect."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -7029,6 +7826,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/redirect-analyzer#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/redirect-analyzer#faq"
               }
             },
             {
@@ -7049,6 +7849,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/redirect-analyzer#faq",
+              "name": "Redirect Analyzer FAQ",
+              "url": "https://nogatekeeping.com/tools/redirect-analyzer",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/redirect-analyzer#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Why audit redirect chains?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Redirect chains can slow pages, hide final destinations, break tracking, or preserve old migration mistakes. Mapping the hops makes those issues easier to fix."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What should a clean redirect look like?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A clean redirect usually reaches the intended HTTPS destination with as few hops as possible and with a status code that matches the purpose of the redirect."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -7085,10 +7912,11 @@
         ],
         "h3s": [
           "When to use Redirect Analyzer",
+          "Simple workflow",
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 282,
+        "wordCount": 322,
         "internalLinkCount": 12,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -7153,13 +7981,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, BreadcrumbList"
+          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -7201,7 +8029,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "282 visible words; threshold 220."
+          "detail": "322 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -7270,6 +8098,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#faq"
               }
             },
             {
@@ -7290,6 +8121,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#faq",
+              "name": "Sitemap Robots Explorer FAQ",
+              "url": "https://nogatekeeping.com/tools/sitemap-robots-explorer",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What does Sitemap Robots Explorer look for?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It looks for robots.txt rules, sitemap references, discovered sitemap URLs, and path groups that help explain the public crawl surface of a site."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "When should I run a sitemap and robots check?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Run it before audits, launches, migrations, and cleanup work so crawl hints and public URL coverage are visible early."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -7323,6 +8181,7 @@
         "WebSite",
         "WebPage",
         "WebApplication",
+        "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
@@ -7371,6 +8230,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#faq"
               }
             },
             {
@@ -7391,6 +8253,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#faq",
+              "name": "Sitemap Robots Explorer FAQ",
+              "url": "https://nogatekeeping.com/tools/sitemap-robots-explorer",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What does Sitemap Robots Explorer look for?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It looks for robots.txt rules, sitemap references, discovered sitemap URLs, and path groups that help explain the public crawl surface of a site."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "When should I run a sitemap and robots check?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Run it before audits, launches, migrations, and cleanup work so crawl hints and public URL coverage are visible early."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -7465,6 +8354,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#faq"
               }
             },
             {
@@ -7485,6 +8377,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#faq",
+              "name": "Sitemap Robots Explorer FAQ",
+              "url": "https://nogatekeeping.com/tools/sitemap-robots-explorer",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What does Sitemap Robots Explorer look for?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It looks for robots.txt rules, sitemap references, discovered sitemap URLs, and path groups that help explain the public crawl surface of a site."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "When should I run a sitemap and robots check?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Run it before audits, launches, migrations, and cleanup work so crawl hints and public URL coverage are visible early."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -7520,10 +8439,11 @@
         ],
         "h3s": [
           "When to use Sitemap Robots Explorer",
+          "Simple workflow",
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 241,
+        "wordCount": 280,
         "internalLinkCount": 11,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -7588,13 +8508,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, BreadcrumbList"
+          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -7636,7 +8556,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "241 visible words; threshold 220."
+          "detail": "280 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -7705,6 +8625,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#faq"
               }
             },
             {
@@ -7725,6 +8648,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#faq",
+              "name": "Modular Wireframe Generator FAQ",
+              "url": "https://nogatekeeping.com/tools/modular-wireframe-generator",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What kinds of pages can I wireframe?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The tool is useful for landing pages, pricing pages, feature sections, galleries, contact layouts, testimonials, and other common website structures."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is this meant for polished visual design?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. It is for fast structure planning before visual polish, copy refinement, and detailed component design."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -7758,6 +8708,7 @@
         "WebSite",
         "WebPage",
         "WebApplication",
+        "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
@@ -7806,6 +8757,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#faq"
               }
             },
             {
@@ -7826,6 +8780,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#faq",
+              "name": "Modular Wireframe Generator FAQ",
+              "url": "https://nogatekeeping.com/tools/modular-wireframe-generator",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What kinds of pages can I wireframe?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The tool is useful for landing pages, pricing pages, feature sections, galleries, contact layouts, testimonials, and other common website structures."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is this meant for polished visual design?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. It is for fast structure planning before visual polish, copy refinement, and detailed component design."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -7900,6 +8881,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#faq"
               }
             },
             {
@@ -7920,6 +8904,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#faq",
+              "name": "Modular Wireframe Generator FAQ",
+              "url": "https://nogatekeeping.com/tools/modular-wireframe-generator",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What kinds of pages can I wireframe?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The tool is useful for landing pages, pricing pages, feature sections, galleries, contact layouts, testimonials, and other common website structures."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is this meant for polished visual design?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. It is for fast structure planning before visual polish, copy refinement, and detailed component design."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -7957,10 +8968,11 @@
         ],
         "h3s": [
           "When to use Modular Wireframe Generator",
+          "Simple workflow",
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 253,
+        "wordCount": 287,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -8025,13 +9037,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, BreadcrumbList"
+          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -8073,7 +9085,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "253 visible words; threshold 220."
+          "detail": "287 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -8142,6 +9154,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/image-converter#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/image-converter#faq"
               }
             },
             {
@@ -8162,6 +9177,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/image-converter#faq",
+              "name": "Image Converter FAQ",
+              "url": "https://nogatekeeping.com/tools/image-converter",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/image-converter#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Which image formats can I convert to?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Image Converter is built around common practical outputs including JPG, PNG, WebP, and PDF."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why convert images in the browser?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Browser conversion is useful for quick platform requirements, content cleanup, and batch handoffs without opening a heavier design app."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -8195,6 +9237,7 @@
         "WebSite",
         "WebPage",
         "WebApplication",
+        "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
@@ -8243,6 +9286,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/image-converter#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/image-converter#faq"
               }
             },
             {
@@ -8263,6 +9309,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/image-converter#faq",
+              "name": "Image Converter FAQ",
+              "url": "https://nogatekeeping.com/tools/image-converter",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/image-converter#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Which image formats can I convert to?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Image Converter is built around common practical outputs including JPG, PNG, WebP, and PDF."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why convert images in the browser?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Browser conversion is useful for quick platform requirements, content cleanup, and batch handoffs without opening a heavier design app."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -8337,6 +9410,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/image-converter#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/image-converter#faq"
               }
             },
             {
@@ -8357,6 +9433,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/image-converter#faq",
+              "name": "Image Converter FAQ",
+              "url": "https://nogatekeeping.com/tools/image-converter",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/image-converter#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Which image formats can I convert to?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Image Converter is built around common practical outputs including JPG, PNG, WebP, and PDF."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why convert images in the browser?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Browser conversion is useful for quick platform requirements, content cleanup, and batch handoffs without opening a heavier design app."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -8394,10 +9497,11 @@
         "h3s": [
           "No files added yet",
           "When to use Image Converter",
+          "Simple workflow",
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 267,
+        "wordCount": 306,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -8462,13 +9566,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, BreadcrumbList"
+          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -8510,7 +9614,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "267 visible words; threshold 220."
+          "detail": "306 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -8579,6 +9683,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/image-extractor#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/image-extractor#faq"
               }
             },
             {
@@ -8599,6 +9706,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/image-extractor#faq",
+              "name": "Image Extractor FAQ",
+              "url": "https://nogatekeeping.com/tools/image-extractor",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/image-extractor#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "When is Image Extractor useful?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It is useful during redesigns, migrations, content audits, and cleanup passes when image assets need to be found from a live page."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Does Image Extractor replace source files?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. It helps recover and inspect discoverable page assets when source files are missing or scattered."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -8632,6 +9766,7 @@
         "WebSite",
         "WebPage",
         "WebApplication",
+        "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
@@ -8680,6 +9815,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/image-extractor#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/image-extractor#faq"
               }
             },
             {
@@ -8700,6 +9838,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/image-extractor#faq",
+              "name": "Image Extractor FAQ",
+              "url": "https://nogatekeeping.com/tools/image-extractor",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/image-extractor#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "When is Image Extractor useful?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It is useful during redesigns, migrations, content audits, and cleanup passes when image assets need to be found from a live page."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Does Image Extractor replace source files?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. It helps recover and inspect discoverable page assets when source files are missing or scattered."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -8774,6 +9939,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/image-extractor#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/image-extractor#faq"
               }
             },
             {
@@ -8794,6 +9962,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/image-extractor#faq",
+              "name": "Image Extractor FAQ",
+              "url": "https://nogatekeeping.com/tools/image-extractor",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/image-extractor#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "When is Image Extractor useful?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It is useful during redesigns, migrations, content audits, and cleanup passes when image assets need to be found from a live page."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Does Image Extractor replace source files?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. It helps recover and inspect discoverable page assets when source files are missing or scattered."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -8829,10 +10024,11 @@
         ],
         "h3s": [
           "When to use Image Extractor",
+          "Simple workflow",
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 249,
+        "wordCount": 283,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -8897,13 +10093,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, BreadcrumbList"
+          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -8945,7 +10141,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "249 visible words; threshold 220."
+          "detail": "283 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -9014,6 +10210,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/font-converter#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/font-converter#faq"
               }
             },
             {
@@ -9034,6 +10233,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/font-converter#faq",
+              "name": "Font Converter FAQ",
+              "url": "https://nogatekeeping.com/tools/font-converter",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/font-converter#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "When should I convert font files?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Convert fonts when a project needs a browser-friendly format, a desktop-compatible handoff, or a cleaned-up set of typography assets."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can Font Converter handle batches?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. It is built for batch uploads so several font files can move through the same conversion workflow together."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -9067,6 +10293,7 @@
         "WebSite",
         "WebPage",
         "WebApplication",
+        "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
@@ -9115,6 +10342,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/font-converter#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/font-converter#faq"
               }
             },
             {
@@ -9135,6 +10365,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/font-converter#faq",
+              "name": "Font Converter FAQ",
+              "url": "https://nogatekeeping.com/tools/font-converter",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/font-converter#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "When should I convert font files?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Convert fonts when a project needs a browser-friendly format, a desktop-compatible handoff, or a cleaned-up set of typography assets."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can Font Converter handle batches?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. It is built for batch uploads so several font files can move through the same conversion workflow together."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -9209,6 +10466,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/font-converter#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/font-converter#faq"
               }
             },
             {
@@ -9229,6 +10489,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/font-converter#faq",
+              "name": "Font Converter FAQ",
+              "url": "https://nogatekeeping.com/tools/font-converter",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/font-converter#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "When should I convert font files?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Convert fonts when a project needs a browser-friendly format, a desktop-compatible handoff, or a cleaned-up set of typography assets."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can Font Converter handle batches?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. It is built for batch uploads so several font files can move through the same conversion workflow together."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -9268,10 +10555,11 @@
         ],
         "h3s": [
           "When to use Font Converter",
+          "Simple workflow",
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 311,
+        "wordCount": 351,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -9336,13 +10624,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, BreadcrumbList"
+          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -9384,7 +10672,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "311 visible words; threshold 220."
+          "detail": "351 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -9453,6 +10741,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/heatmap-tracker#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/heatmap-tracker#faq"
               }
             },
             {
@@ -9473,6 +10764,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/heatmap-tracker#faq",
+              "name": "Heatmap Tracker FAQ",
+              "url": "https://nogatekeeping.com/tools/heatmap-tracker",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/heatmap-tracker#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Is Heatmap Tracker a production analytics tool?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. It is a local prototyping tool for mockups, demos, UX reviews, and early analytics planning before adding real tracking infrastructure."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What should I use it with?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Use it with screenshots, product screens, landing page comps, or prototype states where a visual click pattern would clarify the discussion."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -9506,6 +10824,7 @@
         "WebSite",
         "WebPage",
         "WebApplication",
+        "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
@@ -9554,6 +10873,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/heatmap-tracker#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/heatmap-tracker#faq"
               }
             },
             {
@@ -9574,6 +10896,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/heatmap-tracker#faq",
+              "name": "Heatmap Tracker FAQ",
+              "url": "https://nogatekeeping.com/tools/heatmap-tracker",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/heatmap-tracker#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Is Heatmap Tracker a production analytics tool?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. It is a local prototyping tool for mockups, demos, UX reviews, and early analytics planning before adding real tracking infrastructure."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What should I use it with?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Use it with screenshots, product screens, landing page comps, or prototype states where a visual click pattern would clarify the discussion."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -9648,6 +10997,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/heatmap-tracker#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/heatmap-tracker#faq"
               }
             },
             {
@@ -9668,6 +11020,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/heatmap-tracker#faq",
+              "name": "Heatmap Tracker FAQ",
+              "url": "https://nogatekeeping.com/tools/heatmap-tracker",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/heatmap-tracker#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Is Heatmap Tracker a production analytics tool?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. It is a local prototyping tool for mockups, demos, UX reviews, and early analytics planning before adding real tracking infrastructure."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What should I use it with?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Use it with screenshots, product screens, landing page comps, or prototype states where a visual click pattern would clarify the discussion."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -9705,10 +11084,11 @@
         "h3s": [
           "Click The Canvas To Add Heat",
           "When to use Heatmap Tracker",
+          "Simple workflow",
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 391,
+        "wordCount": 429,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -9773,13 +11153,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, BreadcrumbList"
+          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -9821,7 +11201,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "391 visible words; threshold 220."
+          "detail": "429 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -9890,6 +11270,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/dictate#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/dictate#faq"
               }
             },
             {
@@ -9910,6 +11293,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/dictate#faq",
+              "name": "Dictate FAQ",
+              "url": "https://nogatekeeping.com/tools/dictate",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/dictate#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Is Dictate useful for rough drafts?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. It is best for fast first-pass notes, outlines, reminders, and messages that can be edited before they become final copy."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Does Dictate replace a full writing app?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. It is a lightweight capture workspace for turning speech into editable text before moving the result into a document, task manager, or message."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -9943,6 +11353,7 @@
         "WebSite",
         "WebPage",
         "WebApplication",
+        "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
@@ -9991,6 +11402,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/dictate#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/dictate#faq"
               }
             },
             {
@@ -10011,6 +11425,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/dictate#faq",
+              "name": "Dictate FAQ",
+              "url": "https://nogatekeeping.com/tools/dictate",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/dictate#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Is Dictate useful for rough drafts?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. It is best for fast first-pass notes, outlines, reminders, and messages that can be edited before they become final copy."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Does Dictate replace a full writing app?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. It is a lightweight capture workspace for turning speech into editable text before moving the result into a document, task manager, or message."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -10085,6 +11526,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/dictate#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/dictate#faq"
               }
             },
             {
@@ -10105,6 +11549,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/dictate#faq",
+              "name": "Dictate FAQ",
+              "url": "https://nogatekeeping.com/tools/dictate",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/dictate#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Is Dictate useful for rough drafts?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. It is best for fast first-pass notes, outlines, reminders, and messages that can be edited before they become final copy."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Does Dictate replace a full writing app?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. It is a lightweight capture workspace for turning speech into editable text before moving the result into a document, task manager, or message."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -10140,10 +11611,11 @@
         ],
         "h3s": [
           "When to use Dictate",
+          "Simple workflow",
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 226,
+        "wordCount": 278,
         "internalLinkCount": 12,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -10208,13 +11680,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, BreadcrumbList"
+          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -10256,7 +11728,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "226 visible words; threshold 220."
+          "detail": "278 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -10325,6 +11797,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/campaign-url-architect#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/campaign-url-architect#faq"
               }
             },
             {
@@ -10345,6 +11820,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/campaign-url-architect#faq",
+              "name": "Campaign URL Architect FAQ",
+              "url": "https://nogatekeeping.com/tools/campaign-url-architect",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/campaign-url-architect#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Does Campaign URL Architect use GA4 campaign parameters?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. The generated URL uses the standard utm_campaign field along with source, medium, term, and content values when those fields are filled in."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I reuse old campaign naming patterns?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Recent links are stored locally so recurring channels, naming conventions, and campaign structures can be rebuilt without opening a separate tracker."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -10378,6 +11880,7 @@
         "WebSite",
         "WebPage",
         "WebApplication",
+        "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
@@ -10426,6 +11929,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/campaign-url-architect#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/campaign-url-architect#faq"
               }
             },
             {
@@ -10446,6 +11952,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/campaign-url-architect#faq",
+              "name": "Campaign URL Architect FAQ",
+              "url": "https://nogatekeeping.com/tools/campaign-url-architect",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/campaign-url-architect#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Does Campaign URL Architect use GA4 campaign parameters?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. The generated URL uses the standard utm_campaign field along with source, medium, term, and content values when those fields are filled in."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I reuse old campaign naming patterns?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Recent links are stored locally so recurring channels, naming conventions, and campaign structures can be rebuilt without opening a separate tracker."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -10520,6 +12053,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/campaign-url-architect#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/campaign-url-architect#faq"
               }
             },
             {
@@ -10540,6 +12076,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/campaign-url-architect#faq",
+              "name": "Campaign URL Architect FAQ",
+              "url": "https://nogatekeeping.com/tools/campaign-url-architect",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/campaign-url-architect#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Does Campaign URL Architect use GA4 campaign parameters?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. The generated URL uses the standard utm_campaign field along with source, medium, term, and content values when those fields are filled in."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I reuse old campaign naming patterns?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Recent links are stored locally so recurring channels, naming conventions, and campaign structures can be rebuilt without opening a separate tracker."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -10577,10 +12140,11 @@
         ],
         "h3s": [
           "When to use Campaign URL Architect",
+          "Simple workflow",
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 287,
+        "wordCount": 332,
         "internalLinkCount": 11,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -10645,13 +12209,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, BreadcrumbList"
+          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -10693,7 +12257,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "287 visible words; threshold 220."
+          "detail": "332 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -10762,6 +12326,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#faq"
               }
             },
             {
@@ -10782,6 +12349,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#faq",
+              "name": "Lorem Ipsum Generator FAQ",
+              "url": "https://nogatekeeping.com/tools/lorem-ipsum-generator",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Why use generated placeholder text?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Placeholder text helps test layout rhythm, wrapping, spacing, and empty content states before final copy is ready."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I control the amount of text?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Lorem Ipsum Generator can create text by word, sentence, or paragraph count so the output fits the exact slot."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -10815,6 +12409,7 @@
         "WebSite",
         "WebPage",
         "WebApplication",
+        "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
@@ -10863,6 +12458,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#faq"
               }
             },
             {
@@ -10883,6 +12481,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#faq",
+              "name": "Lorem Ipsum Generator FAQ",
+              "url": "https://nogatekeeping.com/tools/lorem-ipsum-generator",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Why use generated placeholder text?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Placeholder text helps test layout rhythm, wrapping, spacing, and empty content states before final copy is ready."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I control the amount of text?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Lorem Ipsum Generator can create text by word, sentence, or paragraph count so the output fits the exact slot."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -10957,6 +12582,9 @@
               },
               "mainEntity": {
                 "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#web-application"
+              },
+              "hasPart": {
+                "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#faq"
               }
             },
             {
@@ -10977,6 +12605,33 @@
               "publisher": {
                 "@id": "https://nogatekeeping.com/#organization"
               }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#faq",
+              "name": "Lorem Ipsum Generator FAQ",
+              "url": "https://nogatekeeping.com/tools/lorem-ipsum-generator",
+              "isPartOf": {
+                "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#webpage"
+              },
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Why use generated placeholder text?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Placeholder text helps test layout rhythm, wrapping, spacing, and empty content states before final copy is ready."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I control the amount of text?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Lorem Ipsum Generator can create text by word, sentence, or paragraph count so the output fits the exact slot."
+                  }
+                }
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -11014,10 +12669,11 @@
           "Result",
           "How it works",
           "When to use Lorem Ipsum Generator",
+          "Simple workflow",
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 300,
+        "wordCount": 331,
         "internalLinkCount": 12,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -11082,13 +12738,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, BreadcrumbList"
+          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -11130,7 +12786,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "300 visible words; threshold 220."
+          "detail": "331 visible words; threshold 220."
         },
         {
           "id": "internal_links",

@@ -5,6 +5,7 @@ import {
   type PublishedBlogPost,
 } from "../blog/posts";
 import { TOOL_CATALOG } from "../tools/catalog";
+import { TOOL_LANDING_CONTENT } from "../tools/landingContent";
 import { TOOL_META_BY_SLUG } from "../tools/metaRegistry";
 import type { ToolCategory, ToolMeta } from "../tools/types";
 
@@ -168,6 +169,31 @@ function toolApplicationNode(meta: ToolMeta, siteUrl: string): JsonLdNode {
     publisher: {
       "@id": `${siteUrl}/#organization`,
     },
+  };
+}
+
+function faqPageNode(meta: ToolMeta, siteUrl: string): JsonLdNode | null {
+  const faqs = TOOL_LANDING_CONTENT[meta.slug]?.faqs;
+  if (!faqs?.length) return null;
+
+  const url = toolUrl(meta, siteUrl);
+
+  return {
+    "@type": "FAQPage",
+    "@id": `${url}#faq`,
+    name: `${meta.title} FAQ`,
+    url,
+    isPartOf: {
+      "@id": `${url}#webpage`,
+    },
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
   };
 }
 
@@ -390,11 +416,22 @@ function toolSchema(
 ): JsonLdDocument {
   const url = absoluteUrl(descriptor.canonicalPath, siteUrl);
   const appId = toolApplicationId(meta, siteUrl);
+  const faqNode = faqPageNode(meta, siteUrl);
 
   return schemaGraph(
     [
-      webpageNode(descriptor, "WebPage", siteUrl, { "@id": appId }),
+      {
+        ...webpageNode(descriptor, "WebPage", siteUrl, { "@id": appId }),
+        ...(faqNode
+          ? {
+              hasPart: {
+                "@id": faqNode["@id"],
+              },
+            }
+          : {}),
+      },
       toolApplicationNode(meta, siteUrl),
+      ...(faqNode ? [faqNode] : []),
       breadcrumbNode(
         `${url}#breadcrumb`,
         [
