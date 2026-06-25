@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Button } from "../components/Button";
+import Card from "../components/Card";
 import SiteFooter from "../components/SiteFooter";
 import SiteTopNav from "../components/SiteTopNav";
 import { TOOL_CATALOG } from "../tools/catalog";
@@ -18,7 +20,11 @@ export default function ToolsIndex() {
 
       <main className="py-8 sm:py-12">
         <div className="ng-page-shell space-y-8">
-          <section className="ng-card grid gap-8 p-6 sm:p-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(280px,0.8fr)]">
+          <Card
+            component="section"
+            padding="none"
+            className="grid gap-8 p-6 sm:p-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(280px,0.8fr)]"
+          >
             <div className="space-y-5">
               <div className="ng-eyebrow">Tool Directory / All Utilities</div>
               <h1 className="max-w-[10ch] text-5xl font-extrabold uppercase leading-[0.86] tracking-[-0.08em] text-primary sm:text-7xl">
@@ -29,12 +35,12 @@ export default function ToolsIndex() {
               </p>
 
               <div className="flex flex-wrap gap-3">
-                <a className="ng-button ng-button-primary" href="#all-tools">
+                <Button href="#all-tools">
                   Jump To Tools
-                </a>
-                <Link className="ng-button ng-button-outline" to="/">
+                </Button>
+                <Button component={Link} to="/" variant="outline">
                   Back Home
-                </Link>
+                </Button>
               </div>
             </div>
 
@@ -56,7 +62,7 @@ export default function ToolsIndex() {
                 </p>
               </div>
             </div>
-          </section>
+          </Card>
 
           <section className="space-y-5" id="all-tools">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
@@ -73,12 +79,18 @@ export default function ToolsIndex() {
 
             <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
               {TOOL_CATALOG.map((tool) => (
-                <Link
+                <Card
+                  component={Link}
                   key={tool.id}
+                  padding="none"
                   to={tool.route}
-                  className="ng-card group grid min-h-[220px] gap-5 p-5 transition-colors hover:bg-[var(--ng-panel)]"
-                  style={{
-                    boxShadow: "none",
+                  className="group grid min-h-[220px] gap-5 p-5 transition-colors"
+                  sx={{
+                    color: "inherit",
+                    textDecoration: "none",
+                    "&:hover": {
+                      backgroundColor: "var(--ng-panel)",
+                    },
                   }}
                 >
                   <div className="flex items-start justify-between gap-4">
@@ -103,7 +115,7 @@ export default function ToolsIndex() {
                       style={{ backgroundColor: tool.bg }}
                     />
                   </div>
-                </Link>
+                </Card>
               ))}
             </div>
           </section>
