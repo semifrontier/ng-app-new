@@ -27,17 +27,8 @@ const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
             borderColor: isMuted
               ? "var(--ng-border-subtle)"
               : "var(--ng-border)",
-            borderRadius: 0,
-            boxShadow: "none",
-            color: "var(--ng-text)",
-            fontFamily: "inherit",
-            fontSize: "0.875rem",
-            fontWeight: 600,
             px: "1rem",
             py: "0.75rem",
-            transition:
-              "background-color 150ms ease, border-color 150ms ease, color 150ms ease",
-            width: "100%",
             "&.Mui-focused": {
               outline: "2px solid var(--ng-primary)",
               outlineOffset: "2px",

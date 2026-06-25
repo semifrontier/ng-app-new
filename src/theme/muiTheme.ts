@@ -49,12 +49,25 @@ export const ngMuiTheme = createTheme({
       },
       styleOverrides: {
         root: {
+          alignItems: "center",
+          border: "2px solid",
           borderRadius: 0,
           boxShadow: "none",
+          display: "inline-flex",
           fontFamily: "inherit",
           fontWeight: 800,
+          gap: "0.5rem",
+          justifyContent: "center",
           letterSpacing: 0,
+          lineHeight: 1.2,
+          minWidth: 0,
           textTransform: "uppercase",
+          transition:
+            "background-color 150ms ease, border-color 150ms ease, color 150ms ease",
+          "&.Mui-disabled": {
+            borderColor: "var(--ng-border)",
+            opacity: 0.5,
+          },
           "&:hover": {
             boxShadow: "none",
           },
@@ -65,7 +78,14 @@ export const ngMuiTheme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: 0,
+          boxShadow: "none",
+          color: "var(--ng-text)",
           fontFamily: "inherit",
+          fontSize: "0.875rem",
+          fontWeight: 600,
+          transition:
+            "background-color 150ms ease, border-color 150ms ease, color 150ms ease",
+          width: "100%",
         },
         input: {
           font: "inherit",
@@ -78,6 +98,7 @@ export const ngMuiTheme = createTheme({
           backgroundImage: "none",
           borderRadius: 0,
           boxShadow: "none",
+          color: "var(--ng-text)",
         },
       },
     },
