@@ -10,5 +10,7 @@ export type ToolMeta = {
   slug: string;
   title: string;
   description: string;
+  seoTitle?: string;
+  seoDescription?: string;
   category: ToolCategory;
 };

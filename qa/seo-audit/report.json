@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T15:12:15.158Z",
+  "generatedAt": "2026-06-26T14:45:35.950Z",
   "siteUrl": "https://nogatekeeping.com",
   "summary": {
     "routes": 22,
@@ -88,7 +88,7 @@
                     "@id": "https://nogatekeeping.com/tools/case-converter#web-application",
                     "@type": "WebApplication",
                     "name": "Case Converter",
-                    "description": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
+                    "description": "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
                     "url": "https://nogatekeeping.com/tools/case-converter",
                     "applicationCategory": "UtilitiesApplication"
                   }
@@ -116,7 +116,7 @@
                     "@id": "https://nogatekeeping.com/tools/image-to-text#web-application",
                     "@type": "WebApplication",
                     "name": "Image to Text",
-                    "description": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
+                    "description": "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
                     "url": "https://nogatekeeping.com/tools/image-to-text",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -130,7 +130,7 @@
                     "@id": "https://nogatekeeping.com/tools/image-compressor#web-application",
                     "@type": "WebApplication",
                     "name": "Image Compressor",
-                    "description": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
+                    "description": "Compress images, decrease image resolution with max width and height controls, compare savings, and download files or a ZIP.",
                     "url": "https://nogatekeeping.com/tools/image-compressor",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -406,7 +406,7 @@
                     "@id": "https://nogatekeeping.com/tools/case-converter#web-application",
                     "@type": "WebApplication",
                     "name": "Case Converter",
-                    "description": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
+                    "description": "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
                     "url": "https://nogatekeeping.com/tools/case-converter",
                     "applicationCategory": "UtilitiesApplication"
                   }
@@ -434,7 +434,7 @@
                     "@id": "https://nogatekeeping.com/tools/image-to-text#web-application",
                     "@type": "WebApplication",
                     "name": "Image to Text",
-                    "description": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
+                    "description": "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
                     "url": "https://nogatekeeping.com/tools/image-to-text",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -448,7 +448,7 @@
                     "@id": "https://nogatekeeping.com/tools/image-compressor#web-application",
                     "@type": "WebApplication",
                     "name": "Image Compressor",
-                    "description": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
+                    "description": "Compress images, decrease image resolution with max width and height controls, compare savings, and download files or a ZIP.",
                     "url": "https://nogatekeeping.com/tools/image-compressor",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -718,7 +718,7 @@
                     "@id": "https://nogatekeeping.com/tools/case-converter#web-application",
                     "@type": "WebApplication",
                     "name": "Case Converter",
-                    "description": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
+                    "description": "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
                     "url": "https://nogatekeeping.com/tools/case-converter",
                     "applicationCategory": "UtilitiesApplication"
                   }
@@ -746,7 +746,7 @@
                     "@id": "https://nogatekeeping.com/tools/image-to-text#web-application",
                     "@type": "WebApplication",
                     "name": "Image to Text",
-                    "description": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
+                    "description": "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
                     "url": "https://nogatekeeping.com/tools/image-to-text",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -760,7 +760,7 @@
                     "@id": "https://nogatekeeping.com/tools/image-compressor#web-application",
                     "@type": "WebApplication",
                     "name": "Image Compressor",
-                    "description": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
+                    "description": "Compress images, decrease image resolution with max width and height controls, compare savings, and download files or a ZIP.",
                     "url": "https://nogatekeeping.com/tools/image-compressor",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -976,7 +976,7 @@
           "Lorem Ipsum Generator"
         ],
         "h3s": [],
-        "wordCount": 711,
+        "wordCount": 717,
         "internalLinkCount": 28,
         "missingImageAltCount": 0,
         "toolContentPresent": false,
@@ -1089,7 +1089,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "711 visible words; threshold 350."
+          "detail": "717 visible words; threshold 350."
         },
         {
           "id": "internal_links",
@@ -1178,7 +1178,7 @@
                     "@id": "https://nogatekeeping.com/tools/case-converter#web-application",
                     "@type": "WebApplication",
                     "name": "Case Converter",
-                    "description": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
+                    "description": "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
                     "url": "https://nogatekeeping.com/tools/case-converter",
                     "applicationCategory": "UtilitiesApplication"
                   }
@@ -1206,7 +1206,7 @@
                     "@id": "https://nogatekeeping.com/tools/image-to-text#web-application",
                     "@type": "WebApplication",
                     "name": "Image to Text",
-                    "description": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
+                    "description": "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
                     "url": "https://nogatekeeping.com/tools/image-to-text",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -1220,7 +1220,7 @@
                     "@id": "https://nogatekeeping.com/tools/image-compressor#web-application",
                     "@type": "WebApplication",
                     "name": "Image Compressor",
-                    "description": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
+                    "description": "Compress images, decrease image resolution with max width and height controls, compare savings, and download files or a ZIP.",
                     "url": "https://nogatekeeping.com/tools/image-compressor",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -1515,7 +1515,7 @@
                     "@id": "https://nogatekeeping.com/tools/case-converter#web-application",
                     "@type": "WebApplication",
                     "name": "Case Converter",
-                    "description": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
+                    "description": "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
                     "url": "https://nogatekeeping.com/tools/case-converter",
                     "applicationCategory": "UtilitiesApplication"
                   }
@@ -1543,7 +1543,7 @@
                     "@id": "https://nogatekeeping.com/tools/image-to-text#web-application",
                     "@type": "WebApplication",
                     "name": "Image to Text",
-                    "description": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
+                    "description": "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
                     "url": "https://nogatekeeping.com/tools/image-to-text",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -1557,7 +1557,7 @@
                     "@id": "https://nogatekeeping.com/tools/image-compressor#web-application",
                     "@type": "WebApplication",
                     "name": "Image Compressor",
-                    "description": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
+                    "description": "Compress images, decrease image resolution with max width and height controls, compare savings, and download files or a ZIP.",
                     "url": "https://nogatekeeping.com/tools/image-compressor",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -1845,7 +1845,7 @@
                     "@id": "https://nogatekeeping.com/tools/case-converter#web-application",
                     "@type": "WebApplication",
                     "name": "Case Converter",
-                    "description": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
+                    "description": "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
                     "url": "https://nogatekeeping.com/tools/case-converter",
                     "applicationCategory": "UtilitiesApplication"
                   }
@@ -1873,7 +1873,7 @@
                     "@id": "https://nogatekeeping.com/tools/image-to-text#web-application",
                     "@type": "WebApplication",
                     "name": "Image to Text",
-                    "description": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
+                    "description": "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
                     "url": "https://nogatekeeping.com/tools/image-to-text",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -1887,7 +1887,7 @@
                     "@id": "https://nogatekeeping.com/tools/image-compressor#web-application",
                     "@type": "WebApplication",
                     "name": "Image Compressor",
-                    "description": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
+                    "description": "Compress images, decrease image resolution with max width and height controls, compare savings, and download files or a ZIP.",
                     "url": "https://nogatekeeping.com/tools/image-compressor",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -2122,7 +2122,7 @@
           "Campaign URL Architect",
           "Lorem Ipsum Generator"
         ],
-        "wordCount": 469,
+        "wordCount": 473,
         "internalLinkCount": 27,
         "missingImageAltCount": 0,
         "toolContentPresent": false,
@@ -2235,7 +2235,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "469 visible words; threshold 300."
+          "detail": "473 visible words; threshold 300."
         },
         {
           "id": "internal_links",
@@ -3824,8 +3824,8 @@
       "type": "tool",
       "status": "pass",
       "descriptor": {
-        "title": "Case Converter - Free Tool - No Gatekeeping",
-        "description": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
+        "title": "Uppercase to Lowercase Converter - No Gatekeeping",
+        "description": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
         "canonicalPath": "/tools/case-converter",
         "schema": {
           "@context": "https://schema.org",
@@ -3850,8 +3850,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/case-converter#webpage",
               "url": "https://nogatekeeping.com/tools/case-converter",
-              "name": "Case Converter - Free Tool - No Gatekeeping",
-              "description": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
+              "name": "Uppercase to Lowercase Converter - No Gatekeeping",
+              "description": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -3869,7 +3869,7 @@
               "@type": "WebApplication",
               "@id": "https://nogatekeeping.com/tools/case-converter#web-application",
               "name": "Case Converter",
-              "description": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
+              "description": "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
               "url": "https://nogatekeeping.com/tools/case-converter",
               "applicationCategory": "UtilitiesApplication",
               "operatingSystem": "Any modern web browser",
@@ -3893,6 +3893,14 @@
                 "@id": "https://nogatekeeping.com/tools/case-converter#webpage"
               },
               "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Can I convert uppercase text to lowercase?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Paste the all-caps text, choose lowercase, and copy the converted result without changing the original wording."
+                  }
+                },
                 {
                   "@type": "Question",
                   "name": "What casing formats are best for content cleanup?",
@@ -3947,17 +3955,17 @@
         "BreadcrumbList"
       ],
       "firstResponse": {
-        "title": "Case Converter - Free Tool - No Gatekeeping",
-        "description": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
+        "title": "Uppercase to Lowercase Converter - No Gatekeeping",
+        "description": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
         "robots": "index,follow",
         "canonical": "https://nogatekeeping.com/tools/case-converter",
         "ogSiteName": "No Gatekeeping",
         "ogType": "website",
-        "ogTitle": "Case Converter - Free Tool - No Gatekeeping",
-        "ogDescription": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
+        "ogTitle": "Uppercase to Lowercase Converter - No Gatekeeping",
+        "ogDescription": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
         "ogUrl": "https://nogatekeeping.com/tools/case-converter",
-        "twitterTitle": "Case Converter - Free Tool - No Gatekeeping",
-        "twitterDescription": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
+        "twitterTitle": "Uppercase to Lowercase Converter - No Gatekeeping",
+        "twitterDescription": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
         "jsonLdCount": 1,
         "schema": {
           "@context": "https://schema.org",
@@ -3982,8 +3990,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/case-converter#webpage",
               "url": "https://nogatekeeping.com/tools/case-converter",
-              "name": "Case Converter - Free Tool - No Gatekeeping",
-              "description": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
+              "name": "Uppercase to Lowercase Converter - No Gatekeeping",
+              "description": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -4001,7 +4009,7 @@
               "@type": "WebApplication",
               "@id": "https://nogatekeeping.com/tools/case-converter#web-application",
               "name": "Case Converter",
-              "description": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
+              "description": "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
               "url": "https://nogatekeeping.com/tools/case-converter",
               "applicationCategory": "UtilitiesApplication",
               "operatingSystem": "Any modern web browser",
@@ -4025,6 +4033,14 @@
                 "@id": "https://nogatekeeping.com/tools/case-converter#webpage"
               },
               "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Can I convert uppercase text to lowercase?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Paste the all-caps text, choose lowercase, and copy the converted result without changing the original wording."
+                  }
+                },
                 {
                   "@type": "Question",
                   "name": "What casing formats are best for content cleanup?",
@@ -4071,17 +4087,17 @@
         }
       },
       "dom": {
-        "title": "Case Converter - Free Tool - No Gatekeeping",
-        "description": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
+        "title": "Uppercase to Lowercase Converter - No Gatekeeping",
+        "description": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
         "robots": "index,follow",
         "canonical": "https://nogatekeeping.com/tools/case-converter",
         "ogSiteName": "No Gatekeeping",
         "ogType": "website",
-        "ogTitle": "Case Converter - Free Tool - No Gatekeeping",
-        "ogDescription": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
+        "ogTitle": "Uppercase to Lowercase Converter - No Gatekeeping",
+        "ogDescription": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
         "ogUrl": "https://nogatekeeping.com/tools/case-converter",
-        "twitterTitle": "Case Converter - Free Tool - No Gatekeeping",
-        "twitterDescription": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
+        "twitterTitle": "Uppercase to Lowercase Converter - No Gatekeeping",
+        "twitterDescription": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
         "jsonLdCount": 1,
         "schema": {
           "@context": "https://schema.org",
@@ -4106,8 +4122,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/case-converter#webpage",
               "url": "https://nogatekeeping.com/tools/case-converter",
-              "name": "Case Converter - Free Tool - No Gatekeeping",
-              "description": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
+              "name": "Uppercase to Lowercase Converter - No Gatekeeping",
+              "description": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -4125,7 +4141,7 @@
               "@type": "WebApplication",
               "@id": "https://nogatekeeping.com/tools/case-converter#web-application",
               "name": "Case Converter",
-              "description": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
+              "description": "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
               "url": "https://nogatekeeping.com/tools/case-converter",
               "applicationCategory": "UtilitiesApplication",
               "operatingSystem": "Any modern web browser",
@@ -4149,6 +4165,14 @@
                 "@id": "https://nogatekeeping.com/tools/case-converter#webpage"
               },
               "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Can I convert uppercase text to lowercase?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Paste the all-caps text, choose lowercase, and copy the converted result without changing the original wording."
+                  }
+                },
                 {
                   "@type": "Question",
                   "name": "What casing formats are best for content cleanup?",
@@ -4198,7 +4222,7 @@
         ],
         "h2s": [
           "Choose Case",
-          "Clean up text casing before it lands in production."
+          "Convert uppercase to lowercase before text ships."
         ],
         "h3s": [
           "When to use Case Converter",
@@ -4206,7 +4230,7 @@
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 295,
+        "wordCount": 317,
         "internalLinkCount": 12,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -4217,25 +4241,25 @@
           "id": "title_present",
           "label": "Title is present",
           "status": "pass",
-          "detail": "Case Converter - Free Tool - No Gatekeeping"
+          "detail": "Uppercase to Lowercase Converter - No Gatekeeping"
         },
         {
           "id": "title_length",
           "label": "Title length",
           "status": "pass",
-          "detail": "43 characters."
+          "detail": "49 characters."
         },
         {
           "id": "description_present",
           "label": "Meta description is present",
           "status": "pass",
-          "detail": "Convert pasted text between common case formats, clean spacing, and copy the result in one click."
+          "detail": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter."
         },
         {
           "id": "description_length",
           "label": "Meta description length",
           "status": "pass",
-          "detail": "97 characters."
+          "detail": "134 characters."
         },
         {
           "id": "title_unique",
@@ -4319,7 +4343,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "295 visible words; threshold 220."
+          "detail": "317 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -4882,8 +4906,8 @@
       "type": "tool",
       "status": "pass",
       "descriptor": {
-        "title": "Image to Text - Free Tool - No Gatekeeping",
-        "description": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
+        "title": "Image to Text Converter - OCR Tool - No Gatekeeping",
+        "description": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
         "canonicalPath": "/tools/image-to-text",
         "schema": {
           "@context": "https://schema.org",
@@ -4908,8 +4932,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/image-to-text#webpage",
               "url": "https://nogatekeeping.com/tools/image-to-text",
-              "name": "Image to Text - Free Tool - No Gatekeeping",
-              "description": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
+              "name": "Image to Text Converter - OCR Tool - No Gatekeeping",
+              "description": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -4927,7 +4951,7 @@
               "@type": "WebApplication",
               "@id": "https://nogatekeeping.com/tools/image-to-text#web-application",
               "name": "Image to Text",
-              "description": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
+              "description": "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
               "url": "https://nogatekeeping.com/tools/image-to-text",
               "applicationCategory": "MultimediaApplication",
               "operatingSystem": "Any modern web browser",
@@ -4951,6 +4975,14 @@
                 "@id": "https://nogatekeeping.com/tools/image-to-text#webpage"
               },
               "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Can this convert image text to text I can copy?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Upload an image with readable text, run OCR in the browser, then copy or download the extracted text."
+                  }
+                },
                 {
                   "@type": "Question",
                   "name": "What kinds of images work best for OCR?",
@@ -5005,17 +5037,17 @@
         "BreadcrumbList"
       ],
       "firstResponse": {
-        "title": "Image to Text - Free Tool - No Gatekeeping",
-        "description": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
+        "title": "Image to Text Converter - OCR Tool - No Gatekeeping",
+        "description": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
         "robots": "index,follow",
         "canonical": "https://nogatekeeping.com/tools/image-to-text",
         "ogSiteName": "No Gatekeeping",
         "ogType": "website",
-        "ogTitle": "Image to Text - Free Tool - No Gatekeeping",
-        "ogDescription": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
+        "ogTitle": "Image to Text Converter - OCR Tool - No Gatekeeping",
+        "ogDescription": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
         "ogUrl": "https://nogatekeeping.com/tools/image-to-text",
-        "twitterTitle": "Image to Text - Free Tool - No Gatekeeping",
-        "twitterDescription": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
+        "twitterTitle": "Image to Text Converter - OCR Tool - No Gatekeeping",
+        "twitterDescription": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
         "jsonLdCount": 1,
         "schema": {
           "@context": "https://schema.org",
@@ -5040,8 +5072,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/image-to-text#webpage",
               "url": "https://nogatekeeping.com/tools/image-to-text",
-              "name": "Image to Text - Free Tool - No Gatekeeping",
-              "description": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
+              "name": "Image to Text Converter - OCR Tool - No Gatekeeping",
+              "description": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -5059,7 +5091,7 @@
               "@type": "WebApplication",
               "@id": "https://nogatekeeping.com/tools/image-to-text#web-application",
               "name": "Image to Text",
-              "description": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
+              "description": "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
               "url": "https://nogatekeeping.com/tools/image-to-text",
               "applicationCategory": "MultimediaApplication",
               "operatingSystem": "Any modern web browser",
@@ -5083,6 +5115,14 @@
                 "@id": "https://nogatekeeping.com/tools/image-to-text#webpage"
               },
               "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Can this convert image text to text I can copy?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Upload an image with readable text, run OCR in the browser, then copy or download the extracted text."
+                  }
+                },
                 {
                   "@type": "Question",
                   "name": "What kinds of images work best for OCR?",
@@ -5129,17 +5169,17 @@
         }
       },
       "dom": {
-        "title": "Image to Text - Free Tool - No Gatekeeping",
-        "description": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
+        "title": "Image to Text Converter - OCR Tool - No Gatekeeping",
+        "description": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
         "robots": "index,follow",
         "canonical": "https://nogatekeeping.com/tools/image-to-text",
         "ogSiteName": "No Gatekeeping",
         "ogType": "website",
-        "ogTitle": "Image to Text - Free Tool - No Gatekeeping",
-        "ogDescription": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
+        "ogTitle": "Image to Text Converter - OCR Tool - No Gatekeeping",
+        "ogDescription": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
         "ogUrl": "https://nogatekeeping.com/tools/image-to-text",
-        "twitterTitle": "Image to Text - Free Tool - No Gatekeeping",
-        "twitterDescription": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
+        "twitterTitle": "Image to Text Converter - OCR Tool - No Gatekeeping",
+        "twitterDescription": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
         "jsonLdCount": 1,
         "schema": {
           "@context": "https://schema.org",
@@ -5164,8 +5204,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/image-to-text#webpage",
               "url": "https://nogatekeeping.com/tools/image-to-text",
-              "name": "Image to Text - Free Tool - No Gatekeeping",
-              "description": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
+              "name": "Image to Text Converter - OCR Tool - No Gatekeeping",
+              "description": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -5183,7 +5223,7 @@
               "@type": "WebApplication",
               "@id": "https://nogatekeeping.com/tools/image-to-text#web-application",
               "name": "Image to Text",
-              "description": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
+              "description": "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
               "url": "https://nogatekeeping.com/tools/image-to-text",
               "applicationCategory": "MultimediaApplication",
               "operatingSystem": "Any modern web browser",
@@ -5207,6 +5247,14 @@
                 "@id": "https://nogatekeeping.com/tools/image-to-text#webpage"
               },
               "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Can this convert image text to text I can copy?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Upload an image with readable text, run OCR in the browser, then copy or download the extracted text."
+                  }
+                },
                 {
                   "@type": "Question",
                   "name": "What kinds of images work best for OCR?",
@@ -5255,7 +5303,7 @@
           "Image to Text"
         ],
         "h2s": [
-          "Recover text from an image without uploading it elsewhere."
+          "Convert image text to text you can copy."
         ],
         "h3s": [
           "Image to Text Converter",
@@ -5264,7 +5312,7 @@
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 304,
+        "wordCount": 326,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -5275,25 +5323,25 @@
           "id": "title_present",
           "label": "Title is present",
           "status": "pass",
-          "detail": "Image to Text - Free Tool - No Gatekeeping"
+          "detail": "Image to Text Converter - OCR Tool - No Gatekeeping"
         },
         {
           "id": "title_length",
           "label": "Title length",
           "status": "pass",
-          "detail": "42 characters."
+          "detail": "51 characters."
         },
         {
           "id": "description_present",
           "label": "Meta description is present",
           "status": "pass",
-          "detail": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result."
+          "detail": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents."
         },
         {
           "id": "description_length",
           "label": "Meta description length",
           "status": "pass",
-          "detail": "105 characters."
+          "detail": "139 characters."
         },
         {
           "id": "title_unique",
@@ -5377,7 +5425,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "304 visible words; threshold 220."
+          "detail": "326 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -5410,8 +5458,8 @@
       "type": "tool",
       "status": "pass",
       "descriptor": {
-        "title": "Image Compressor - Free Tool - No Gatekeeping",
-        "description": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
+        "title": "Image Compressor and Resizer - No Gatekeeping",
+        "description": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser.",
         "canonicalPath": "/tools/image-compressor",
         "schema": {
           "@context": "https://schema.org",
@@ -5436,8 +5484,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/image-compressor#webpage",
               "url": "https://nogatekeeping.com/tools/image-compressor",
-              "name": "Image Compressor - Free Tool - No Gatekeeping",
-              "description": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
+              "name": "Image Compressor and Resizer - No Gatekeeping",
+              "description": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -5455,7 +5503,7 @@
               "@type": "WebApplication",
               "@id": "https://nogatekeeping.com/tools/image-compressor#web-application",
               "name": "Image Compressor",
-              "description": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
+              "description": "Compress images, decrease image resolution with max width and height controls, compare savings, and download files or a ZIP.",
               "url": "https://nogatekeeping.com/tools/image-compressor",
               "applicationCategory": "MultimediaApplication",
               "operatingSystem": "Any modern web browser",
@@ -5481,18 +5529,26 @@
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "When should I compress images?",
+                  "name": "Can I decrease image resolution with this compressor?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Compress images before publishing, uploading to a CMS, sending a handoff, or adding large screenshots to a page where weight matters."
+                    "text": "Yes. Set a max width and max height to resize large images down while keeping the aspect ratio intact."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Can I compress more than one image at once?",
+                  "name": "When should I compress images?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. Image Compressor supports batch workflows and ZIP export so related assets can stay together."
+                    "text": "Compress images before publishing, uploading to a CMS, sending a handoff, or adding large screenshots to a page where file weight and picture size matter."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I condense more than one image at once?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Image Compressor supports batch workflows and ZIP export so related assets can be condensed and downloaded together."
                   }
                 }
               ]
@@ -5533,17 +5589,17 @@
         "BreadcrumbList"
       ],
       "firstResponse": {
-        "title": "Image Compressor - Free Tool - No Gatekeeping",
-        "description": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
+        "title": "Image Compressor and Resizer - No Gatekeeping",
+        "description": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser.",
         "robots": "index,follow",
         "canonical": "https://nogatekeeping.com/tools/image-compressor",
         "ogSiteName": "No Gatekeeping",
         "ogType": "website",
-        "ogTitle": "Image Compressor - Free Tool - No Gatekeeping",
-        "ogDescription": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
+        "ogTitle": "Image Compressor and Resizer - No Gatekeeping",
+        "ogDescription": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser.",
         "ogUrl": "https://nogatekeeping.com/tools/image-compressor",
-        "twitterTitle": "Image Compressor - Free Tool - No Gatekeeping",
-        "twitterDescription": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
+        "twitterTitle": "Image Compressor and Resizer - No Gatekeeping",
+        "twitterDescription": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser.",
         "jsonLdCount": 1,
         "schema": {
           "@context": "https://schema.org",
@@ -5568,8 +5624,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/image-compressor#webpage",
               "url": "https://nogatekeeping.com/tools/image-compressor",
-              "name": "Image Compressor - Free Tool - No Gatekeeping",
-              "description": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
+              "name": "Image Compressor and Resizer - No Gatekeeping",
+              "description": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -5587,7 +5643,7 @@
               "@type": "WebApplication",
               "@id": "https://nogatekeeping.com/tools/image-compressor#web-application",
               "name": "Image Compressor",
-              "description": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
+              "description": "Compress images, decrease image resolution with max width and height controls, compare savings, and download files or a ZIP.",
               "url": "https://nogatekeeping.com/tools/image-compressor",
               "applicationCategory": "MultimediaApplication",
               "operatingSystem": "Any modern web browser",
@@ -5613,18 +5669,26 @@
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "When should I compress images?",
+                  "name": "Can I decrease image resolution with this compressor?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Compress images before publishing, uploading to a CMS, sending a handoff, or adding large screenshots to a page where weight matters."
+                    "text": "Yes. Set a max width and max height to resize large images down while keeping the aspect ratio intact."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Can I compress more than one image at once?",
+                  "name": "When should I compress images?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. Image Compressor supports batch workflows and ZIP export so related assets can stay together."
+                    "text": "Compress images before publishing, uploading to a CMS, sending a handoff, or adding large screenshots to a page where file weight and picture size matter."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I condense more than one image at once?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Image Compressor supports batch workflows and ZIP export so related assets can be condensed and downloaded together."
                   }
                 }
               ]
@@ -5657,17 +5721,17 @@
         }
       },
       "dom": {
-        "title": "Image Compressor - Free Tool - No Gatekeeping",
-        "description": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
+        "title": "Image Compressor and Resizer - No Gatekeeping",
+        "description": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser.",
         "robots": "index,follow",
         "canonical": "https://nogatekeeping.com/tools/image-compressor",
         "ogSiteName": "No Gatekeeping",
         "ogType": "website",
-        "ogTitle": "Image Compressor - Free Tool - No Gatekeeping",
-        "ogDescription": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
+        "ogTitle": "Image Compressor and Resizer - No Gatekeeping",
+        "ogDescription": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser.",
         "ogUrl": "https://nogatekeeping.com/tools/image-compressor",
-        "twitterTitle": "Image Compressor - Free Tool - No Gatekeeping",
-        "twitterDescription": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
+        "twitterTitle": "Image Compressor and Resizer - No Gatekeeping",
+        "twitterDescription": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser.",
         "jsonLdCount": 1,
         "schema": {
           "@context": "https://schema.org",
@@ -5692,8 +5756,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/image-compressor#webpage",
               "url": "https://nogatekeeping.com/tools/image-compressor",
-              "name": "Image Compressor - Free Tool - No Gatekeeping",
-              "description": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
+              "name": "Image Compressor and Resizer - No Gatekeeping",
+              "description": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -5711,7 +5775,7 @@
               "@type": "WebApplication",
               "@id": "https://nogatekeeping.com/tools/image-compressor#web-application",
               "name": "Image Compressor",
-              "description": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
+              "description": "Compress images, decrease image resolution with max width and height controls, compare savings, and download files or a ZIP.",
               "url": "https://nogatekeeping.com/tools/image-compressor",
               "applicationCategory": "MultimediaApplication",
               "operatingSystem": "Any modern web browser",
@@ -5737,18 +5801,26 @@
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "When should I compress images?",
+                  "name": "Can I decrease image resolution with this compressor?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Compress images before publishing, uploading to a CMS, sending a handoff, or adding large screenshots to a page where weight matters."
+                    "text": "Yes. Set a max width and max height to resize large images down while keeping the aspect ratio intact."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Can I compress more than one image at once?",
+                  "name": "When should I compress images?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. Image Compressor supports batch workflows and ZIP export so related assets can stay together."
+                    "text": "Compress images before publishing, uploading to a CMS, sending a handoff, or adding large screenshots to a page where file weight and picture size matter."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I condense more than one image at once?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Image Compressor supports batch workflows and ZIP export so related assets can be condensed and downloaded together."
                   }
                 }
               ]
@@ -5783,7 +5855,7 @@
           "Image Compressor"
         ],
         "h2s": [
-          "Shrink image weight before upload or handoff."
+          "Compress images and decrease resolution before upload."
         ],
         "h3s": [
           "When to use Image Compressor",
@@ -5791,7 +5863,7 @@
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 302,
+        "wordCount": 334,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -5802,7 +5874,7 @@
           "id": "title_present",
           "label": "Title is present",
           "status": "pass",
-          "detail": "Image Compressor - Free Tool - No Gatekeeping"
+          "detail": "Image Compressor and Resizer - No Gatekeeping"
         },
         {
           "id": "title_length",
@@ -5814,13 +5886,13 @@
           "id": "description_present",
           "label": "Meta description is present",
           "status": "pass",
-          "detail": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP."
+          "detail": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser."
         },
         {
           "id": "description_length",
           "label": "Meta description length",
           "status": "pass",
-          "detail": "104 characters."
+          "detail": "134 characters."
         },
         {
           "id": "title_unique",
@@ -5904,7 +5976,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "302 visible words; threshold 220."
+          "detail": "334 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -6310,17 +6382,17 @@
           "Color Palette Generator"
         ],
         "h2s": [
-          "#ca6473",
+          "#c4a200",
           "Shape a palette before committing it to a design system."
         ],
         "h3s": [
-          "splitcomplement",
+          "triad",
           "When to use Color Palette Generator",
           "Simple workflow",
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 324,
+        "wordCount": 323,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -6433,7 +6505,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "324 visible words; threshold 220."
+          "detail": "323 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -9501,7 +9573,7 @@
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 306,
+        "wordCount": 308,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -9614,7 +9686,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "306 visible words; threshold 220."
+          "detail": "308 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -11615,7 +11687,7 @@
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 278,
+        "wordCount": 280,
         "internalLinkCount": 12,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -11728,7 +11800,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "278 visible words; threshold 220."
+          "detail": "280 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -12673,7 +12745,7 @@
           "Questions people ask",
           "Related tools"
         ],
-        "wordCount": 331,
+        "wordCount": 333,
         "internalLinkCount": 12,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -12786,7 +12858,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "331 visible words; threshold 220."
+          "detail": "333 visible words; threshold 220."
         },
         {
           "id": "internal_links",

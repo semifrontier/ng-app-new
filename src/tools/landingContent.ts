@@ -38,20 +38,25 @@ export const TOOL_LANDING_CONTENT: Record<string, ToolLandingContent> = {
     ],
   },
   "case-converter": {
-    heading: "Clean up text casing before it lands in production.",
+    heading: "Convert uppercase to lowercase before text ships.",
     summary:
-      "Case Converter reformats pasted text into common casing styles for labels, filenames, headings, code-adjacent strings, and content cleanup work.",
+      "Case Converter reformats pasted text into lowercase, uppercase, title case, sentence case, camel case, and slug-ready formats for content cleanup work.",
     useCases: [
+      "Changing all-caps notes, headings, labels, or exports into readable lowercase text.",
       "Turning rough notes into title case, sentence case, camel case, or slug-ready text.",
       "Normalizing lists of labels before moving them into a CMS, design file, or codebase.",
-      "Quickly removing casing inconsistencies from copied content.",
     ],
     workflowSteps: [
       "Paste the source text exactly as it came from the note, CMS, spreadsheet, or design file.",
-      "Choose the casing format that matches the destination system.",
+      "Choose lowercase, uppercase, title case, sentence case, camel case, kebab case, or snake case for the destination system.",
       "Copy the cleaned output and repeat with the next batch of labels or strings.",
     ],
     faqs: [
+      {
+        question: "Can I convert uppercase text to lowercase?",
+        answer:
+          "Yes. Paste the all-caps text, choose lowercase, and copy the converted result without changing the original wording.",
+      },
       {
         question: "What casing formats are best for content cleanup?",
         answer:
@@ -227,29 +232,35 @@ export const TOOL_LANDING_CONTENT: Record<string, ToolLandingContent> = {
     ],
   },
   "image-compressor": {
-    heading: "Shrink image weight before upload or handoff.",
+    heading: "Compress images and decrease resolution before upload.",
     summary:
-      "Image Compressor processes image batches in the browser, compares savings, and exports individual files or a ZIP for faster pages and cleaner asset delivery.",
+      "Image Compressor processes image batches in the browser, lowers file size, can decrease image resolution with max width and height controls, and exports files or a ZIP.",
     useCases: [
-      "Reducing large images before publishing them to a website or CMS.",
+      "Reducing large images before publishing them to a website, CMS, or product page.",
+      "Decreasing picture size or resolution while preserving the original aspect ratio.",
       "Compressing a batch of screenshots, product images, or content assets together.",
-      "Checking size savings before deciding which output files to keep.",
     ],
     workflowSteps: [
       "Drop in the images that are too heavy for the page, CMS, or handoff.",
-      "Review the compression results and compare file-size savings before downloading.",
+      "Set quality plus max width and height when the image should be resized down.",
+      "Review compression results, resolution changes, and file-size savings before downloading.",
       "Export individual files or a ZIP when the optimized batch is ready.",
     ],
     faqs: [
       {
-        question: "When should I compress images?",
+        question: "Can I decrease image resolution with this compressor?",
         answer:
-          "Compress images before publishing, uploading to a CMS, sending a handoff, or adding large screenshots to a page where weight matters.",
+          "Yes. Set a max width and max height to resize large images down while keeping the aspect ratio intact.",
       },
       {
-        question: "Can I compress more than one image at once?",
+        question: "When should I compress images?",
         answer:
-          "Yes. Image Compressor supports batch workflows and ZIP export so related assets can stay together.",
+          "Compress images before publishing, uploading to a CMS, sending a handoff, or adding large screenshots to a page where file weight and picture size matter.",
+      },
+      {
+        question: "Can I condense more than one image at once?",
+        answer:
+          "Yes. Image Compressor supports batch workflows and ZIP export so related assets can be condensed and downloaded together.",
       },
     ],
   },
@@ -308,20 +319,25 @@ export const TOOL_LANDING_CONTENT: Record<string, ToolLandingContent> = {
     ],
   },
   "image-to-text": {
-    heading: "Recover text from an image without uploading it elsewhere.",
+    heading: "Convert image text to text you can copy.",
     summary:
-      "Image to Text runs OCR locally in the browser, then provides confidence details, copy controls, and downloads for extracted text.",
+      "Image to Text runs OCR locally in the browser to extract words from screenshots, scans, labels, and image-based documents, then gives you copy and download controls.",
     useCases: [
-      "Pulling text from screenshots, scanned notes, labels, or image-based documents.",
+      "Pulling text from screenshots, scanned notes, labels, photos, or image-based documents.",
+      "Turning image text into editable text for notes, content cleanup, or data entry.",
       "Checking OCR confidence before reusing the extracted result.",
-      "Keeping sensitive image-to-text work local to the browser session.",
     ],
     workflowSteps: [
       "Upload the screenshot, scan, label, note, or image-based document.",
-      "Run OCR and review the extracted text alongside confidence details.",
+      "Run OCR and review the image-to-text result alongside confidence details.",
       "Copy or download the cleaned result once the text is ready to reuse.",
     ],
     faqs: [
+      {
+        question: "Can this convert image text to text I can copy?",
+        answer:
+          "Yes. Upload an image with readable text, run OCR in the browser, then copy or download the extracted text.",
+      },
       {
         question: "What kinds of images work best for OCR?",
         answer:

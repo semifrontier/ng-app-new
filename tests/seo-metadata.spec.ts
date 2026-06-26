@@ -65,6 +65,28 @@ const LEGACY_ROUTE_REDIRECTS = [
 const TOOL_CONTENT_ROUTES = SEO_ROUTES.filter((route) =>
   route.path.startsWith("/tools/"),
 );
+const AUDIT_KEYWORD_TARGETS = [
+  {
+    path: "/tools/case-converter",
+    signals: [
+      "uppercase to lowercase converter",
+      "convert uppercase text to lowercase",
+      "lowercase",
+    ],
+  },
+  {
+    path: "/tools/image-to-text",
+    signals: ["image to text converter", "ocr", "convert image text to text"],
+  },
+  {
+    path: "/tools/image-compressor",
+    signals: [
+      "image compressor and resizer",
+      "decrease image resolution",
+      "decrease picture size",
+    ],
+  },
+] as const;
 
 function decodeHtml(value: string | undefined) {
   if (!value) return value;
@@ -157,9 +179,26 @@ function graphNodeByType(schema: JsonLdDocument | undefined, type: string) {
   return schema?.["@graph"].find((node) => node["@type"] === type);
 }
 
+function normalizeSearchText(value: string) {
+  return value.replace(/\s+/g, " ").trim().toLowerCase();
+}
+
 function asArray<T>(value: T | T[] | undefined) {
   if (!value) return [];
   return Array.isArray(value) ? value : [value];
+}
+
+function flattenLandingContent(slug: string) {
+  const content = TOOL_LANDING_CONTENT[slug];
+  if (!content) return "";
+
+  return [
+    content.heading,
+    content.summary,
+    ...content.useCases,
+    ...(content.workflowSteps ?? []),
+    ...(content.faqs ?? []).flatMap((faq) => [faq.question, faq.answer]),
+  ].join(" ");
 }
 
 test.describe("SEO metadata and schema", () => {
@@ -184,6 +223,28 @@ test.describe("SEO metadata and schema", () => {
       expectHeadToMatchDescriptor(snapshotFromHtml(html), route.descriptor);
     });
   }
+
+  test("audit keyword targets stay mapped to the relevant tool pages", () => {
+    for (const target of AUDIT_KEYWORD_TARGETS) {
+      const route = SEO_ROUTES.find((item) => item.path === target.path);
+      expect(route, `Missing SEO route for ${target.path}`).toBeTruthy();
+
+      const slug = target.path.split("/").at(-1);
+      expect(slug, `Could not parse tool slug from ${target.path}`).toBeTruthy();
+
+      const haystack = normalizeSearchText(
+        [
+          route!.descriptor.title,
+          route!.descriptor.description,
+          flattenLandingContent(slug!),
+        ].join(" "),
+      );
+
+      for (const signal of target.signals) {
+        expect(haystack).toContain(normalizeSearchText(signal));
+      }
+    }
+  });
 
   for (const path of HYDRATION_SMOKE_PATHS) {
     test(`${path} keeps metadata stable after hydration`, async ({ page }) => {

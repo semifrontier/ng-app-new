@@ -34,19 +34,23 @@
       "title": "Case Converter",
       "category": "Text",
       "url": "/tools/case-converter",
-      "description": "Convert pasted text between common case formats, clean spacing, and copy the result in one click.",
-      "summary": "Case Converter reformats pasted text into common casing styles for labels, filenames, headings, code-adjacent strings, and content cleanup work.",
+      "description": "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
+      "summary": "Case Converter reformats pasted text into lowercase, uppercase, title case, sentence case, camel case, and slug-ready formats for content cleanup work.",
       "useCases": [
+        "Changing all-caps notes, headings, labels, or exports into readable lowercase text.",
         "Turning rough notes into title case, sentence case, camel case, or slug-ready text.",
-        "Normalizing lists of labels before moving them into a CMS, design file, or codebase.",
-        "Quickly removing casing inconsistencies from copied content."
+        "Normalizing lists of labels before moving them into a CMS, design file, or codebase."
       ],
       "workflowSteps": [
         "Paste the source text exactly as it came from the note, CMS, spreadsheet, or design file.",
-        "Choose the casing format that matches the destination system.",
+        "Choose lowercase, uppercase, title case, sentence case, camel case, kebab case, or snake case for the destination system.",
         "Copy the cleaned output and repeat with the next batch of labels or strings."
       ],
       "faqs": [
+        {
+          "question": "Can I convert uppercase text to lowercase?",
+          "answer": "Yes. Paste the all-caps text, choose lowercase, and copy the converted result without changing the original wording."
+        },
         {
           "question": "What casing formats are best for content cleanup?",
           "answer": "Sentence case and title case are useful for visible copy, while camel case, pascal case, kebab case, and snake case work better for code-adjacent strings and filenames."
@@ -90,19 +94,23 @@
       "title": "Image to Text",
       "category": "Images",
       "url": "/tools/image-to-text",
-      "description": "Extract text from images locally in your browser, review OCR confidence, and copy or download the result.",
-      "summary": "Image to Text runs OCR locally in the browser, then provides confidence details, copy controls, and downloads for extracted text.",
+      "description": "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
+      "summary": "Image to Text runs OCR locally in the browser to extract words from screenshots, scans, labels, and image-based documents, then gives you copy and download controls.",
       "useCases": [
-        "Pulling text from screenshots, scanned notes, labels, or image-based documents.",
-        "Checking OCR confidence before reusing the extracted result.",
-        "Keeping sensitive image-to-text work local to the browser session."
+        "Pulling text from screenshots, scanned notes, labels, photos, or image-based documents.",
+        "Turning image text into editable text for notes, content cleanup, or data entry.",
+        "Checking OCR confidence before reusing the extracted result."
       ],
       "workflowSteps": [
         "Upload the screenshot, scan, label, note, or image-based document.",
-        "Run OCR and review the extracted text alongside confidence details.",
+        "Run OCR and review the image-to-text result alongside confidence details.",
         "Copy or download the cleaned result once the text is ready to reuse."
       ],
       "faqs": [
+        {
+          "question": "Can this convert image text to text I can copy?",
+          "answer": "Yes. Upload an image with readable text, run OCR in the browser, then copy or download the extracted text."
+        },
         {
           "question": "What kinds of images work best for OCR?",
           "answer": "Clear screenshots, scans, labels, and high-contrast text images usually produce better results than blurry, skewed, or heavily stylized text."
@@ -118,26 +126,31 @@
       "title": "Image Compressor",
       "category": "Images",
       "url": "/tools/image-compressor",
-      "description": "Compress images in the browser, compare size savings, and download each file or the full batch as a ZIP.",
-      "summary": "Image Compressor processes image batches in the browser, compares savings, and exports individual files or a ZIP for faster pages and cleaner asset delivery.",
+      "description": "Compress images, decrease image resolution with max width and height controls, compare savings, and download files or a ZIP.",
+      "summary": "Image Compressor processes image batches in the browser, lowers file size, can decrease image resolution with max width and height controls, and exports files or a ZIP.",
       "useCases": [
-        "Reducing large images before publishing them to a website or CMS.",
-        "Compressing a batch of screenshots, product images, or content assets together.",
-        "Checking size savings before deciding which output files to keep."
+        "Reducing large images before publishing them to a website, CMS, or product page.",
+        "Decreasing picture size or resolution while preserving the original aspect ratio.",
+        "Compressing a batch of screenshots, product images, or content assets together."
       ],
       "workflowSteps": [
         "Drop in the images that are too heavy for the page, CMS, or handoff.",
-        "Review the compression results and compare file-size savings before downloading.",
+        "Set quality plus max width and height when the image should be resized down.",
+        "Review compression results, resolution changes, and file-size savings before downloading.",
         "Export individual files or a ZIP when the optimized batch is ready."
       ],
       "faqs": [
         {
-          "question": "When should I compress images?",
-          "answer": "Compress images before publishing, uploading to a CMS, sending a handoff, or adding large screenshots to a page where weight matters."
+          "question": "Can I decrease image resolution with this compressor?",
+          "answer": "Yes. Set a max width and max height to resize large images down while keeping the aspect ratio intact."
         },
         {
-          "question": "Can I compress more than one image at once?",
-          "answer": "Yes. Image Compressor supports batch workflows and ZIP export so related assets can stay together."
+          "question": "When should I compress images?",
+          "answer": "Compress images before publishing, uploading to a CMS, sending a handoff, or adding large screenshots to a page where file weight and picture size matter."
+        },
+        {
+          "question": "Can I condense more than one image at once?",
+          "answer": "Yes. Image Compressor supports batch workflows and ZIP export so related assets can be condensed and downloaded together."
         }
       ]
     },

@@ -215,7 +215,7 @@ export default function ImageCompressorTool() {
 
             <div className="flex items-center gap-3">
               <label className="text-sm font-bold uppercase tracking-wide text-slate-800">
-                Max W
+                Max Width
               </label>
               <input
                 type="number"
@@ -227,7 +227,7 @@ export default function ImageCompressorTool() {
 
             <div className="flex items-center gap-3">
               <label className="text-sm font-bold uppercase tracking-wide text-slate-800">
-                Max H
+                Max Height
               </label>
               <input
                 type="number"
@@ -256,7 +256,7 @@ export default function ImageCompressorTool() {
                 disabled={files.length === 0 || isCompressing}
                 className="px-5 py-2 border-2 border-transparent bg-primary text-white font-bold uppercase tracking-wide disabled:opacity-40"
               >
-                {isCompressing ? "Compressing..." : "Compress"}
+                {isCompressing ? "Compressing..." : "Compress & Resize"}
               </button>
 
               <button

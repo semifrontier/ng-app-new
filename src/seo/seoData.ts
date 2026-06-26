@@ -448,8 +448,10 @@ function toolSchema(
 
 function toolDescriptor(meta: ToolMeta, siteUrl: string): SeoDescriptor {
   const descriptor = {
-    title: appendTitleSuffix(meta.title, " - Free Tool - No Gatekeeping"),
-    description: meta.description,
+    title:
+      meta.seoTitle ??
+      appendTitleSuffix(meta.title, " - Free Tool - No Gatekeeping"),
+    description: meta.seoDescription ?? meta.description,
     canonicalPath: `/tools/${meta.slug}`,
   };
 

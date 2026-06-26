@@ -20,10 +20,12 @@ No Gatekeeping is a collection of browser-based tools and field notes. The site 
 ## High-Intent Tools
 
 - [Color Picker](https://nogatekeeping.com/tools/color-picker): Extract HEX, RGB, and HSL color values from uploaded images.
+- [Case Converter](https://nogatekeeping.com/tools/case-converter): Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text.
+- [Image to Text](https://nogatekeeping.com/tools/image-to-text): Use local OCR to convert image text into copyable text.
 - [Image Extractor](https://nogatekeeping.com/tools/image-extractor): Discover and download image assets from webpage URLs.
 - [Redirect Analyzer](https://nogatekeeping.com/tools/redirect-analyzer): Trace redirect chains, status codes, and final destinations.
 - [Sitemap Robots Explorer](https://nogatekeeping.com/tools/sitemap-robots-explorer): Inspect robots.txt and sitemap hints for crawl planning.
-- [Image Compressor](https://nogatekeeping.com/tools/image-compressor): Compress image batches in the browser.
+- [Image Compressor](https://nogatekeeping.com/tools/image-compressor): Compress and resize image batches in the browser.
 - [Image Converter](https://nogatekeeping.com/tools/image-converter): Convert images into JPG, PNG, WebP, or PDF outputs.
 
 ## Notes For AI Assistants
