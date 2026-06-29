@@ -1,41 +1,147 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/blog/",
+      "destination": "/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/ai-in-graphic-design-keeping-the-human-touch/",
+      "destination": "/blog/ai-in-graphic-design-keeping-the-human-touch",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/",
+      "destination": "/tools",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/campaign-url-architect/",
+      "destination": "/tools/campaign-url-architect",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/case-converter/",
+      "destination": "/tools/case-converter",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/color-palette-generator/",
+      "destination": "/tools/color-palette-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/color-picker/",
+      "destination": "/tools/color-picker",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/dictate/",
+      "destination": "/tools/dictate",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/dns-checker/",
+      "destination": "/tools/dns-checker",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/font-converter/",
+      "destination": "/tools/font-converter",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/heatmap-tracker/",
+      "destination": "/tools/heatmap-tracker",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/image-compressor/",
+      "destination": "/tools/image-compressor",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/image-converter/",
+      "destination": "/tools/image-converter",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/image-extractor/",
+      "destination": "/tools/image-extractor",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/image-to-text/",
+      "destination": "/tools/image-to-text",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/lorem-ipsum-generator/",
+      "destination": "/tools/lorem-ipsum-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/modular-wireframe-generator/",
+      "destination": "/tools/modular-wireframe-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/proportion-scaler/",
+      "destination": "/tools/proportion-scaler",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/redirect-analyzer/",
+      "destination": "/tools/redirect-analyzer",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/sitemap-robots-explorer/",
+      "destination": "/tools/sitemap-robots-explorer",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/vectorvault/",
+      "destination": "/tools/vectorvault",
+      "statusCode": 301
+    },
+    {
       "source": "/design-tools/how-to-get-hex-code-from-image",
       "destination": "/tools/color-picker",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/design-tools/:slug",
       "destination": "/tools/:slug",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/design-tools",
       "destination": "/tools",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/category/design-tools",
       "destination": "/tools",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/tool/:slug",
       "destination": "/tools/:slug",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/all-tools/:slug",
       "destination": "/tools/:slug",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/all-tools",
       "destination": "/tools",
-      "permanent": true
+      "statusCode": 301
     }
   ]
 }

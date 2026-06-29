@@ -30,6 +30,9 @@ type HeadSnapshot = {
 
 const SITE_URL = DEFAULT_SITE_URL;
 const SEO_ROUTES = getSeoPrerenderRoutes(SITE_URL);
+const CANONICAL_ROUTE_PATHS = new Set(
+  SEO_ROUTES.map((route) => route.descriptor.canonicalPath),
+);
 const HYDRATION_SMOKE_PATHS = [
   "/",
   "/tools",
@@ -412,6 +415,72 @@ test.describe("SEO metadata and schema", () => {
     );
   });
 
+  test("internal navigation links target canonical routes directly", async ({
+    page,
+  }) => {
+    const failures: string[] = [];
+    const canonicalHost = new URL(SITE_URL).hostname;
+    const legacyPath = /^\/(?:all-tools|design-tools|tool)(?:\/|$)|^\/category\/design-tools\/?$/;
+
+    for (const route of SEO_ROUTES) {
+      await page.goto(route.path, { waitUntil: "domcontentloaded" });
+
+      const hrefs = await page.locator("a[href]").evaluateAll((anchors) =>
+        anchors
+          .map((anchor) => anchor.getAttribute("href"))
+          .filter((href): href is string => Boolean(href)),
+      );
+
+      for (const href of hrefs) {
+        if (
+          href.startsWith("#") ||
+          href.startsWith("mailto:") ||
+          href.startsWith("tel:")
+        ) {
+          continue;
+        }
+
+        const url = new URL(href, SITE_URL);
+        const isAbsolute = /^[a-z][a-z\d+.-]*:/i.test(href);
+        const isInternal =
+          !isAbsolute ||
+          url.hostname === canonicalHost ||
+          url.hostname === `www.${canonicalHost}`;
+
+        if (!isInternal) continue;
+
+        if (isAbsolute && url.protocol !== "https:") {
+          failures.push(`${route.path}: ${href} uses HTTP`);
+        }
+
+        if (isAbsolute && url.hostname !== canonicalHost) {
+          failures.push(`${route.path}: ${href} uses a non-canonical host`);
+        }
+
+        if (url.pathname !== "/" && url.pathname.endsWith("/")) {
+          failures.push(`${route.path}: ${href} has a trailing slash`);
+        }
+
+        if (legacyPath.test(url.pathname)) {
+          failures.push(`${route.path}: ${href} uses a legacy route`);
+        }
+
+        const isPageRoute =
+          url.pathname === "/" ||
+          url.pathname === "/tools" ||
+          url.pathname === "/blog" ||
+          url.pathname.startsWith("/tools/") ||
+          url.pathname.startsWith("/blog/");
+
+        if (isPageRoute && !CANONICAL_ROUTE_PATHS.has(url.pathname)) {
+          failures.push(`${route.path}: ${href} is not a canonical page route`);
+        }
+      }
+    }
+
+    expect(failures).toEqual([]);
+  });
+
   test("deployment config avoids soft-404 catch-all behavior", async () => {
     const vercelConfig = JSON.parse(
       await readFile(new URL("../vercel.json", import.meta.url), "utf8"),
@@ -426,42 +495,49 @@ test.describe("SEO metadata and schema", () => {
     );
 
     expect(vercelConfig.trailingSlash).toBe(false);
+    for (const route of SEO_ROUTES.filter((route) => route.path !== "/")) {
+      expect(vercelConfig.redirects).toContainEqual({
+        source: `${route.descriptor.canonicalPath}/`,
+        destination: route.descriptor.canonicalPath,
+        statusCode: 301,
+      });
+    }
     expect(vercelConfig.redirects).toEqual(
       expect.arrayContaining([
         expect.objectContaining({
           source: "/design-tools/how-to-get-hex-code-from-image",
           destination: "/tools/color-picker",
-          permanent: true,
+          statusCode: 301,
         }),
         expect.objectContaining({
           source: "/design-tools/:slug",
           destination: "/tools/:slug",
-          permanent: true,
+          statusCode: 301,
         }),
         expect.objectContaining({
           source: "/design-tools",
           destination: "/tools",
-          permanent: true,
+          statusCode: 301,
         }),
         expect.objectContaining({
           source: "/category/design-tools",
           destination: "/tools",
-          permanent: true,
+          statusCode: 301,
         }),
         expect.objectContaining({
           source: "/tool/:slug",
           destination: "/tools/:slug",
-          permanent: true,
+          statusCode: 301,
         }),
         expect.objectContaining({
           source: "/all-tools/:slug",
           destination: "/tools/:slug",
-          permanent: true,
+          statusCode: 301,
         }),
         expect.objectContaining({
           source: "/all-tools",
           destination: "/tools",
-          permanent: true,
+          statusCode: 301,
         }),
       ]),
     );
