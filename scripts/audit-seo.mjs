@@ -183,7 +183,7 @@ function expectedSchemaTypes(type, route, toolDataByPath) {
   if (type === "tool") {
     return [
       "WebPage",
-      "WebApplication",
+      "SoftwareApplication",
       ...(toolDataByPath?.get(route.path)?.faqs?.length ? ["FAQPage"] : []),
       "BreadcrumbList",
     ];

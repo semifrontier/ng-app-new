@@ -43,6 +43,22 @@ const DropZone: React.FC<DropZoneProps> = ({ onFileSelected, disabled }) => {
     [onFileSelected, disabled]
   );
 
+  const handlePaste = useCallback(
+    (e: React.ClipboardEvent<HTMLDivElement>) => {
+      if (disabled) return;
+
+      const file = Array.from(e.clipboardData.files).find((candidate) =>
+        ACCEPTED_IMAGE_TYPES.includes(candidate.type),
+      );
+
+      if (!file) return;
+
+      e.preventDefault();
+      onFileSelected(file);
+    },
+    [disabled, onFileSelected],
+  );
+
   const handleFileInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files.length > 0) {
       onFileSelected(e.target.files[0]);
@@ -54,6 +70,7 @@ const DropZone: React.FC<DropZoneProps> = ({ onFileSelected, disabled }) => {
       onDragOver={handleDragOver}
       onDragLeave={handleDragLeave}
       onDrop={handleDrop}
+      onPaste={handlePaste}
       className={[
         "relative group border-2 border-dashed p-8 sm:p-12 transition-all duration-200 ease-in-out text-center cursor-pointer rounded-none",
         isDragActive
@@ -121,7 +138,7 @@ const DropZone: React.FC<DropZoneProps> = ({ onFileSelected, disabled }) => {
 
           <span className="text-slate-400 text-sm">Or</span>
           <span className="text-slate-500 font-medium">
-            Drag and drop your image here
+            Drag and drop or paste your image here
           </span>
         </div>
       </div>

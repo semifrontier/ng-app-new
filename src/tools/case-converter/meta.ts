@@ -3,10 +3,11 @@ import type { ToolMeta } from "../types";
 export const toolMeta = {
   slug: "case-converter",
   title: "Case Converter",
+  pageHeading: "Free Case Converter",
   description:
-    "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
-  seoTitle: "Uppercase to Lowercase Converter - No Gatekeeping",
+    "Use a free letter case converter for uppercase to lowercase, title case, sentence case, alternating case, and code-friendly formats.",
+  seoTitle: "Free Case Converter - Uppercase to Lowercase",
   seoDescription:
-    "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
+    "Free letter case converter for uppercase to lowercase, all caps to lowercase, title case, sentence case, alternating case, camel case, and more.",
   category: "Text",
 } satisfies ToolMeta;

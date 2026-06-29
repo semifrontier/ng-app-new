@@ -9,6 +9,11 @@ type ToolLandingContentProps = {
 };
 
 const RELATED_TOOL_SLUGS: Record<string, string[]> = {
+  "case-converter": [
+    "lorem-ipsum-generator",
+    "dictate",
+    "image-to-text",
+  ],
   "color-picker": [
     "color-palette-generator",
     "image-extractor",
@@ -18,6 +23,16 @@ const RELATED_TOOL_SLUGS: Record<string, string[]> = {
     "image-compressor",
     "image-converter",
     "color-picker",
+  ],
+  "image-to-text": [
+    "image-extractor",
+    "image-compressor",
+    "image-converter",
+  ],
+  "image-compressor": [
+    "image-converter",
+    "proportion-scaler",
+    "image-extractor",
   ],
   "proportion-scaler": [
     "image-converter",
@@ -100,11 +115,31 @@ export default function ToolLandingContent({ meta }: ToolLandingContentProps) {
           <p className="max-w-3xl text-base font-medium leading-7 text-[var(--ng-text-muted)]">
             {content.summary}
           </p>
+
+          {content.sections?.length ? (
+            <div className="space-y-6 border-t-2 border-[var(--ng-border)] pt-6">
+              {content.sections.map((section) => (
+                <section key={section.heading} className="space-y-3">
+                  <h3 className="text-lg font-black uppercase leading-6 tracking-[0.06em] text-[var(--ng-primary)]">
+                    {section.heading}
+                  </h3>
+                  {section.paragraphs.map((paragraph) => (
+                    <p
+                      key={paragraph}
+                      className="text-sm font-medium leading-6 text-[var(--ng-text-muted)]"
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
+                </section>
+              ))}
+            </div>
+          ) : null}
         </div>
 
         <div className="space-y-4">
           <h3 className="text-sm font-black uppercase tracking-[0.18em]">
-            When to use {meta.title}
+            {content.useCasesHeading ?? `When to use ${meta.title}`}
           </h3>
           <ul className="divide-y-2 divide-[var(--ng-border)] border-y-2 border-[var(--ng-border)]">
             {content.useCases.map((useCase) => (
@@ -124,7 +159,7 @@ export default function ToolLandingContent({ meta }: ToolLandingContentProps) {
           {content.workflowSteps?.length ? (
             <div className="space-y-3 border-t-2 border-[var(--ng-border)] pt-6">
               <h3 className="text-sm font-black uppercase tracking-[0.18em]">
-                Simple workflow
+                {content.workflowHeading ?? "How to use this tool"}
               </h3>
               <ol className="grid gap-3">
                 {content.workflowSteps.map((step, index) => (
@@ -144,7 +179,7 @@ export default function ToolLandingContent({ meta }: ToolLandingContentProps) {
 
           <div className="space-y-3 border-t-2 border-[var(--ng-border)] pt-6">
             <h3 className="text-sm font-black uppercase tracking-[0.18em]">
-              Questions people ask
+              Frequently asked questions
             </h3>
             <div className="grid gap-3">
               {faqItems.map((item) => (

@@ -9,6 +9,7 @@ export type ToolCategory =
 export type ToolMeta = {
   slug: string;
   title: string;
+  pageHeading?: string;
   description: string;
   seoTitle?: string;
   seoDescription?: string;

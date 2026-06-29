@@ -68,6 +68,77 @@ const LEGACY_ROUTE_REDIRECTS = [
 const TOOL_CONTENT_ROUTES = SEO_ROUTES.filter((route) =>
   route.path.startsWith("/tools/"),
 );
+const PRIORITY_TOOL_EXPECTATIONS = [
+  {
+    path: "/tools/case-converter",
+    h1: "Free Case Converter",
+    sections: [
+      "Convert uppercase, lowercase, title case, sentence case, and alternating case",
+      "How to convert all caps to lowercase",
+      "When to use a case converter",
+      "How to use this case converter",
+      "Frequently asked questions",
+      "Related tools",
+    ],
+    relatedPaths: [
+      "/tools/lorem-ipsum-generator",
+      "/tools/dictate",
+      "/tools/image-to-text",
+    ],
+  },
+  {
+    path: "/tools/image-to-text",
+    h1: "Free Image to Text Converter",
+    sections: [
+      "Upload or paste an image",
+      "Extract text from screenshots, documents, notes, and graphics",
+      "Copy the result as plain text",
+      "When to extract text from an image",
+      "How to use this image-to-text converter",
+      "Frequently asked questions",
+      "Related tools",
+    ],
+    relatedPaths: [
+      "/tools/image-extractor",
+      "/tools/image-compressor",
+      "/tools/image-converter",
+    ],
+  },
+  {
+    path: "/tools/image-compressor",
+    h1: "Free Image Compressor",
+    sections: [
+      "Decrease picture size and image resolution",
+      "Condense a batch of images in one pass",
+      "When to use an image compressor",
+      "How to use this image compressor",
+      "Frequently asked questions",
+      "Related tools",
+    ],
+    relatedPaths: [
+      "/tools/image-converter",
+      "/tools/proportion-scaler",
+      "/tools/image-extractor",
+    ],
+  },
+  {
+    path: "/tools/color-picker",
+    h1: "Free Image Color Picker",
+    sections: [
+      "Find a HEX code from an image",
+      "Move image colors into a design system",
+      "When to use an image color picker",
+      "How to use this image color picker",
+      "Frequently asked questions",
+      "Related tools",
+    ],
+    relatedPaths: [
+      "/tools/color-palette-generator",
+      "/tools/image-extractor",
+      "/tools/image-compressor",
+    ],
+  },
+] as const;
 const AUDIT_KEYWORD_TARGETS = [
   {
     path: "/tools/case-converter",
@@ -198,6 +269,10 @@ function flattenLandingContent(slug: string) {
   return [
     content.heading,
     content.summary,
+    ...(content.sections ?? []).flatMap((section) => [
+      section.heading,
+      ...section.paragraphs,
+    ]),
     ...content.useCases,
     ...(content.workflowSteps ?? []),
     ...(content.faqs ?? []).flatMap((faq) => [faq.question, faq.answer]),
@@ -213,6 +288,16 @@ test.describe("SEO metadata and schema", () => {
     })).filter((route) => route.length > MAX_RECOMMENDED_TITLE_LENGTH);
 
     expect(longTitles).toEqual([]);
+  });
+
+  test("route title tags and meta descriptions are unique", () => {
+    const titles = SEO_ROUTES.map((route) => route.descriptor.title);
+    const descriptions = SEO_ROUTES.map(
+      (route) => route.descriptor.description,
+    );
+
+    expect(new Set(titles).size).toBe(titles.length);
+    expect(new Set(descriptions).size).toBe(descriptions.length);
   });
 
   for (const route of SEO_ROUTES) {
@@ -320,6 +405,13 @@ test.describe("SEO metadata and schema", () => {
       await expect(section).toContainText(content.heading);
       await expect(section).toContainText(content.summary);
 
+      for (const detailSection of content.sections ?? []) {
+        await expect(section).toContainText(detailSection.heading);
+        for (const paragraph of detailSection.paragraphs) {
+          await expect(section).toContainText(paragraph);
+        }
+      }
+
       for (const useCase of content.useCases) {
         await expect(section).toContainText(useCase);
       }
@@ -332,6 +424,40 @@ test.describe("SEO metadata and schema", () => {
         await expect(section).toContainText(faq.question);
         await expect(section).toContainText(faq.answer);
       }
+    });
+  }
+
+  for (const expectation of PRIORITY_TOOL_EXPECTATIONS) {
+    test(`${expectation.path} has priority SEO content and direct related links`, async ({
+      page,
+    }) => {
+      await page.goto(expectation.path, { waitUntil: "domcontentloaded" });
+
+      await expect(page.locator("h1")).toHaveText(expectation.h1);
+
+      const content = page.locator(
+        `[data-seo-content-for="${expectation.path.split("/").at(-1)}"]`,
+      );
+      for (const heading of expectation.sections) {
+        await expect(
+          content.getByRole("heading", { name: heading, exact: true }),
+        ).toBeVisible();
+      }
+
+      for (const path of expectation.relatedPaths) {
+        await expect(content.locator(`a[href="${path}"]`)).toBeVisible();
+      }
+
+      const route = SEO_ROUTES.find((candidate) => candidate.path === expectation.path);
+      const applicationNode = graphNodeByType(
+        route?.descriptor.schema,
+        "SoftwareApplication",
+      );
+      const faqNode = graphNodeByType(route?.descriptor.schema, "FAQPage");
+
+      expect(applicationNode?.name).toBe(expectation.h1);
+      expect(applicationNode?.url).toBe(`${SITE_URL}${expectation.path}`);
+      expect(faqNode).toBeTruthy();
     });
   }
 

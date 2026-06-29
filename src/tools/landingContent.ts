@@ -1,7 +1,13 @@
 export type ToolLandingContent = {
   heading: string;
   summary: string;
+  sections?: Array<{
+    heading: string;
+    paragraphs: string[];
+  }>;
+  useCasesHeading?: string;
   useCases: string[];
+  workflowHeading?: string;
   workflowSteps?: string[];
   faqs?: Array<{
     question: string;
@@ -38,34 +44,60 @@ export const TOOL_LANDING_CONTENT: Record<string, ToolLandingContent> = {
     ],
   },
   "case-converter": {
-    heading: "Convert uppercase to lowercase before text ships.",
+    heading: "A letter case converter for fast text cleanup.",
     summary:
-      "Case Converter reformats pasted text into lowercase, uppercase, title case, sentence case, camel case, and slug-ready formats for content cleanup work.",
-    useCases: [
-      "Changing all-caps notes, headings, labels, or exports into readable lowercase text.",
-      "Turning rough notes into title case, sentence case, camel case, or slug-ready text.",
-      "Normalizing lists of labels before moving them into a CMS, design file, or codebase.",
+      "This free case converter changes uppercase to lowercase, all caps to lowercase, title case, sentence case, alternating case, and code-friendly formats without retyping the source text.",
+    sections: [
+      {
+        heading:
+          "Convert uppercase, lowercase, title case, sentence case, and alternating case",
+        paragraphs: [
+          "Paste text once, then choose the letter case the destination needs. The converter handles visible copy formats such as lowercase, UPPERCASE, Title Case, Sentence case, Capitalize Each Word, aLtErNaTiNg cAsE, and InVeRsE CaSe.",
+          "For filenames, URLs, variables, and structured labels, the same workspace can produce camelCase, PascalCase, snake_case, kebab-case, and CONSTANT_CASE output.",
+        ],
+      },
+      {
+        heading: "How to convert all caps to lowercase",
+        paragraphs: [
+          "Copy the all-caps text, paste it into the input field, and select lowercase. The converter uppercase-to-lowercase action preserves the words and punctuation while changing capital letters to lowercase.",
+          "This also covers searches such as cap to lowercase or all caps to lowercase: there is no need to edit each letter by hand, even when the source is a long heading, spreadsheet column, transcript, or CMS export.",
+        ],
+      },
     ],
+    useCasesHeading: "When to use a case converter",
+    useCases: [
+      "Changing all-caps notes, headings, labels, or exports into readable lowercase text before publishing.",
+      "Turning rough copy into title case or sentence case for a document, design, email, or CMS field.",
+      "Creating alternating or inverse case for informal creative text without editing characters individually.",
+      "Normalizing labels into camel case, snake case, kebab case, or constant case before development handoff.",
+    ],
+    workflowHeading: "How to use this case converter",
     workflowSteps: [
-      "Paste the source text exactly as it came from the note, CMS, spreadsheet, or design file.",
-      "Choose lowercase, uppercase, title case, sentence case, camel case, kebab case, or snake case for the destination system.",
-      "Copy the cleaned output and repeat with the next batch of labels or strings.",
+      "Paste the source text exactly as it came from the note, CMS, spreadsheet, transcript, or design file.",
+      "Choose lowercase, uppercase, title case, sentence case, alternating case, or a code-friendly format.",
+      "Review the converted text in the output panel and make any content edits that casing alone cannot solve.",
+      "Copy the cleaned result and repeat with the next paragraph, label list, or group of strings.",
     ],
     faqs: [
       {
-        question: "Can I convert uppercase text to lowercase?",
+        question: "Can I use this as an uppercase to lowercase converter?",
         answer:
-          "Yes. Paste the all-caps text, choose lowercase, and copy the converted result without changing the original wording.",
+          "Yes. Use it to convert uppercase text to lowercase: paste uppercase or all-caps text, choose lowercase, and copy the result without changing the original words or punctuation.",
       },
       {
-        question: "What casing formats are best for content cleanup?",
+        question: "What does a letter case converter change?",
         answer:
-          "Sentence case and title case are useful for visible copy, while camel case, pascal case, kebab case, and snake case work better for code-adjacent strings and filenames.",
+          "A letter case converter changes capitalization and, for code-friendly formats, word separators. It does not rewrite the meaning or grammar of the source text.",
       },
       {
-        question: "Does Case Converter change the meaning of the text?",
+        question: "Which case should I use for visible copy?",
         answer:
-          "No. It reformats casing and spacing so copied text can move into another tool without a manual cleanup pass.",
+          "Sentence case and title case are common for visible copy. Lowercase and uppercase work for specific styles, while alternating case is usually best reserved for informal or creative text.",
+      },
+      {
+        question: "Can it convert text for code and filenames?",
+        answer:
+          "Yes. The tool can create camelCase, PascalCase, snake_case, kebab-case, and CONSTANT_CASE strings for code-adjacent labels, URLs, and filenames.",
       },
     ],
   },
@@ -97,22 +129,41 @@ export const TOOL_LANDING_CONTENT: Record<string, ToolLandingContent> = {
     ],
   },
   "color-picker": {
-    heading: "Extract HEX color codes from the image in front of you.",
+    heading: "Get a HEX code from any image.",
     summary:
-      "Color Picker works as an image-to-hex tool, sampling HEX, RGB, and HSL values from uploaded images with a zoomed canvas so reference colors can move straight into design or development.",
+      "This free image color picker samples HEX, RGB, and HSL values from an uploaded screenshot, logo, photo, or graphic so a visual reference can become a usable design value.",
+    sections: [
+      {
+        heading: "Find a HEX code from an image",
+        paragraphs: [
+          "Upload the image, move the picker over the target area, and use the magnified preview to select the exact pixel. The current HEX code appears beside its RGB and HSL equivalents for one-click copying.",
+          "Nearby pixels may differ because of shadows, gradients, anti-aliasing, or image compression. Zooming in before copying helps avoid choosing an edge color by accident.",
+        ],
+      },
+      {
+        heading: "Move image colors into a design system",
+        paragraphs: [
+          "Use the sampled value in CSS, a design token, a brand palette, or a presentation theme. HEX is convenient for web work, RGB describes the screen color channels, and HSL makes lightness or saturation adjustments easier to reason about.",
+        ],
+      },
+    ],
+    useCasesHeading: "When to use an image color picker",
     useCases: [
       "Matching a HEX color from a screenshot, logo, product photo, or moodboard.",
       "Checking nearby pixels with a magnified view before copying the final value.",
       "Translating visual references into usable CSS or design-token color formats.",
+      "Comparing a sampled brand color with an existing palette before design handoff.",
     ],
+    workflowHeading: "How to use this image color picker",
     workflowSteps: [
       "Upload the image or screenshot that contains the color you need to match.",
       "Use the magnified picker to sample the exact pixel or compare nearby options.",
-      "Copy the HEX, RGB, or HSL value into your CSS, design system, or palette notes.",
+      "Review the HEX, RGB, and HSL values generated for the selected color.",
+      "Copy the preferred format into your CSS, design system, or palette notes.",
     ],
     faqs: [
       {
-        question: "Can Color Picker pull a HEX code from a screenshot?",
+        question: "Can I get a HEX code from a screenshot?",
         answer:
           "Yes. Upload the screenshot, sample the target pixel, and copy the HEX value for design or front-end use.",
       },
@@ -120,6 +171,16 @@ export const TOOL_LANDING_CONTENT: Record<string, ToolLandingContent> = {
         question: "Why does one image area produce slightly different colors?",
         answer:
           "Anti-aliasing, shadows, compression, and gradients can change nearby pixels. The zoomed picker helps compare those pixels before copying the final value.",
+      },
+      {
+        question: "What image formats can I upload?",
+        answer:
+          "The image picker accepts common browser image formats including PNG, JPG, WebP, and GIF files.",
+      },
+      {
+        question: "Should I copy HEX, RGB, or HSL?",
+        answer:
+          "HEX is common in design files and CSS, RGB is useful when channel values matter, and HSL is convenient when you want to adjust hue, saturation, or lightness.",
       },
     ],
   },
@@ -232,14 +293,32 @@ export const TOOL_LANDING_CONTENT: Record<string, ToolLandingContent> = {
     ],
   },
   "image-compressor": {
-    heading: "Compress images and decrease resolution before upload.",
+    heading: "Compress and resize images before upload.",
     summary:
-      "Image Compressor processes image batches in the browser, lowers file size, can decrease image resolution with max width and height controls, and exports files or a ZIP.",
+      "This free image compressor reduces file size in the browser, can decrease image resolution with maximum width and height controls, and exports optimized images individually or as a ZIP.",
+    sections: [
+      {
+        heading: "Decrease picture size and image resolution",
+        paragraphs: [
+          "Lower the quality setting to reduce file weight, or enter maximum dimensions when the image resolution needs to decrease as well. Width and height stay proportional so the resized result does not stretch.",
+          "A modest resolution decrease is often enough for oversized screenshots, product images, and photos that will be displayed much smaller than their original dimensions.",
+        ],
+      },
+      {
+        heading: "Condense a batch of images in one pass",
+        paragraphs: [
+          "Add several PNG, JPG, JPEG, or WebP files, apply one set of compression controls, and compare the original and compressed sizes. Download a single result or keep the batch together with ZIP export.",
+        ],
+      },
+    ],
+    useCasesHeading: "When to use an image compressor",
     useCases: [
       "Reducing large images before publishing them to a website, CMS, or product page.",
       "Decreasing picture size or resolution while preserving the original aspect ratio.",
       "Compressing a batch of screenshots, product images, or content assets together.",
+      "Preparing lighter image attachments for email, documentation, or design handoff.",
     ],
+    workflowHeading: "How to use this image compressor",
     workflowSteps: [
       "Drop in the images that are too heavy for the page, CMS, or handoff.",
       "Set quality plus max width and height when the image should be resized down.",
@@ -261,6 +340,11 @@ export const TOOL_LANDING_CONTENT: Record<string, ToolLandingContent> = {
         question: "Can I condense more than one image at once?",
         answer:
           "Yes. Image Compressor supports batch workflows and ZIP export so related assets can be condensed and downloaded together.",
+      },
+      {
+        question: "Does image compression change the dimensions?",
+        answer:
+          "Only when maximum width or height is set below the original dimensions. Otherwise, the tool can reduce file size while keeping the original width and height.",
       },
     ],
   },
@@ -319,18 +403,44 @@ export const TOOL_LANDING_CONTENT: Record<string, ToolLandingContent> = {
     ],
   },
   "image-to-text": {
-    heading: "Convert image text to text you can copy.",
+    heading: "Extract text from images with browser-based OCR.",
     summary:
-      "Image to Text runs OCR locally in the browser to extract words from screenshots, scans, labels, and image-based documents, then gives you copy and download controls.",
+      "This free image-to-text converter runs OCR locally in the browser to extract words from screenshots, documents, notes, labels, and graphics, then returns plain text you can review, copy, or download.",
+    sections: [
+      {
+        heading: "Upload or paste an image",
+        paragraphs: [
+          "Upload a PNG, JPG, or WebP file, drag it into the drop zone, or paste a copied image while the uploader is focused. A clear, high-resolution source gives OCR the best chance of recognizing every line correctly.",
+        ],
+      },
+      {
+        heading:
+          "Extract text from screenshots, documents, notes, and graphics",
+        paragraphs: [
+          "The image-to-text converter analyzes visible characters and turns image text into editable text. It is useful for screenshots, scanned pages, handwritten or printed notes, product labels, slides, and graphics where the words cannot be selected directly.",
+          "OCR confidence helps identify uncertain lines. Blurry, skewed, low-contrast, or highly stylized source images may need a quick manual correction after extraction.",
+        ],
+      },
+      {
+        heading: "Copy the result as plain text",
+        paragraphs: [
+          "Review the extracted words, correct any OCR mistakes, then copy the result as plain text or download it for later use. The output can move into notes, documents, spreadsheets, accessibility copy, or content-management fields.",
+        ],
+      },
+    ],
+    useCasesHeading: "When to extract text from an image",
     useCases: [
       "Pulling text from screenshots, scanned notes, labels, photos, or image-based documents.",
       "Turning image text into editable text for notes, content cleanup, or data entry.",
       "Checking OCR confidence before reusing the extracted result.",
+      "Recovering words from slides, social graphics, receipts, or reference images when source copy is unavailable.",
     ],
+    workflowHeading: "How to use this image-to-text converter",
     workflowSteps: [
-      "Upload the screenshot, scan, label, note, or image-based document.",
-      "Run OCR and review the image-to-text result alongside confidence details.",
-      "Copy or download the cleaned result once the text is ready to reuse.",
+      "Upload, drag, or paste the screenshot, scan, label, note, or image-based document.",
+      "Choose the document language so OCR uses the right recognition data.",
+      "Run OCR and compare the image-text-to-text result with the source and confidence details.",
+      "Correct any uncertain characters, then copy or download the plain-text result.",
     ],
     faqs: [
       {
@@ -347,6 +457,11 @@ export const TOOL_LANDING_CONTENT: Record<string, ToolLandingContent> = {
         question: "Why check OCR confidence?",
         answer:
           "Confidence helps flag areas that may need manual review before the extracted text is reused in content, documentation, or data entry.",
+      },
+      {
+        question: "Is 'imagen to text' the same as image to text?",
+        answer:
+          "Yes. 'Imagen to text' is a common bilingual or alternate search for the same OCR task: extracting readable text from an image file.",
       },
     ],
   },

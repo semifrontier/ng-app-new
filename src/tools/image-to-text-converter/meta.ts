@@ -3,10 +3,11 @@ import type { ToolMeta } from "../types";
 export const toolMeta: ToolMeta = {
   slug: "image-to-text",
   title: "Image to Text",
+  pageHeading: "Free Image to Text Converter",
   description:
-    "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
-  seoTitle: "Image to Text Converter - OCR Tool - No Gatekeeping",
+    "Extract text from screenshots, documents, notes, labels, and graphics with local browser OCR, then copy or download the result.",
+  seoTitle: "Free Image to Text Converter (OCR) - No Gatekeeping",
   seoDescription:
-    "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
+    "Use free browser OCR to extract text from screenshots, documents, notes, labels, and graphics, then copy or download the image-to-text result.",
   category: "Images",
 } satisfies ToolMeta;

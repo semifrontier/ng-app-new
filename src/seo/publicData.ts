@@ -12,6 +12,7 @@ export const PUBLIC_TOOLS_DATA = TOOL_CATALOG.map((tool) => {
     url: tool.route,
     description: tool.desc,
     summary: content?.summary ?? tool.desc,
+    sections: content?.sections ?? [],
     useCases: content?.useCases ?? [],
     workflowSteps: content?.workflowSteps ?? [],
     faqs: content?.faqs ?? [],

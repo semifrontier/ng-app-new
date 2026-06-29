@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T14:45:35.950Z",
+  "generatedAt": "2026-06-29T16:55:16.888Z",
   "siteUrl": "https://nogatekeeping.com",
   "summary": {
     "routes": 22,
@@ -72,9 +72,9 @@
                   "url": "https://nogatekeeping.com/tools/color-picker",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/color-picker#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Color Picker",
-                    "description": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy.",
+                    "description": "Get a HEX code from an image, inspect nearby pixels with a zoomed picker, and copy HEX, RGB, or HSL color values.",
                     "url": "https://nogatekeeping.com/tools/color-picker",
                     "applicationCategory": "DesignApplication"
                   }
@@ -86,9 +86,9 @@
                   "url": "https://nogatekeeping.com/tools/case-converter",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/case-converter#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Case Converter",
-                    "description": "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
+                    "description": "Use a free letter case converter for uppercase to lowercase, title case, sentence case, alternating case, and code-friendly formats.",
                     "url": "https://nogatekeeping.com/tools/case-converter",
                     "applicationCategory": "UtilitiesApplication"
                   }
@@ -100,7 +100,7 @@
                   "url": "https://nogatekeeping.com/tools/proportion-scaler",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/proportion-scaler#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Proportion Scaler",
                     "description": "Scale dimensions proportionally, preserve aspect ratios, and copy resized width and height values.",
                     "url": "https://nogatekeeping.com/tools/proportion-scaler",
@@ -114,9 +114,9 @@
                   "url": "https://nogatekeeping.com/tools/image-to-text",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-to-text#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image to Text",
-                    "description": "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
+                    "description": "Extract text from screenshots, documents, notes, labels, and graphics with local browser OCR, then copy or download the result.",
                     "url": "https://nogatekeeping.com/tools/image-to-text",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -128,9 +128,9 @@
                   "url": "https://nogatekeeping.com/tools/image-compressor",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-compressor#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image Compressor",
-                    "description": "Compress images, decrease image resolution with max width and height controls, compare savings, and download files or a ZIP.",
+                    "description": "Compress and resize image batches, decrease picture resolution, compare file-size savings, and download optimized files or a ZIP.",
                     "url": "https://nogatekeeping.com/tools/image-compressor",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -142,7 +142,7 @@
                   "url": "https://nogatekeeping.com/tools/color-palette-generator",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/color-palette-generator#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Color Palette Generator",
                     "description": "Generate, tune, preview, and export color palettes for brand systems, mockups, and design projects.",
                     "url": "https://nogatekeeping.com/tools/color-palette-generator",
@@ -156,7 +156,7 @@
                   "url": "https://nogatekeeping.com/tools/vectorvault",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/vectorvault#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Vector Vault",
                     "description": "Search, preview, edit, upload, and export SVG icons from a local vector library.",
                     "url": "https://nogatekeeping.com/tools/vectorvault",
@@ -170,7 +170,7 @@
                   "url": "https://nogatekeeping.com/tools/dns-checker",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/dns-checker#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "DNS Checker",
                     "description": "Check DNS records across public resolvers to compare propagation, response details, and lookup speed.",
                     "url": "https://nogatekeeping.com/tools/dns-checker",
@@ -184,7 +184,7 @@
                   "url": "https://nogatekeeping.com/tools/redirect-analyzer",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/redirect-analyzer#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Redirect Analyzer",
                     "description": "Map URL redirect chains, trace status codes, final destinations, and HTTP-to-HTTPS upgrade behavior.",
                     "url": "https://nogatekeeping.com/tools/redirect-analyzer",
@@ -198,7 +198,7 @@
                   "url": "https://nogatekeeping.com/tools/sitemap-robots-explorer",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Sitemap Robots Explorer",
                     "description": "Explore robots.txt, discover sitemap files, scan URLs, and categorize site structure from one input.",
                     "url": "https://nogatekeeping.com/tools/sitemap-robots-explorer",
@@ -212,7 +212,7 @@
                   "url": "https://nogatekeeping.com/tools/modular-wireframe-generator",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Modular Wireframe Generator",
                     "description": "Compose modular website wireframes, cycle section variations, and export layouts for design planning.",
                     "url": "https://nogatekeeping.com/tools/modular-wireframe-generator",
@@ -226,7 +226,7 @@
                   "url": "https://nogatekeeping.com/tools/image-converter",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-converter#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image Converter",
                     "description": "Convert images to JPG, PNG, WebP, or PDF directly in the browser with batch controls and downloads.",
                     "url": "https://nogatekeeping.com/tools/image-converter",
@@ -240,7 +240,7 @@
                   "url": "https://nogatekeeping.com/tools/image-extractor",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-extractor#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image Extractor",
                     "description": "Extract images from a webpage, review discovered image URLs and assets, and download individual files or a ZIP.",
                     "url": "https://nogatekeeping.com/tools/image-extractor",
@@ -254,7 +254,7 @@
                   "url": "https://nogatekeeping.com/tools/font-converter",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/font-converter#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Font Converter",
                     "description": "Convert font files in bulk between web and desktop formats, then download ready-to-use outputs.",
                     "url": "https://nogatekeeping.com/tools/font-converter",
@@ -268,7 +268,7 @@
                   "url": "https://nogatekeeping.com/tools/heatmap-tracker",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/heatmap-tracker#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Heatmap Tracker",
                     "description": "Prototype click heatmaps locally by placing hotspots on screenshots, seeding demo data, and exporting JSON.",
                     "url": "https://nogatekeeping.com/tools/heatmap-tracker",
@@ -282,7 +282,7 @@
                   "url": "https://nogatekeeping.com/tools/dictate",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/dictate#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Dictate",
                     "description": "Dictate notes in the browser, edit the transcript, keep local history, and play text back aloud.",
                     "url": "https://nogatekeeping.com/tools/dictate",
@@ -296,7 +296,7 @@
                   "url": "https://nogatekeeping.com/tools/campaign-url-architect",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/campaign-url-architect#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Campaign URL Architect",
                     "description": "Build clean UTM-tagged campaign URLs, preview every parameter, and keep a local history for reuse.",
                     "url": "https://nogatekeeping.com/tools/campaign-url-architect",
@@ -310,7 +310,7 @@
                   "url": "https://nogatekeeping.com/tools/lorem-ipsum-generator",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Lorem Ipsum Generator",
                     "description": "Generate Lorem Ipsum placeholder text by paragraph, sentence, or word count and copy it quickly.",
                     "url": "https://nogatekeeping.com/tools/lorem-ipsum-generator",
@@ -390,9 +390,9 @@
                   "url": "https://nogatekeeping.com/tools/color-picker",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/color-picker#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Color Picker",
-                    "description": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy.",
+                    "description": "Get a HEX code from an image, inspect nearby pixels with a zoomed picker, and copy HEX, RGB, or HSL color values.",
                     "url": "https://nogatekeeping.com/tools/color-picker",
                     "applicationCategory": "DesignApplication"
                   }
@@ -404,9 +404,9 @@
                   "url": "https://nogatekeeping.com/tools/case-converter",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/case-converter#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Case Converter",
-                    "description": "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
+                    "description": "Use a free letter case converter for uppercase to lowercase, title case, sentence case, alternating case, and code-friendly formats.",
                     "url": "https://nogatekeeping.com/tools/case-converter",
                     "applicationCategory": "UtilitiesApplication"
                   }
@@ -418,7 +418,7 @@
                   "url": "https://nogatekeeping.com/tools/proportion-scaler",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/proportion-scaler#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Proportion Scaler",
                     "description": "Scale dimensions proportionally, preserve aspect ratios, and copy resized width and height values.",
                     "url": "https://nogatekeeping.com/tools/proportion-scaler",
@@ -432,9 +432,9 @@
                   "url": "https://nogatekeeping.com/tools/image-to-text",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-to-text#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image to Text",
-                    "description": "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
+                    "description": "Extract text from screenshots, documents, notes, labels, and graphics with local browser OCR, then copy or download the result.",
                     "url": "https://nogatekeeping.com/tools/image-to-text",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -446,9 +446,9 @@
                   "url": "https://nogatekeeping.com/tools/image-compressor",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-compressor#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image Compressor",
-                    "description": "Compress images, decrease image resolution with max width and height controls, compare savings, and download files or a ZIP.",
+                    "description": "Compress and resize image batches, decrease picture resolution, compare file-size savings, and download optimized files or a ZIP.",
                     "url": "https://nogatekeeping.com/tools/image-compressor",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -460,7 +460,7 @@
                   "url": "https://nogatekeeping.com/tools/color-palette-generator",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/color-palette-generator#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Color Palette Generator",
                     "description": "Generate, tune, preview, and export color palettes for brand systems, mockups, and design projects.",
                     "url": "https://nogatekeeping.com/tools/color-palette-generator",
@@ -474,7 +474,7 @@
                   "url": "https://nogatekeeping.com/tools/vectorvault",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/vectorvault#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Vector Vault",
                     "description": "Search, preview, edit, upload, and export SVG icons from a local vector library.",
                     "url": "https://nogatekeeping.com/tools/vectorvault",
@@ -488,7 +488,7 @@
                   "url": "https://nogatekeeping.com/tools/dns-checker",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/dns-checker#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "DNS Checker",
                     "description": "Check DNS records across public resolvers to compare propagation, response details, and lookup speed.",
                     "url": "https://nogatekeeping.com/tools/dns-checker",
@@ -502,7 +502,7 @@
                   "url": "https://nogatekeeping.com/tools/redirect-analyzer",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/redirect-analyzer#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Redirect Analyzer",
                     "description": "Map URL redirect chains, trace status codes, final destinations, and HTTP-to-HTTPS upgrade behavior.",
                     "url": "https://nogatekeeping.com/tools/redirect-analyzer",
@@ -516,7 +516,7 @@
                   "url": "https://nogatekeeping.com/tools/sitemap-robots-explorer",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Sitemap Robots Explorer",
                     "description": "Explore robots.txt, discover sitemap files, scan URLs, and categorize site structure from one input.",
                     "url": "https://nogatekeeping.com/tools/sitemap-robots-explorer",
@@ -530,7 +530,7 @@
                   "url": "https://nogatekeeping.com/tools/modular-wireframe-generator",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Modular Wireframe Generator",
                     "description": "Compose modular website wireframes, cycle section variations, and export layouts for design planning.",
                     "url": "https://nogatekeeping.com/tools/modular-wireframe-generator",
@@ -544,7 +544,7 @@
                   "url": "https://nogatekeeping.com/tools/image-converter",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-converter#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image Converter",
                     "description": "Convert images to JPG, PNG, WebP, or PDF directly in the browser with batch controls and downloads.",
                     "url": "https://nogatekeeping.com/tools/image-converter",
@@ -558,7 +558,7 @@
                   "url": "https://nogatekeeping.com/tools/image-extractor",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-extractor#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image Extractor",
                     "description": "Extract images from a webpage, review discovered image URLs and assets, and download individual files or a ZIP.",
                     "url": "https://nogatekeeping.com/tools/image-extractor",
@@ -572,7 +572,7 @@
                   "url": "https://nogatekeeping.com/tools/font-converter",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/font-converter#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Font Converter",
                     "description": "Convert font files in bulk between web and desktop formats, then download ready-to-use outputs.",
                     "url": "https://nogatekeeping.com/tools/font-converter",
@@ -586,7 +586,7 @@
                   "url": "https://nogatekeeping.com/tools/heatmap-tracker",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/heatmap-tracker#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Heatmap Tracker",
                     "description": "Prototype click heatmaps locally by placing hotspots on screenshots, seeding demo data, and exporting JSON.",
                     "url": "https://nogatekeeping.com/tools/heatmap-tracker",
@@ -600,7 +600,7 @@
                   "url": "https://nogatekeeping.com/tools/dictate",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/dictate#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Dictate",
                     "description": "Dictate notes in the browser, edit the transcript, keep local history, and play text back aloud.",
                     "url": "https://nogatekeeping.com/tools/dictate",
@@ -614,7 +614,7 @@
                   "url": "https://nogatekeeping.com/tools/campaign-url-architect",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/campaign-url-architect#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Campaign URL Architect",
                     "description": "Build clean UTM-tagged campaign URLs, preview every parameter, and keep a local history for reuse.",
                     "url": "https://nogatekeeping.com/tools/campaign-url-architect",
@@ -628,7 +628,7 @@
                   "url": "https://nogatekeeping.com/tools/lorem-ipsum-generator",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Lorem Ipsum Generator",
                     "description": "Generate Lorem Ipsum placeholder text by paragraph, sentence, or word count and copy it quickly.",
                     "url": "https://nogatekeeping.com/tools/lorem-ipsum-generator",
@@ -702,9 +702,9 @@
                   "url": "https://nogatekeeping.com/tools/color-picker",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/color-picker#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Color Picker",
-                    "description": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy.",
+                    "description": "Get a HEX code from an image, inspect nearby pixels with a zoomed picker, and copy HEX, RGB, or HSL color values.",
                     "url": "https://nogatekeeping.com/tools/color-picker",
                     "applicationCategory": "DesignApplication"
                   }
@@ -716,9 +716,9 @@
                   "url": "https://nogatekeeping.com/tools/case-converter",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/case-converter#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Case Converter",
-                    "description": "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
+                    "description": "Use a free letter case converter for uppercase to lowercase, title case, sentence case, alternating case, and code-friendly formats.",
                     "url": "https://nogatekeeping.com/tools/case-converter",
                     "applicationCategory": "UtilitiesApplication"
                   }
@@ -730,7 +730,7 @@
                   "url": "https://nogatekeeping.com/tools/proportion-scaler",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/proportion-scaler#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Proportion Scaler",
                     "description": "Scale dimensions proportionally, preserve aspect ratios, and copy resized width and height values.",
                     "url": "https://nogatekeeping.com/tools/proportion-scaler",
@@ -744,9 +744,9 @@
                   "url": "https://nogatekeeping.com/tools/image-to-text",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-to-text#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image to Text",
-                    "description": "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
+                    "description": "Extract text from screenshots, documents, notes, labels, and graphics with local browser OCR, then copy or download the result.",
                     "url": "https://nogatekeeping.com/tools/image-to-text",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -758,9 +758,9 @@
                   "url": "https://nogatekeeping.com/tools/image-compressor",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-compressor#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image Compressor",
-                    "description": "Compress images, decrease image resolution with max width and height controls, compare savings, and download files or a ZIP.",
+                    "description": "Compress and resize image batches, decrease picture resolution, compare file-size savings, and download optimized files or a ZIP.",
                     "url": "https://nogatekeeping.com/tools/image-compressor",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -772,7 +772,7 @@
                   "url": "https://nogatekeeping.com/tools/color-palette-generator",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/color-palette-generator#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Color Palette Generator",
                     "description": "Generate, tune, preview, and export color palettes for brand systems, mockups, and design projects.",
                     "url": "https://nogatekeeping.com/tools/color-palette-generator",
@@ -786,7 +786,7 @@
                   "url": "https://nogatekeeping.com/tools/vectorvault",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/vectorvault#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Vector Vault",
                     "description": "Search, preview, edit, upload, and export SVG icons from a local vector library.",
                     "url": "https://nogatekeeping.com/tools/vectorvault",
@@ -800,7 +800,7 @@
                   "url": "https://nogatekeeping.com/tools/dns-checker",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/dns-checker#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "DNS Checker",
                     "description": "Check DNS records across public resolvers to compare propagation, response details, and lookup speed.",
                     "url": "https://nogatekeeping.com/tools/dns-checker",
@@ -814,7 +814,7 @@
                   "url": "https://nogatekeeping.com/tools/redirect-analyzer",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/redirect-analyzer#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Redirect Analyzer",
                     "description": "Map URL redirect chains, trace status codes, final destinations, and HTTP-to-HTTPS upgrade behavior.",
                     "url": "https://nogatekeeping.com/tools/redirect-analyzer",
@@ -828,7 +828,7 @@
                   "url": "https://nogatekeeping.com/tools/sitemap-robots-explorer",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Sitemap Robots Explorer",
                     "description": "Explore robots.txt, discover sitemap files, scan URLs, and categorize site structure from one input.",
                     "url": "https://nogatekeeping.com/tools/sitemap-robots-explorer",
@@ -842,7 +842,7 @@
                   "url": "https://nogatekeeping.com/tools/modular-wireframe-generator",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Modular Wireframe Generator",
                     "description": "Compose modular website wireframes, cycle section variations, and export layouts for design planning.",
                     "url": "https://nogatekeeping.com/tools/modular-wireframe-generator",
@@ -856,7 +856,7 @@
                   "url": "https://nogatekeeping.com/tools/image-converter",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-converter#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image Converter",
                     "description": "Convert images to JPG, PNG, WebP, or PDF directly in the browser with batch controls and downloads.",
                     "url": "https://nogatekeeping.com/tools/image-converter",
@@ -870,7 +870,7 @@
                   "url": "https://nogatekeeping.com/tools/image-extractor",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-extractor#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image Extractor",
                     "description": "Extract images from a webpage, review discovered image URLs and assets, and download individual files or a ZIP.",
                     "url": "https://nogatekeeping.com/tools/image-extractor",
@@ -884,7 +884,7 @@
                   "url": "https://nogatekeeping.com/tools/font-converter",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/font-converter#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Font Converter",
                     "description": "Convert font files in bulk between web and desktop formats, then download ready-to-use outputs.",
                     "url": "https://nogatekeeping.com/tools/font-converter",
@@ -898,7 +898,7 @@
                   "url": "https://nogatekeeping.com/tools/heatmap-tracker",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/heatmap-tracker#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Heatmap Tracker",
                     "description": "Prototype click heatmaps locally by placing hotspots on screenshots, seeding demo data, and exporting JSON.",
                     "url": "https://nogatekeeping.com/tools/heatmap-tracker",
@@ -912,7 +912,7 @@
                   "url": "https://nogatekeeping.com/tools/dictate",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/dictate#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Dictate",
                     "description": "Dictate notes in the browser, edit the transcript, keep local history, and play text back aloud.",
                     "url": "https://nogatekeeping.com/tools/dictate",
@@ -926,7 +926,7 @@
                   "url": "https://nogatekeeping.com/tools/campaign-url-architect",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/campaign-url-architect#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Campaign URL Architect",
                     "description": "Build clean UTM-tagged campaign URLs, preview every parameter, and keep a local history for reuse.",
                     "url": "https://nogatekeeping.com/tools/campaign-url-architect",
@@ -940,7 +940,7 @@
                   "url": "https://nogatekeeping.com/tools/lorem-ipsum-generator",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Lorem Ipsum Generator",
                     "description": "Generate Lorem Ipsum placeholder text by paragraph, sentence, or word count and copy it quickly.",
                     "url": "https://nogatekeeping.com/tools/lorem-ipsum-generator",
@@ -976,7 +976,7 @@
           "Lorem Ipsum Generator"
         ],
         "h3s": [],
-        "wordCount": 717,
+        "wordCount": 727,
         "internalLinkCount": 28,
         "missingImageAltCount": 0,
         "toolContentPresent": false,
@@ -1089,7 +1089,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "717 visible words; threshold 350."
+          "detail": "727 visible words; threshold 350."
         },
         {
           "id": "internal_links",
@@ -1162,9 +1162,9 @@
                   "url": "https://nogatekeeping.com/tools/color-picker",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/color-picker#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Color Picker",
-                    "description": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy.",
+                    "description": "Get a HEX code from an image, inspect nearby pixels with a zoomed picker, and copy HEX, RGB, or HSL color values.",
                     "url": "https://nogatekeeping.com/tools/color-picker",
                     "applicationCategory": "DesignApplication"
                   }
@@ -1176,9 +1176,9 @@
                   "url": "https://nogatekeeping.com/tools/case-converter",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/case-converter#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Case Converter",
-                    "description": "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
+                    "description": "Use a free letter case converter for uppercase to lowercase, title case, sentence case, alternating case, and code-friendly formats.",
                     "url": "https://nogatekeeping.com/tools/case-converter",
                     "applicationCategory": "UtilitiesApplication"
                   }
@@ -1190,7 +1190,7 @@
                   "url": "https://nogatekeeping.com/tools/proportion-scaler",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/proportion-scaler#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Proportion Scaler",
                     "description": "Scale dimensions proportionally, preserve aspect ratios, and copy resized width and height values.",
                     "url": "https://nogatekeeping.com/tools/proportion-scaler",
@@ -1204,9 +1204,9 @@
                   "url": "https://nogatekeeping.com/tools/image-to-text",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-to-text#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image to Text",
-                    "description": "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
+                    "description": "Extract text from screenshots, documents, notes, labels, and graphics with local browser OCR, then copy or download the result.",
                     "url": "https://nogatekeeping.com/tools/image-to-text",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -1218,9 +1218,9 @@
                   "url": "https://nogatekeeping.com/tools/image-compressor",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-compressor#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image Compressor",
-                    "description": "Compress images, decrease image resolution with max width and height controls, compare savings, and download files or a ZIP.",
+                    "description": "Compress and resize image batches, decrease picture resolution, compare file-size savings, and download optimized files or a ZIP.",
                     "url": "https://nogatekeeping.com/tools/image-compressor",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -1232,7 +1232,7 @@
                   "url": "https://nogatekeeping.com/tools/color-palette-generator",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/color-palette-generator#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Color Palette Generator",
                     "description": "Generate, tune, preview, and export color palettes for brand systems, mockups, and design projects.",
                     "url": "https://nogatekeeping.com/tools/color-palette-generator",
@@ -1246,7 +1246,7 @@
                   "url": "https://nogatekeeping.com/tools/vectorvault",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/vectorvault#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Vector Vault",
                     "description": "Search, preview, edit, upload, and export SVG icons from a local vector library.",
                     "url": "https://nogatekeeping.com/tools/vectorvault",
@@ -1260,7 +1260,7 @@
                   "url": "https://nogatekeeping.com/tools/dns-checker",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/dns-checker#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "DNS Checker",
                     "description": "Check DNS records across public resolvers to compare propagation, response details, and lookup speed.",
                     "url": "https://nogatekeeping.com/tools/dns-checker",
@@ -1274,7 +1274,7 @@
                   "url": "https://nogatekeeping.com/tools/redirect-analyzer",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/redirect-analyzer#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Redirect Analyzer",
                     "description": "Map URL redirect chains, trace status codes, final destinations, and HTTP-to-HTTPS upgrade behavior.",
                     "url": "https://nogatekeeping.com/tools/redirect-analyzer",
@@ -1288,7 +1288,7 @@
                   "url": "https://nogatekeeping.com/tools/sitemap-robots-explorer",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Sitemap Robots Explorer",
                     "description": "Explore robots.txt, discover sitemap files, scan URLs, and categorize site structure from one input.",
                     "url": "https://nogatekeeping.com/tools/sitemap-robots-explorer",
@@ -1302,7 +1302,7 @@
                   "url": "https://nogatekeeping.com/tools/modular-wireframe-generator",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Modular Wireframe Generator",
                     "description": "Compose modular website wireframes, cycle section variations, and export layouts for design planning.",
                     "url": "https://nogatekeeping.com/tools/modular-wireframe-generator",
@@ -1316,7 +1316,7 @@
                   "url": "https://nogatekeeping.com/tools/image-converter",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-converter#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image Converter",
                     "description": "Convert images to JPG, PNG, WebP, or PDF directly in the browser with batch controls and downloads.",
                     "url": "https://nogatekeeping.com/tools/image-converter",
@@ -1330,7 +1330,7 @@
                   "url": "https://nogatekeeping.com/tools/image-extractor",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-extractor#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image Extractor",
                     "description": "Extract images from a webpage, review discovered image URLs and assets, and download individual files or a ZIP.",
                     "url": "https://nogatekeeping.com/tools/image-extractor",
@@ -1344,7 +1344,7 @@
                   "url": "https://nogatekeeping.com/tools/font-converter",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/font-converter#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Font Converter",
                     "description": "Convert font files in bulk between web and desktop formats, then download ready-to-use outputs.",
                     "url": "https://nogatekeeping.com/tools/font-converter",
@@ -1358,7 +1358,7 @@
                   "url": "https://nogatekeeping.com/tools/heatmap-tracker",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/heatmap-tracker#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Heatmap Tracker",
                     "description": "Prototype click heatmaps locally by placing hotspots on screenshots, seeding demo data, and exporting JSON.",
                     "url": "https://nogatekeeping.com/tools/heatmap-tracker",
@@ -1372,7 +1372,7 @@
                   "url": "https://nogatekeeping.com/tools/dictate",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/dictate#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Dictate",
                     "description": "Dictate notes in the browser, edit the transcript, keep local history, and play text back aloud.",
                     "url": "https://nogatekeeping.com/tools/dictate",
@@ -1386,7 +1386,7 @@
                   "url": "https://nogatekeeping.com/tools/campaign-url-architect",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/campaign-url-architect#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Campaign URL Architect",
                     "description": "Build clean UTM-tagged campaign URLs, preview every parameter, and keep a local history for reuse.",
                     "url": "https://nogatekeeping.com/tools/campaign-url-architect",
@@ -1400,7 +1400,7 @@
                   "url": "https://nogatekeeping.com/tools/lorem-ipsum-generator",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Lorem Ipsum Generator",
                     "description": "Generate Lorem Ipsum placeholder text by paragraph, sentence, or word count and copy it quickly.",
                     "url": "https://nogatekeeping.com/tools/lorem-ipsum-generator",
@@ -1499,9 +1499,9 @@
                   "url": "https://nogatekeeping.com/tools/color-picker",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/color-picker#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Color Picker",
-                    "description": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy.",
+                    "description": "Get a HEX code from an image, inspect nearby pixels with a zoomed picker, and copy HEX, RGB, or HSL color values.",
                     "url": "https://nogatekeeping.com/tools/color-picker",
                     "applicationCategory": "DesignApplication"
                   }
@@ -1513,9 +1513,9 @@
                   "url": "https://nogatekeeping.com/tools/case-converter",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/case-converter#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Case Converter",
-                    "description": "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
+                    "description": "Use a free letter case converter for uppercase to lowercase, title case, sentence case, alternating case, and code-friendly formats.",
                     "url": "https://nogatekeeping.com/tools/case-converter",
                     "applicationCategory": "UtilitiesApplication"
                   }
@@ -1527,7 +1527,7 @@
                   "url": "https://nogatekeeping.com/tools/proportion-scaler",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/proportion-scaler#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Proportion Scaler",
                     "description": "Scale dimensions proportionally, preserve aspect ratios, and copy resized width and height values.",
                     "url": "https://nogatekeeping.com/tools/proportion-scaler",
@@ -1541,9 +1541,9 @@
                   "url": "https://nogatekeeping.com/tools/image-to-text",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-to-text#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image to Text",
-                    "description": "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
+                    "description": "Extract text from screenshots, documents, notes, labels, and graphics with local browser OCR, then copy or download the result.",
                     "url": "https://nogatekeeping.com/tools/image-to-text",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -1555,9 +1555,9 @@
                   "url": "https://nogatekeeping.com/tools/image-compressor",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-compressor#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image Compressor",
-                    "description": "Compress images, decrease image resolution with max width and height controls, compare savings, and download files or a ZIP.",
+                    "description": "Compress and resize image batches, decrease picture resolution, compare file-size savings, and download optimized files or a ZIP.",
                     "url": "https://nogatekeeping.com/tools/image-compressor",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -1569,7 +1569,7 @@
                   "url": "https://nogatekeeping.com/tools/color-palette-generator",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/color-palette-generator#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Color Palette Generator",
                     "description": "Generate, tune, preview, and export color palettes for brand systems, mockups, and design projects.",
                     "url": "https://nogatekeeping.com/tools/color-palette-generator",
@@ -1583,7 +1583,7 @@
                   "url": "https://nogatekeeping.com/tools/vectorvault",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/vectorvault#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Vector Vault",
                     "description": "Search, preview, edit, upload, and export SVG icons from a local vector library.",
                     "url": "https://nogatekeeping.com/tools/vectorvault",
@@ -1597,7 +1597,7 @@
                   "url": "https://nogatekeeping.com/tools/dns-checker",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/dns-checker#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "DNS Checker",
                     "description": "Check DNS records across public resolvers to compare propagation, response details, and lookup speed.",
                     "url": "https://nogatekeeping.com/tools/dns-checker",
@@ -1611,7 +1611,7 @@
                   "url": "https://nogatekeeping.com/tools/redirect-analyzer",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/redirect-analyzer#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Redirect Analyzer",
                     "description": "Map URL redirect chains, trace status codes, final destinations, and HTTP-to-HTTPS upgrade behavior.",
                     "url": "https://nogatekeeping.com/tools/redirect-analyzer",
@@ -1625,7 +1625,7 @@
                   "url": "https://nogatekeeping.com/tools/sitemap-robots-explorer",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Sitemap Robots Explorer",
                     "description": "Explore robots.txt, discover sitemap files, scan URLs, and categorize site structure from one input.",
                     "url": "https://nogatekeeping.com/tools/sitemap-robots-explorer",
@@ -1639,7 +1639,7 @@
                   "url": "https://nogatekeeping.com/tools/modular-wireframe-generator",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Modular Wireframe Generator",
                     "description": "Compose modular website wireframes, cycle section variations, and export layouts for design planning.",
                     "url": "https://nogatekeeping.com/tools/modular-wireframe-generator",
@@ -1653,7 +1653,7 @@
                   "url": "https://nogatekeeping.com/tools/image-converter",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-converter#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image Converter",
                     "description": "Convert images to JPG, PNG, WebP, or PDF directly in the browser with batch controls and downloads.",
                     "url": "https://nogatekeeping.com/tools/image-converter",
@@ -1667,7 +1667,7 @@
                   "url": "https://nogatekeeping.com/tools/image-extractor",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-extractor#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image Extractor",
                     "description": "Extract images from a webpage, review discovered image URLs and assets, and download individual files or a ZIP.",
                     "url": "https://nogatekeeping.com/tools/image-extractor",
@@ -1681,7 +1681,7 @@
                   "url": "https://nogatekeeping.com/tools/font-converter",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/font-converter#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Font Converter",
                     "description": "Convert font files in bulk between web and desktop formats, then download ready-to-use outputs.",
                     "url": "https://nogatekeeping.com/tools/font-converter",
@@ -1695,7 +1695,7 @@
                   "url": "https://nogatekeeping.com/tools/heatmap-tracker",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/heatmap-tracker#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Heatmap Tracker",
                     "description": "Prototype click heatmaps locally by placing hotspots on screenshots, seeding demo data, and exporting JSON.",
                     "url": "https://nogatekeeping.com/tools/heatmap-tracker",
@@ -1709,7 +1709,7 @@
                   "url": "https://nogatekeeping.com/tools/dictate",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/dictate#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Dictate",
                     "description": "Dictate notes in the browser, edit the transcript, keep local history, and play text back aloud.",
                     "url": "https://nogatekeeping.com/tools/dictate",
@@ -1723,7 +1723,7 @@
                   "url": "https://nogatekeeping.com/tools/campaign-url-architect",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/campaign-url-architect#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Campaign URL Architect",
                     "description": "Build clean UTM-tagged campaign URLs, preview every parameter, and keep a local history for reuse.",
                     "url": "https://nogatekeeping.com/tools/campaign-url-architect",
@@ -1737,7 +1737,7 @@
                   "url": "https://nogatekeeping.com/tools/lorem-ipsum-generator",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Lorem Ipsum Generator",
                     "description": "Generate Lorem Ipsum placeholder text by paragraph, sentence, or word count and copy it quickly.",
                     "url": "https://nogatekeeping.com/tools/lorem-ipsum-generator",
@@ -1829,9 +1829,9 @@
                   "url": "https://nogatekeeping.com/tools/color-picker",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/color-picker#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Color Picker",
-                    "description": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy.",
+                    "description": "Get a HEX code from an image, inspect nearby pixels with a zoomed picker, and copy HEX, RGB, or HSL color values.",
                     "url": "https://nogatekeeping.com/tools/color-picker",
                     "applicationCategory": "DesignApplication"
                   }
@@ -1843,9 +1843,9 @@
                   "url": "https://nogatekeeping.com/tools/case-converter",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/case-converter#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Case Converter",
-                    "description": "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
+                    "description": "Use a free letter case converter for uppercase to lowercase, title case, sentence case, alternating case, and code-friendly formats.",
                     "url": "https://nogatekeeping.com/tools/case-converter",
                     "applicationCategory": "UtilitiesApplication"
                   }
@@ -1857,7 +1857,7 @@
                   "url": "https://nogatekeeping.com/tools/proportion-scaler",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/proportion-scaler#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Proportion Scaler",
                     "description": "Scale dimensions proportionally, preserve aspect ratios, and copy resized width and height values.",
                     "url": "https://nogatekeeping.com/tools/proportion-scaler",
@@ -1871,9 +1871,9 @@
                   "url": "https://nogatekeeping.com/tools/image-to-text",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-to-text#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image to Text",
-                    "description": "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
+                    "description": "Extract text from screenshots, documents, notes, labels, and graphics with local browser OCR, then copy or download the result.",
                     "url": "https://nogatekeeping.com/tools/image-to-text",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -1885,9 +1885,9 @@
                   "url": "https://nogatekeeping.com/tools/image-compressor",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-compressor#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image Compressor",
-                    "description": "Compress images, decrease image resolution with max width and height controls, compare savings, and download files or a ZIP.",
+                    "description": "Compress and resize image batches, decrease picture resolution, compare file-size savings, and download optimized files or a ZIP.",
                     "url": "https://nogatekeeping.com/tools/image-compressor",
                     "applicationCategory": "MultimediaApplication"
                   }
@@ -1899,7 +1899,7 @@
                   "url": "https://nogatekeeping.com/tools/color-palette-generator",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/color-palette-generator#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Color Palette Generator",
                     "description": "Generate, tune, preview, and export color palettes for brand systems, mockups, and design projects.",
                     "url": "https://nogatekeeping.com/tools/color-palette-generator",
@@ -1913,7 +1913,7 @@
                   "url": "https://nogatekeeping.com/tools/vectorvault",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/vectorvault#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Vector Vault",
                     "description": "Search, preview, edit, upload, and export SVG icons from a local vector library.",
                     "url": "https://nogatekeeping.com/tools/vectorvault",
@@ -1927,7 +1927,7 @@
                   "url": "https://nogatekeeping.com/tools/dns-checker",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/dns-checker#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "DNS Checker",
                     "description": "Check DNS records across public resolvers to compare propagation, response details, and lookup speed.",
                     "url": "https://nogatekeeping.com/tools/dns-checker",
@@ -1941,7 +1941,7 @@
                   "url": "https://nogatekeeping.com/tools/redirect-analyzer",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/redirect-analyzer#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Redirect Analyzer",
                     "description": "Map URL redirect chains, trace status codes, final destinations, and HTTP-to-HTTPS upgrade behavior.",
                     "url": "https://nogatekeeping.com/tools/redirect-analyzer",
@@ -1955,7 +1955,7 @@
                   "url": "https://nogatekeeping.com/tools/sitemap-robots-explorer",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Sitemap Robots Explorer",
                     "description": "Explore robots.txt, discover sitemap files, scan URLs, and categorize site structure from one input.",
                     "url": "https://nogatekeeping.com/tools/sitemap-robots-explorer",
@@ -1969,7 +1969,7 @@
                   "url": "https://nogatekeeping.com/tools/modular-wireframe-generator",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Modular Wireframe Generator",
                     "description": "Compose modular website wireframes, cycle section variations, and export layouts for design planning.",
                     "url": "https://nogatekeeping.com/tools/modular-wireframe-generator",
@@ -1983,7 +1983,7 @@
                   "url": "https://nogatekeeping.com/tools/image-converter",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-converter#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image Converter",
                     "description": "Convert images to JPG, PNG, WebP, or PDF directly in the browser with batch controls and downloads.",
                     "url": "https://nogatekeeping.com/tools/image-converter",
@@ -1997,7 +1997,7 @@
                   "url": "https://nogatekeeping.com/tools/image-extractor",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/image-extractor#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Image Extractor",
                     "description": "Extract images from a webpage, review discovered image URLs and assets, and download individual files or a ZIP.",
                     "url": "https://nogatekeeping.com/tools/image-extractor",
@@ -2011,7 +2011,7 @@
                   "url": "https://nogatekeeping.com/tools/font-converter",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/font-converter#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Font Converter",
                     "description": "Convert font files in bulk between web and desktop formats, then download ready-to-use outputs.",
                     "url": "https://nogatekeeping.com/tools/font-converter",
@@ -2025,7 +2025,7 @@
                   "url": "https://nogatekeeping.com/tools/heatmap-tracker",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/heatmap-tracker#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Heatmap Tracker",
                     "description": "Prototype click heatmaps locally by placing hotspots on screenshots, seeding demo data, and exporting JSON.",
                     "url": "https://nogatekeeping.com/tools/heatmap-tracker",
@@ -2039,7 +2039,7 @@
                   "url": "https://nogatekeeping.com/tools/dictate",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/dictate#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Dictate",
                     "description": "Dictate notes in the browser, edit the transcript, keep local history, and play text back aloud.",
                     "url": "https://nogatekeeping.com/tools/dictate",
@@ -2053,7 +2053,7 @@
                   "url": "https://nogatekeeping.com/tools/campaign-url-architect",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/campaign-url-architect#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Campaign URL Architect",
                     "description": "Build clean UTM-tagged campaign URLs, preview every parameter, and keep a local history for reuse.",
                     "url": "https://nogatekeeping.com/tools/campaign-url-architect",
@@ -2067,7 +2067,7 @@
                   "url": "https://nogatekeeping.com/tools/lorem-ipsum-generator",
                   "item": {
                     "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#web-application",
-                    "@type": "WebApplication",
+                    "@type": "SoftwareApplication",
                     "name": "Lorem Ipsum Generator",
                     "description": "Generate Lorem Ipsum placeholder text by paragraph, sentence, or word count and copy it quickly.",
                     "url": "https://nogatekeeping.com/tools/lorem-ipsum-generator",
@@ -2122,7 +2122,7 @@
           "Campaign URL Architect",
           "Lorem Ipsum Generator"
         ],
-        "wordCount": 473,
+        "wordCount": 478,
         "internalLinkCount": 27,
         "missingImageAltCount": 0,
         "toolContentPresent": false,
@@ -2235,7 +2235,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "473 visible words; threshold 300."
+          "detail": "478 visible words; threshold 300."
         },
         {
           "id": "internal_links",
@@ -3296,8 +3296,8 @@
       "type": "tool",
       "status": "pass",
       "descriptor": {
-        "title": "Color Picker - Free Tool - No Gatekeeping",
-        "description": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy.",
+        "title": "Free Image Color Picker - HEX, RGB and HSL",
+        "description": "Upload a screenshot, logo, photo, or graphic to get a HEX code from the image, inspect nearby pixels, and copy HEX, RGB, or HSL values.",
         "canonicalPath": "/tools/color-picker",
         "schema": {
           "@context": "https://schema.org",
@@ -3322,8 +3322,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/color-picker#webpage",
               "url": "https://nogatekeeping.com/tools/color-picker",
-              "name": "Color Picker - Free Tool - No Gatekeeping",
-              "description": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy.",
+              "name": "Free Image Color Picker - HEX, RGB and HSL",
+              "description": "Upload a screenshot, logo, photo, or graphic to get a HEX code from the image, inspect nearby pixels, and copy HEX, RGB, or HSL values.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -3338,10 +3338,10 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/color-picker#web-application",
-              "name": "Color Picker",
-              "description": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy.",
+              "name": "Free Image Color Picker",
+              "description": "Upload a screenshot, logo, photo, or graphic to get a HEX code from the image, inspect nearby pixels, and copy HEX, RGB, or HSL values.",
               "url": "https://nogatekeeping.com/tools/color-picker",
               "applicationCategory": "DesignApplication",
               "operatingSystem": "Any modern web browser",
@@ -3367,7 +3367,7 @@
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "Can Color Picker pull a HEX code from a screenshot?",
+                  "name": "Can I get a HEX code from a screenshot?",
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Yes. Upload the screenshot, sample the target pixel, and copy the HEX value for design or front-end use."
@@ -3379,6 +3379,22 @@
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Anti-aliasing, shadows, compression, and gradients can change nearby pixels. The zoomed picker helps compare those pixels before copying the final value."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What image formats can I upload?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The image picker accepts common browser image formats including PNG, JPG, WebP, and GIF files."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Should I copy HEX, RGB, or HSL?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "HEX is common in design files and CSS, RGB is useful when channel values matter, and HSL is convenient when you want to adjust hue, saturation, or lightness."
                   }
                 }
               ]
@@ -3414,22 +3430,22 @@
         "Organization",
         "WebSite",
         "WebPage",
-        "WebApplication",
+        "SoftwareApplication",
         "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
-        "title": "Color Picker - Free Tool - No Gatekeeping",
-        "description": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy.",
+        "title": "Free Image Color Picker - HEX, RGB and HSL",
+        "description": "Upload a screenshot, logo, photo, or graphic to get a HEX code from the image, inspect nearby pixels, and copy HEX, RGB, or HSL values.",
         "robots": "index,follow",
         "canonical": "https://nogatekeeping.com/tools/color-picker",
         "ogSiteName": "No Gatekeeping",
         "ogType": "website",
-        "ogTitle": "Color Picker - Free Tool - No Gatekeeping",
-        "ogDescription": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy.",
+        "ogTitle": "Free Image Color Picker - HEX, RGB and HSL",
+        "ogDescription": "Upload a screenshot, logo, photo, or graphic to get a HEX code from the image, inspect nearby pixels, and copy HEX, RGB, or HSL values.",
         "ogUrl": "https://nogatekeeping.com/tools/color-picker",
-        "twitterTitle": "Color Picker - Free Tool - No Gatekeeping",
-        "twitterDescription": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy.",
+        "twitterTitle": "Free Image Color Picker - HEX, RGB and HSL",
+        "twitterDescription": "Upload a screenshot, logo, photo, or graphic to get a HEX code from the image, inspect nearby pixels, and copy HEX, RGB, or HSL values.",
         "jsonLdCount": 1,
         "schema": {
           "@context": "https://schema.org",
@@ -3454,8 +3470,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/color-picker#webpage",
               "url": "https://nogatekeeping.com/tools/color-picker",
-              "name": "Color Picker - Free Tool - No Gatekeeping",
-              "description": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy.",
+              "name": "Free Image Color Picker - HEX, RGB and HSL",
+              "description": "Upload a screenshot, logo, photo, or graphic to get a HEX code from the image, inspect nearby pixels, and copy HEX, RGB, or HSL values.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -3470,10 +3486,10 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/color-picker#web-application",
-              "name": "Color Picker",
-              "description": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy.",
+              "name": "Free Image Color Picker",
+              "description": "Upload a screenshot, logo, photo, or graphic to get a HEX code from the image, inspect nearby pixels, and copy HEX, RGB, or HSL values.",
               "url": "https://nogatekeeping.com/tools/color-picker",
               "applicationCategory": "DesignApplication",
               "operatingSystem": "Any modern web browser",
@@ -3499,7 +3515,7 @@
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "Can Color Picker pull a HEX code from a screenshot?",
+                  "name": "Can I get a HEX code from a screenshot?",
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Yes. Upload the screenshot, sample the target pixel, and copy the HEX value for design or front-end use."
@@ -3511,6 +3527,22 @@
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Anti-aliasing, shadows, compression, and gradients can change nearby pixels. The zoomed picker helps compare those pixels before copying the final value."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What image formats can I upload?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The image picker accepts common browser image formats including PNG, JPG, WebP, and GIF files."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Should I copy HEX, RGB, or HSL?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "HEX is common in design files and CSS, RGB is useful when channel values matter, and HSL is convenient when you want to adjust hue, saturation, or lightness."
                   }
                 }
               ]
@@ -3543,17 +3575,17 @@
         }
       },
       "dom": {
-        "title": "Color Picker - Free Tool - No Gatekeeping",
-        "description": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy.",
+        "title": "Free Image Color Picker - HEX, RGB and HSL",
+        "description": "Upload a screenshot, logo, photo, or graphic to get a HEX code from the image, inspect nearby pixels, and copy HEX, RGB, or HSL values.",
         "robots": "index,follow",
         "canonical": "https://nogatekeeping.com/tools/color-picker",
         "ogSiteName": "No Gatekeeping",
         "ogType": "website",
-        "ogTitle": "Color Picker - Free Tool - No Gatekeeping",
-        "ogDescription": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy.",
+        "ogTitle": "Free Image Color Picker - HEX, RGB and HSL",
+        "ogDescription": "Upload a screenshot, logo, photo, or graphic to get a HEX code from the image, inspect nearby pixels, and copy HEX, RGB, or HSL values.",
         "ogUrl": "https://nogatekeeping.com/tools/color-picker",
-        "twitterTitle": "Color Picker - Free Tool - No Gatekeeping",
-        "twitterDescription": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy.",
+        "twitterTitle": "Free Image Color Picker - HEX, RGB and HSL",
+        "twitterDescription": "Upload a screenshot, logo, photo, or graphic to get a HEX code from the image, inspect nearby pixels, and copy HEX, RGB, or HSL values.",
         "jsonLdCount": 1,
         "schema": {
           "@context": "https://schema.org",
@@ -3578,8 +3610,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/color-picker#webpage",
               "url": "https://nogatekeeping.com/tools/color-picker",
-              "name": "Color Picker - Free Tool - No Gatekeeping",
-              "description": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy.",
+              "name": "Free Image Color Picker - HEX, RGB and HSL",
+              "description": "Upload a screenshot, logo, photo, or graphic to get a HEX code from the image, inspect nearby pixels, and copy HEX, RGB, or HSL values.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -3594,10 +3626,10 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/color-picker#web-application",
-              "name": "Color Picker",
-              "description": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy.",
+              "name": "Free Image Color Picker",
+              "description": "Upload a screenshot, logo, photo, or graphic to get a HEX code from the image, inspect nearby pixels, and copy HEX, RGB, or HSL values.",
               "url": "https://nogatekeeping.com/tools/color-picker",
               "applicationCategory": "DesignApplication",
               "operatingSystem": "Any modern web browser",
@@ -3623,7 +3655,7 @@
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "Can Color Picker pull a HEX code from a screenshot?",
+                  "name": "Can I get a HEX code from a screenshot?",
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Yes. Upload the screenshot, sample the target pixel, and copy the HEX value for design or front-end use."
@@ -3635,6 +3667,22 @@
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Anti-aliasing, shadows, compression, and gradients can change nearby pixels. The zoomed picker helps compare those pixels before copying the final value."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What image formats can I upload?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The image picker accepts common browser image formats including PNG, JPG, WebP, and GIF files."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Should I copy HEX, RGB, or HSL?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "HEX is common in design files and CSS, RGB is useful when channel values matter, and HSL is convenient when you want to adjust hue, saturation, or lightness."
                   }
                 }
               ]
@@ -3666,19 +3714,21 @@
           ]
         },
         "h1s": [
-          "Color Picker"
+          "Free Image Color Picker"
         ],
         "h2s": [
-          "Extract HEX color codes from the image in front of you."
+          "Get a HEX code from any image."
         ],
         "h3s": [
           "UPLOAD A FILE",
-          "When to use Color Picker",
-          "Simple workflow",
-          "Questions people ask",
+          "Find a HEX code from an image",
+          "Move image colors into a design system",
+          "When to use an image color picker",
+          "How to use this image color picker",
+          "Frequently asked questions",
           "Related tools"
         ],
-        "wordCount": 319,
+        "wordCount": 472,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -3689,25 +3739,25 @@
           "id": "title_present",
           "label": "Title is present",
           "status": "pass",
-          "detail": "Color Picker - Free Tool - No Gatekeeping"
+          "detail": "Free Image Color Picker - HEX, RGB and HSL"
         },
         {
           "id": "title_length",
           "label": "Title length",
           "status": "pass",
-          "detail": "41 characters."
+          "detail": "42 characters."
         },
         {
           "id": "description_present",
           "label": "Meta description is present",
           "status": "pass",
-          "detail": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy."
+          "detail": "Upload a screenshot, logo, photo, or graphic to get a HEX code from the image, inspect nearby pixels, and copy HEX, RGB, or HSL values."
         },
         {
           "id": "description_length",
           "label": "Meta description length",
           "status": "pass",
-          "detail": "93 characters."
+          "detail": "135 characters."
         },
         {
           "id": "title_unique",
@@ -3743,13 +3793,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -3773,7 +3823,7 @@
           "id": "h1_count",
           "label": "Exactly one H1",
           "status": "pass",
-          "detail": "1 found: Color Picker"
+          "detail": "1 found: Free Image Color Picker"
         },
         {
           "id": "h1_alignment",
@@ -3791,7 +3841,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "319 visible words; threshold 220."
+          "detail": "472 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -3824,8 +3874,8 @@
       "type": "tool",
       "status": "pass",
       "descriptor": {
-        "title": "Uppercase to Lowercase Converter - No Gatekeeping",
-        "description": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
+        "title": "Free Case Converter - Uppercase to Lowercase",
+        "description": "Free letter case converter for uppercase to lowercase, all caps to lowercase, title case, sentence case, alternating case, camel case, and more.",
         "canonicalPath": "/tools/case-converter",
         "schema": {
           "@context": "https://schema.org",
@@ -3850,8 +3900,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/case-converter#webpage",
               "url": "https://nogatekeeping.com/tools/case-converter",
-              "name": "Uppercase to Lowercase Converter - No Gatekeeping",
-              "description": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
+              "name": "Free Case Converter - Uppercase to Lowercase",
+              "description": "Free letter case converter for uppercase to lowercase, all caps to lowercase, title case, sentence case, alternating case, camel case, and more.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -3866,10 +3916,10 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/case-converter#web-application",
-              "name": "Case Converter",
-              "description": "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
+              "name": "Free Case Converter",
+              "description": "Free letter case converter for uppercase to lowercase, all caps to lowercase, title case, sentence case, alternating case, camel case, and more.",
               "url": "https://nogatekeeping.com/tools/case-converter",
               "applicationCategory": "UtilitiesApplication",
               "operatingSystem": "Any modern web browser",
@@ -3895,26 +3945,34 @@
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "Can I convert uppercase text to lowercase?",
+                  "name": "Can I use this as an uppercase to lowercase converter?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. Paste the all-caps text, choose lowercase, and copy the converted result without changing the original wording."
+                    "text": "Yes. Use it to convert uppercase text to lowercase: paste uppercase or all-caps text, choose lowercase, and copy the result without changing the original words or punctuation."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "What casing formats are best for content cleanup?",
+                  "name": "What does a letter case converter change?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Sentence case and title case are useful for visible copy, while camel case, pascal case, kebab case, and snake case work better for code-adjacent strings and filenames."
+                    "text": "A letter case converter changes capitalization and, for code-friendly formats, word separators. It does not rewrite the meaning or grammar of the source text."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Does Case Converter change the meaning of the text?",
+                  "name": "Which case should I use for visible copy?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "No. It reformats casing and spacing so copied text can move into another tool without a manual cleanup pass."
+                    "text": "Sentence case and title case are common for visible copy. Lowercase and uppercase work for specific styles, while alternating case is usually best reserved for informal or creative text."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can it convert text for code and filenames?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. The tool can create camelCase, PascalCase, snake_case, kebab-case, and CONSTANT_CASE strings for code-adjacent labels, URLs, and filenames."
                   }
                 }
               ]
@@ -3950,22 +4008,22 @@
         "Organization",
         "WebSite",
         "WebPage",
-        "WebApplication",
+        "SoftwareApplication",
         "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
-        "title": "Uppercase to Lowercase Converter - No Gatekeeping",
-        "description": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
+        "title": "Free Case Converter - Uppercase to Lowercase",
+        "description": "Free letter case converter for uppercase to lowercase, all caps to lowercase, title case, sentence case, alternating case, camel case, and more.",
         "robots": "index,follow",
         "canonical": "https://nogatekeeping.com/tools/case-converter",
         "ogSiteName": "No Gatekeeping",
         "ogType": "website",
-        "ogTitle": "Uppercase to Lowercase Converter - No Gatekeeping",
-        "ogDescription": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
+        "ogTitle": "Free Case Converter - Uppercase to Lowercase",
+        "ogDescription": "Free letter case converter for uppercase to lowercase, all caps to lowercase, title case, sentence case, alternating case, camel case, and more.",
         "ogUrl": "https://nogatekeeping.com/tools/case-converter",
-        "twitterTitle": "Uppercase to Lowercase Converter - No Gatekeeping",
-        "twitterDescription": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
+        "twitterTitle": "Free Case Converter - Uppercase to Lowercase",
+        "twitterDescription": "Free letter case converter for uppercase to lowercase, all caps to lowercase, title case, sentence case, alternating case, camel case, and more.",
         "jsonLdCount": 1,
         "schema": {
           "@context": "https://schema.org",
@@ -3990,8 +4048,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/case-converter#webpage",
               "url": "https://nogatekeeping.com/tools/case-converter",
-              "name": "Uppercase to Lowercase Converter - No Gatekeeping",
-              "description": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
+              "name": "Free Case Converter - Uppercase to Lowercase",
+              "description": "Free letter case converter for uppercase to lowercase, all caps to lowercase, title case, sentence case, alternating case, camel case, and more.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -4006,10 +4064,10 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/case-converter#web-application",
-              "name": "Case Converter",
-              "description": "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
+              "name": "Free Case Converter",
+              "description": "Free letter case converter for uppercase to lowercase, all caps to lowercase, title case, sentence case, alternating case, camel case, and more.",
               "url": "https://nogatekeeping.com/tools/case-converter",
               "applicationCategory": "UtilitiesApplication",
               "operatingSystem": "Any modern web browser",
@@ -4035,26 +4093,34 @@
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "Can I convert uppercase text to lowercase?",
+                  "name": "Can I use this as an uppercase to lowercase converter?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. Paste the all-caps text, choose lowercase, and copy the converted result without changing the original wording."
+                    "text": "Yes. Use it to convert uppercase text to lowercase: paste uppercase or all-caps text, choose lowercase, and copy the result without changing the original words or punctuation."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "What casing formats are best for content cleanup?",
+                  "name": "What does a letter case converter change?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Sentence case and title case are useful for visible copy, while camel case, pascal case, kebab case, and snake case work better for code-adjacent strings and filenames."
+                    "text": "A letter case converter changes capitalization and, for code-friendly formats, word separators. It does not rewrite the meaning or grammar of the source text."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Does Case Converter change the meaning of the text?",
+                  "name": "Which case should I use for visible copy?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "No. It reformats casing and spacing so copied text can move into another tool without a manual cleanup pass."
+                    "text": "Sentence case and title case are common for visible copy. Lowercase and uppercase work for specific styles, while alternating case is usually best reserved for informal or creative text."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can it convert text for code and filenames?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. The tool can create camelCase, PascalCase, snake_case, kebab-case, and CONSTANT_CASE strings for code-adjacent labels, URLs, and filenames."
                   }
                 }
               ]
@@ -4087,17 +4153,17 @@
         }
       },
       "dom": {
-        "title": "Uppercase to Lowercase Converter - No Gatekeeping",
-        "description": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
+        "title": "Free Case Converter - Uppercase to Lowercase",
+        "description": "Free letter case converter for uppercase to lowercase, all caps to lowercase, title case, sentence case, alternating case, camel case, and more.",
         "robots": "index,follow",
         "canonical": "https://nogatekeeping.com/tools/case-converter",
         "ogSiteName": "No Gatekeeping",
         "ogType": "website",
-        "ogTitle": "Uppercase to Lowercase Converter - No Gatekeeping",
-        "ogDescription": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
+        "ogTitle": "Free Case Converter - Uppercase to Lowercase",
+        "ogDescription": "Free letter case converter for uppercase to lowercase, all caps to lowercase, title case, sentence case, alternating case, camel case, and more.",
         "ogUrl": "https://nogatekeeping.com/tools/case-converter",
-        "twitterTitle": "Uppercase to Lowercase Converter - No Gatekeeping",
-        "twitterDescription": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
+        "twitterTitle": "Free Case Converter - Uppercase to Lowercase",
+        "twitterDescription": "Free letter case converter for uppercase to lowercase, all caps to lowercase, title case, sentence case, alternating case, camel case, and more.",
         "jsonLdCount": 1,
         "schema": {
           "@context": "https://schema.org",
@@ -4122,8 +4188,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/case-converter#webpage",
               "url": "https://nogatekeeping.com/tools/case-converter",
-              "name": "Uppercase to Lowercase Converter - No Gatekeeping",
-              "description": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter.",
+              "name": "Free Case Converter - Uppercase to Lowercase",
+              "description": "Free letter case converter for uppercase to lowercase, all caps to lowercase, title case, sentence case, alternating case, camel case, and more.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -4138,10 +4204,10 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/case-converter#web-application",
-              "name": "Case Converter",
-              "description": "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
+              "name": "Free Case Converter",
+              "description": "Free letter case converter for uppercase to lowercase, all caps to lowercase, title case, sentence case, alternating case, camel case, and more.",
               "url": "https://nogatekeeping.com/tools/case-converter",
               "applicationCategory": "UtilitiesApplication",
               "operatingSystem": "Any modern web browser",
@@ -4167,26 +4233,34 @@
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "Can I convert uppercase text to lowercase?",
+                  "name": "Can I use this as an uppercase to lowercase converter?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. Paste the all-caps text, choose lowercase, and copy the converted result without changing the original wording."
+                    "text": "Yes. Use it to convert uppercase text to lowercase: paste uppercase or all-caps text, choose lowercase, and copy the result without changing the original words or punctuation."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "What casing formats are best for content cleanup?",
+                  "name": "What does a letter case converter change?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Sentence case and title case are useful for visible copy, while camel case, pascal case, kebab case, and snake case work better for code-adjacent strings and filenames."
+                    "text": "A letter case converter changes capitalization and, for code-friendly formats, word separators. It does not rewrite the meaning or grammar of the source text."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Does Case Converter change the meaning of the text?",
+                  "name": "Which case should I use for visible copy?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "No. It reformats casing and spacing so copied text can move into another tool without a manual cleanup pass."
+                    "text": "Sentence case and title case are common for visible copy. Lowercase and uppercase work for specific styles, while alternating case is usually best reserved for informal or creative text."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can it convert text for code and filenames?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. The tool can create camelCase, PascalCase, snake_case, kebab-case, and CONSTANT_CASE strings for code-adjacent labels, URLs, and filenames."
                   }
                 }
               ]
@@ -4218,48 +4292,50 @@
           ]
         },
         "h1s": [
-          "Case Converter"
+          "Free Case Converter"
         ],
         "h2s": [
           "Choose Case",
-          "Convert uppercase to lowercase before text ships."
+          "A letter case converter for fast text cleanup."
         ],
         "h3s": [
-          "When to use Case Converter",
-          "Simple workflow",
-          "Questions people ask",
+          "Convert uppercase, lowercase, title case, sentence case, and alternating case",
+          "How to convert all caps to lowercase",
+          "When to use a case converter",
+          "How to use this case converter",
+          "Frequently asked questions",
           "Related tools"
         ],
-        "wordCount": 317,
-        "internalLinkCount": 12,
+        "wordCount": 534,
+        "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
-        "relatedToolLinkCount": 2
+        "relatedToolLinkCount": 3
       },
       "checks": [
         {
           "id": "title_present",
           "label": "Title is present",
           "status": "pass",
-          "detail": "Uppercase to Lowercase Converter - No Gatekeeping"
+          "detail": "Free Case Converter - Uppercase to Lowercase"
         },
         {
           "id": "title_length",
           "label": "Title length",
           "status": "pass",
-          "detail": "49 characters."
+          "detail": "44 characters."
         },
         {
           "id": "description_present",
           "label": "Meta description is present",
           "status": "pass",
-          "detail": "Convert uppercase text to lowercase, title case, sentence case, camel case, and slug-ready formats with a fast browser case converter."
+          "detail": "Free letter case converter for uppercase to lowercase, all caps to lowercase, title case, sentence case, alternating case, camel case, and more."
         },
         {
           "id": "description_length",
           "label": "Meta description length",
           "status": "pass",
-          "detail": "134 characters."
+          "detail": "144 characters."
         },
         {
           "id": "title_unique",
@@ -4295,13 +4371,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -4325,7 +4401,7 @@
           "id": "h1_count",
           "label": "Exactly one H1",
           "status": "pass",
-          "detail": "1 found: Case Converter"
+          "detail": "1 found: Free Case Converter"
         },
         {
           "id": "h1_alignment",
@@ -4343,13 +4419,13 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "317 visible words; threshold 220."
+          "detail": "534 visible words; threshold 220."
         },
         {
           "id": "internal_links",
           "label": "Internal links support discovery",
           "status": "pass",
-          "detail": "12 unique internal links; threshold 4."
+          "detail": "13 unique internal links; threshold 4."
         },
         {
           "id": "image_alt_text",
@@ -4367,7 +4443,7 @@
           "id": "related_tools",
           "label": "Tool page links to related tools",
           "status": "pass",
-          "detail": "2 related tool links found."
+          "detail": "3 related tool links found."
         }
       ]
     },
@@ -4418,7 +4494,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/proportion-scaler#web-application",
               "name": "Proportion Scaler",
               "description": "Scale dimensions proportionally, preserve aspect ratios, and copy resized width and height values.",
@@ -4494,7 +4570,7 @@
         "Organization",
         "WebSite",
         "WebPage",
-        "WebApplication",
+        "SoftwareApplication",
         "FAQPage",
         "BreadcrumbList"
       ],
@@ -4550,7 +4626,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/proportion-scaler#web-application",
               "name": "Proportion Scaler",
               "description": "Scale dimensions proportionally, preserve aspect ratios, and copy resized width and height values.",
@@ -4674,7 +4750,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/proportion-scaler#web-application",
               "name": "Proportion Scaler",
               "description": "Scale dimensions proportionally, preserve aspect ratios, and copy resized width and height values.",
@@ -4756,11 +4832,11 @@
           "Original Dimensions",
           "New Dimensions",
           "When to use Proportion Scaler",
-          "Simple workflow",
-          "Questions people ask",
+          "How to use this tool",
+          "Frequently asked questions",
           "Related tools"
         ],
-        "wordCount": 297,
+        "wordCount": 299,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -4825,13 +4901,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -4873,7 +4949,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "297 visible words; threshold 220."
+          "detail": "299 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -4906,8 +4982,8 @@
       "type": "tool",
       "status": "pass",
       "descriptor": {
-        "title": "Image to Text Converter - OCR Tool - No Gatekeeping",
-        "description": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
+        "title": "Free Image to Text Converter (OCR) - No Gatekeeping",
+        "description": "Use free browser OCR to extract text from screenshots, documents, notes, labels, and graphics, then copy or download the image-to-text result.",
         "canonicalPath": "/tools/image-to-text",
         "schema": {
           "@context": "https://schema.org",
@@ -4932,8 +5008,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/image-to-text#webpage",
               "url": "https://nogatekeeping.com/tools/image-to-text",
-              "name": "Image to Text Converter - OCR Tool - No Gatekeeping",
-              "description": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
+              "name": "Free Image to Text Converter (OCR) - No Gatekeeping",
+              "description": "Use free browser OCR to extract text from screenshots, documents, notes, labels, and graphics, then copy or download the image-to-text result.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -4948,10 +5024,10 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/image-to-text#web-application",
-              "name": "Image to Text",
-              "description": "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
+              "name": "Free Image to Text Converter",
+              "description": "Use free browser OCR to extract text from screenshots, documents, notes, labels, and graphics, then copy or download the image-to-text result.",
               "url": "https://nogatekeeping.com/tools/image-to-text",
               "applicationCategory": "MultimediaApplication",
               "operatingSystem": "Any modern web browser",
@@ -4997,6 +5073,14 @@
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Confidence helps flag areas that may need manual review before the extracted text is reused in content, documentation, or data entry."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is 'imagen to text' the same as image to text?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. 'Imagen to text' is a common bilingual or alternate search for the same OCR task: extracting readable text from an image file."
                   }
                 }
               ]
@@ -5032,22 +5116,22 @@
         "Organization",
         "WebSite",
         "WebPage",
-        "WebApplication",
+        "SoftwareApplication",
         "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
-        "title": "Image to Text Converter - OCR Tool - No Gatekeeping",
-        "description": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
+        "title": "Free Image to Text Converter (OCR) - No Gatekeeping",
+        "description": "Use free browser OCR to extract text from screenshots, documents, notes, labels, and graphics, then copy or download the image-to-text result.",
         "robots": "index,follow",
         "canonical": "https://nogatekeeping.com/tools/image-to-text",
         "ogSiteName": "No Gatekeeping",
         "ogType": "website",
-        "ogTitle": "Image to Text Converter - OCR Tool - No Gatekeeping",
-        "ogDescription": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
+        "ogTitle": "Free Image to Text Converter (OCR) - No Gatekeeping",
+        "ogDescription": "Use free browser OCR to extract text from screenshots, documents, notes, labels, and graphics, then copy or download the image-to-text result.",
         "ogUrl": "https://nogatekeeping.com/tools/image-to-text",
-        "twitterTitle": "Image to Text Converter - OCR Tool - No Gatekeeping",
-        "twitterDescription": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
+        "twitterTitle": "Free Image to Text Converter (OCR) - No Gatekeeping",
+        "twitterDescription": "Use free browser OCR to extract text from screenshots, documents, notes, labels, and graphics, then copy or download the image-to-text result.",
         "jsonLdCount": 1,
         "schema": {
           "@context": "https://schema.org",
@@ -5072,8 +5156,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/image-to-text#webpage",
               "url": "https://nogatekeeping.com/tools/image-to-text",
-              "name": "Image to Text Converter - OCR Tool - No Gatekeeping",
-              "description": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
+              "name": "Free Image to Text Converter (OCR) - No Gatekeeping",
+              "description": "Use free browser OCR to extract text from screenshots, documents, notes, labels, and graphics, then copy or download the image-to-text result.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -5088,10 +5172,10 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/image-to-text#web-application",
-              "name": "Image to Text",
-              "description": "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
+              "name": "Free Image to Text Converter",
+              "description": "Use free browser OCR to extract text from screenshots, documents, notes, labels, and graphics, then copy or download the image-to-text result.",
               "url": "https://nogatekeeping.com/tools/image-to-text",
               "applicationCategory": "MultimediaApplication",
               "operatingSystem": "Any modern web browser",
@@ -5137,6 +5221,14 @@
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Confidence helps flag areas that may need manual review before the extracted text is reused in content, documentation, or data entry."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is 'imagen to text' the same as image to text?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. 'Imagen to text' is a common bilingual or alternate search for the same OCR task: extracting readable text from an image file."
                   }
                 }
               ]
@@ -5169,17 +5261,17 @@
         }
       },
       "dom": {
-        "title": "Image to Text Converter - OCR Tool - No Gatekeeping",
-        "description": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
+        "title": "Free Image to Text Converter (OCR) - No Gatekeeping",
+        "description": "Use free browser OCR to extract text from screenshots, documents, notes, labels, and graphics, then copy or download the image-to-text result.",
         "robots": "index,follow",
         "canonical": "https://nogatekeeping.com/tools/image-to-text",
         "ogSiteName": "No Gatekeeping",
         "ogType": "website",
-        "ogTitle": "Image to Text Converter - OCR Tool - No Gatekeeping",
-        "ogDescription": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
+        "ogTitle": "Free Image to Text Converter (OCR) - No Gatekeeping",
+        "ogDescription": "Use free browser OCR to extract text from screenshots, documents, notes, labels, and graphics, then copy or download the image-to-text result.",
         "ogUrl": "https://nogatekeeping.com/tools/image-to-text",
-        "twitterTitle": "Image to Text Converter - OCR Tool - No Gatekeeping",
-        "twitterDescription": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
+        "twitterTitle": "Free Image to Text Converter (OCR) - No Gatekeeping",
+        "twitterDescription": "Use free browser OCR to extract text from screenshots, documents, notes, labels, and graphics, then copy or download the image-to-text result.",
         "jsonLdCount": 1,
         "schema": {
           "@context": "https://schema.org",
@@ -5204,8 +5296,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/image-to-text#webpage",
               "url": "https://nogatekeeping.com/tools/image-to-text",
-              "name": "Image to Text Converter - OCR Tool - No Gatekeeping",
-              "description": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents.",
+              "name": "Free Image to Text Converter (OCR) - No Gatekeeping",
+              "description": "Use free browser OCR to extract text from screenshots, documents, notes, labels, and graphics, then copy or download the image-to-text result.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -5220,10 +5312,10 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/image-to-text#web-application",
-              "name": "Image to Text",
-              "description": "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
+              "name": "Free Image to Text Converter",
+              "description": "Use free browser OCR to extract text from screenshots, documents, notes, labels, and graphics, then copy or download the image-to-text result.",
               "url": "https://nogatekeeping.com/tools/image-to-text",
               "applicationCategory": "MultimediaApplication",
               "operatingSystem": "Any modern web browser",
@@ -5270,6 +5362,14 @@
                     "@type": "Answer",
                     "text": "Confidence helps flag areas that may need manual review before the extracted text is reused in content, documentation, or data entry."
                   }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is 'imagen to text' the same as image to text?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. 'Imagen to text' is a common bilingual or alternate search for the same OCR task: extracting readable text from an image file."
+                  }
                 }
               ]
             },
@@ -5300,19 +5400,22 @@
           ]
         },
         "h1s": [
-          "Image to Text"
+          "Free Image to Text Converter"
         ],
         "h2s": [
-          "Convert image text to text you can copy."
+          "Extract text from images with browser-based OCR."
         ],
         "h3s": [
           "Image to Text Converter",
-          "When to use Image to Text",
-          "Simple workflow",
-          "Questions people ask",
+          "Upload or paste an image",
+          "Extract text from screenshots, documents, notes, and graphics",
+          "Copy the result as plain text",
+          "When to extract text from an image",
+          "How to use this image-to-text converter",
+          "Frequently asked questions",
           "Related tools"
         ],
-        "wordCount": 326,
+        "wordCount": 526,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -5323,7 +5426,7 @@
           "id": "title_present",
           "label": "Title is present",
           "status": "pass",
-          "detail": "Image to Text Converter - OCR Tool - No Gatekeeping"
+          "detail": "Free Image to Text Converter (OCR) - No Gatekeeping"
         },
         {
           "id": "title_length",
@@ -5335,13 +5438,13 @@
           "id": "description_present",
           "label": "Meta description is present",
           "status": "pass",
-          "detail": "Use local OCR to convert image text to text you can copy, clean up, or download from screenshots, scans, labels, and image-based documents."
+          "detail": "Use free browser OCR to extract text from screenshots, documents, notes, labels, and graphics, then copy or download the image-to-text result."
         },
         {
           "id": "description_length",
           "label": "Meta description length",
           "status": "pass",
-          "detail": "139 characters."
+          "detail": "142 characters."
         },
         {
           "id": "title_unique",
@@ -5377,13 +5480,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -5407,7 +5510,7 @@
           "id": "h1_count",
           "label": "Exactly one H1",
           "status": "pass",
-          "detail": "1 found: Image to Text"
+          "detail": "1 found: Free Image to Text Converter"
         },
         {
           "id": "h1_alignment",
@@ -5425,7 +5528,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "326 visible words; threshold 220."
+          "detail": "526 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -5458,8 +5561,8 @@
       "type": "tool",
       "status": "pass",
       "descriptor": {
-        "title": "Image Compressor and Resizer - No Gatekeeping",
-        "description": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser.",
+        "title": "Free Image Compressor and Resizer - No Gatekeeping",
+        "description": "Compress images in your browser, decrease picture size or resolution, compare savings, and download optimized files individually or as a ZIP.",
         "canonicalPath": "/tools/image-compressor",
         "schema": {
           "@context": "https://schema.org",
@@ -5484,8 +5587,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/image-compressor#webpage",
               "url": "https://nogatekeeping.com/tools/image-compressor",
-              "name": "Image Compressor and Resizer - No Gatekeeping",
-              "description": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser.",
+              "name": "Free Image Compressor and Resizer - No Gatekeeping",
+              "description": "Compress images in your browser, decrease picture size or resolution, compare savings, and download optimized files individually or as a ZIP.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -5500,10 +5603,10 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/image-compressor#web-application",
-              "name": "Image Compressor",
-              "description": "Compress images, decrease image resolution with max width and height controls, compare savings, and download files or a ZIP.",
+              "name": "Free Image Compressor",
+              "description": "Compress images in your browser, decrease picture size or resolution, compare savings, and download optimized files individually or as a ZIP.",
               "url": "https://nogatekeeping.com/tools/image-compressor",
               "applicationCategory": "MultimediaApplication",
               "operatingSystem": "Any modern web browser",
@@ -5549,6 +5652,14 @@
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Yes. Image Compressor supports batch workflows and ZIP export so related assets can be condensed and downloaded together."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Does image compression change the dimensions?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Only when maximum width or height is set below the original dimensions. Otherwise, the tool can reduce file size while keeping the original width and height."
                   }
                 }
               ]
@@ -5584,22 +5695,22 @@
         "Organization",
         "WebSite",
         "WebPage",
-        "WebApplication",
+        "SoftwareApplication",
         "FAQPage",
         "BreadcrumbList"
       ],
       "firstResponse": {
-        "title": "Image Compressor and Resizer - No Gatekeeping",
-        "description": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser.",
+        "title": "Free Image Compressor and Resizer - No Gatekeeping",
+        "description": "Compress images in your browser, decrease picture size or resolution, compare savings, and download optimized files individually or as a ZIP.",
         "robots": "index,follow",
         "canonical": "https://nogatekeeping.com/tools/image-compressor",
         "ogSiteName": "No Gatekeeping",
         "ogType": "website",
-        "ogTitle": "Image Compressor and Resizer - No Gatekeeping",
-        "ogDescription": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser.",
+        "ogTitle": "Free Image Compressor and Resizer - No Gatekeeping",
+        "ogDescription": "Compress images in your browser, decrease picture size or resolution, compare savings, and download optimized files individually or as a ZIP.",
         "ogUrl": "https://nogatekeeping.com/tools/image-compressor",
-        "twitterTitle": "Image Compressor and Resizer - No Gatekeeping",
-        "twitterDescription": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser.",
+        "twitterTitle": "Free Image Compressor and Resizer - No Gatekeeping",
+        "twitterDescription": "Compress images in your browser, decrease picture size or resolution, compare savings, and download optimized files individually or as a ZIP.",
         "jsonLdCount": 1,
         "schema": {
           "@context": "https://schema.org",
@@ -5624,8 +5735,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/image-compressor#webpage",
               "url": "https://nogatekeeping.com/tools/image-compressor",
-              "name": "Image Compressor and Resizer - No Gatekeeping",
-              "description": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser.",
+              "name": "Free Image Compressor and Resizer - No Gatekeeping",
+              "description": "Compress images in your browser, decrease picture size or resolution, compare savings, and download optimized files individually or as a ZIP.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -5640,10 +5751,10 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/image-compressor#web-application",
-              "name": "Image Compressor",
-              "description": "Compress images, decrease image resolution with max width and height controls, compare savings, and download files or a ZIP.",
+              "name": "Free Image Compressor",
+              "description": "Compress images in your browser, decrease picture size or resolution, compare savings, and download optimized files individually or as a ZIP.",
               "url": "https://nogatekeeping.com/tools/image-compressor",
               "applicationCategory": "MultimediaApplication",
               "operatingSystem": "Any modern web browser",
@@ -5689,6 +5800,14 @@
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Yes. Image Compressor supports batch workflows and ZIP export so related assets can be condensed and downloaded together."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Does image compression change the dimensions?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Only when maximum width or height is set below the original dimensions. Otherwise, the tool can reduce file size while keeping the original width and height."
                   }
                 }
               ]
@@ -5721,17 +5840,17 @@
         }
       },
       "dom": {
-        "title": "Image Compressor and Resizer - No Gatekeeping",
-        "description": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser.",
+        "title": "Free Image Compressor and Resizer - No Gatekeeping",
+        "description": "Compress images in your browser, decrease picture size or resolution, compare savings, and download optimized files individually or as a ZIP.",
         "robots": "index,follow",
         "canonical": "https://nogatekeeping.com/tools/image-compressor",
         "ogSiteName": "No Gatekeeping",
         "ogType": "website",
-        "ogTitle": "Image Compressor and Resizer - No Gatekeeping",
-        "ogDescription": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser.",
+        "ogTitle": "Free Image Compressor and Resizer - No Gatekeeping",
+        "ogDescription": "Compress images in your browser, decrease picture size or resolution, compare savings, and download optimized files individually or as a ZIP.",
         "ogUrl": "https://nogatekeeping.com/tools/image-compressor",
-        "twitterTitle": "Image Compressor and Resizer - No Gatekeeping",
-        "twitterDescription": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser.",
+        "twitterTitle": "Free Image Compressor and Resizer - No Gatekeeping",
+        "twitterDescription": "Compress images in your browser, decrease picture size or resolution, compare savings, and download optimized files individually or as a ZIP.",
         "jsonLdCount": 1,
         "schema": {
           "@context": "https://schema.org",
@@ -5756,8 +5875,8 @@
               "@type": "WebPage",
               "@id": "https://nogatekeeping.com/tools/image-compressor#webpage",
               "url": "https://nogatekeeping.com/tools/image-compressor",
-              "name": "Image Compressor and Resizer - No Gatekeeping",
-              "description": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser.",
+              "name": "Free Image Compressor and Resizer - No Gatekeeping",
+              "description": "Compress images in your browser, decrease picture size or resolution, compare savings, and download optimized files individually or as a ZIP.",
               "isPartOf": {
                 "@id": "https://nogatekeeping.com/#website"
               },
@@ -5772,10 +5891,10 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/image-compressor#web-application",
-              "name": "Image Compressor",
-              "description": "Compress images, decrease image resolution with max width and height controls, compare savings, and download files or a ZIP.",
+              "name": "Free Image Compressor",
+              "description": "Compress images in your browser, decrease picture size or resolution, compare savings, and download optimized files individually or as a ZIP.",
               "url": "https://nogatekeeping.com/tools/image-compressor",
               "applicationCategory": "MultimediaApplication",
               "operatingSystem": "Any modern web browser",
@@ -5822,6 +5941,14 @@
                     "@type": "Answer",
                     "text": "Yes. Image Compressor supports batch workflows and ZIP export so related assets can be condensed and downloaded together."
                   }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Does image compression change the dimensions?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Only when maximum width or height is set below the original dimensions. Otherwise, the tool can reduce file size while keeping the original width and height."
+                  }
                 }
               ]
             },
@@ -5852,18 +5979,20 @@
           ]
         },
         "h1s": [
-          "Image Compressor"
+          "Free Image Compressor"
         ],
         "h2s": [
-          "Compress images and decrease resolution before upload."
+          "Compress and resize images before upload."
         ],
         "h3s": [
-          "When to use Image Compressor",
-          "Simple workflow",
-          "Questions people ask",
+          "Decrease picture size and image resolution",
+          "Condense a batch of images in one pass",
+          "When to use an image compressor",
+          "How to use this image compressor",
+          "Frequently asked questions",
           "Related tools"
         ],
-        "wordCount": 334,
+        "wordCount": 453,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -5874,25 +6003,25 @@
           "id": "title_present",
           "label": "Title is present",
           "status": "pass",
-          "detail": "Image Compressor and Resizer - No Gatekeeping"
+          "detail": "Free Image Compressor and Resizer - No Gatekeeping"
         },
         {
           "id": "title_length",
           "label": "Title length",
           "status": "pass",
-          "detail": "45 characters."
+          "detail": "50 characters."
         },
         {
           "id": "description_present",
           "label": "Meta description is present",
           "status": "pass",
-          "detail": "Compress images, decrease picture size, lower image resolution, compare savings, and download optimized files or a ZIP in the browser."
+          "detail": "Compress images in your browser, decrease picture size or resolution, compare savings, and download optimized files individually or as a ZIP."
         },
         {
           "id": "description_length",
           "label": "Meta description length",
           "status": "pass",
-          "detail": "134 characters."
+          "detail": "141 characters."
         },
         {
           "id": "title_unique",
@@ -5928,13 +6057,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -5958,7 +6087,7 @@
           "id": "h1_count",
           "label": "Exactly one H1",
           "status": "pass",
-          "detail": "1 found: Image Compressor"
+          "detail": "1 found: Free Image Compressor"
         },
         {
           "id": "h1_alignment",
@@ -5976,7 +6105,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "334 visible words; threshold 220."
+          "detail": "453 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -6051,7 +6180,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/color-palette-generator#web-application",
               "name": "Color Palette Generator",
               "description": "Generate, tune, preview, and export color palettes for brand systems, mockups, and design projects.",
@@ -6127,7 +6256,7 @@
         "Organization",
         "WebSite",
         "WebPage",
-        "WebApplication",
+        "SoftwareApplication",
         "FAQPage",
         "BreadcrumbList"
       ],
@@ -6183,7 +6312,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/color-palette-generator#web-application",
               "name": "Color Palette Generator",
               "description": "Generate, tune, preview, and export color palettes for brand systems, mockups, and design projects.",
@@ -6307,7 +6436,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/color-palette-generator#web-application",
               "name": "Color Palette Generator",
               "description": "Generate, tune, preview, and export color palettes for brand systems, mockups, and design projects.",
@@ -6382,17 +6511,17 @@
           "Color Palette Generator"
         ],
         "h2s": [
-          "#c4a200",
+          "#e484b1",
           "Shape a palette before committing it to a design system."
         ],
         "h3s": [
-          "triad",
+          "analogous",
           "When to use Color Palette Generator",
-          "Simple workflow",
-          "Questions people ask",
+          "How to use this tool",
+          "Frequently asked questions",
           "Related tools"
         ],
-        "wordCount": 323,
+        "wordCount": 335,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -6457,13 +6586,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -6505,7 +6634,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "323 visible words; threshold 220."
+          "detail": "335 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -6580,7 +6709,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/vectorvault#web-application",
               "name": "Vector Vault",
               "description": "Search, preview, edit, upload, and export SVG icons from a local vector library.",
@@ -6656,7 +6785,7 @@
         "Organization",
         "WebSite",
         "WebPage",
-        "WebApplication",
+        "SoftwareApplication",
         "FAQPage",
         "BreadcrumbList"
       ],
@@ -6712,7 +6841,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/vectorvault#web-application",
               "name": "Vector Vault",
               "description": "Search, preview, edit, upload, and export SVG icons from a local vector library.",
@@ -6836,7 +6965,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/vectorvault#web-application",
               "name": "Vector Vault",
               "description": "Search, preview, edit, upload, and export SVG icons from a local vector library.",
@@ -6916,11 +7045,11 @@
         ],
         "h3s": [
           "When to use Vector Vault",
-          "Simple workflow",
-          "Questions people ask",
+          "How to use this tool",
+          "Frequently asked questions",
           "Related tools"
         ],
-        "wordCount": 262,
+        "wordCount": 270,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -6985,13 +7114,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -7033,7 +7162,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "262 visible words; threshold 220."
+          "detail": "270 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -7108,7 +7237,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/dns-checker#web-application",
               "name": "DNS Checker",
               "description": "Check DNS records across public resolvers to compare propagation, response details, and lookup speed.",
@@ -7184,7 +7313,7 @@
         "Organization",
         "WebSite",
         "WebPage",
-        "WebApplication",
+        "SoftwareApplication",
         "FAQPage",
         "BreadcrumbList"
       ],
@@ -7240,7 +7369,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/dns-checker#web-application",
               "name": "DNS Checker",
               "description": "Check DNS records across public resolvers to compare propagation, response details, and lookup speed.",
@@ -7364,7 +7493,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/dns-checker#web-application",
               "name": "DNS Checker",
               "description": "Check DNS records across public resolvers to compare propagation, response details, and lookup speed.",
@@ -7456,11 +7585,11 @@
           "CIRA",
           "UncensoredDNS",
           "When to use DNS Checker",
-          "Simple workflow",
-          "Questions people ask",
+          "How to use this tool",
+          "Frequently asked questions",
           "Related tools"
         ],
-        "wordCount": 402,
+        "wordCount": 405,
         "internalLinkCount": 12,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -7525,13 +7654,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -7573,7 +7702,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "402 visible words; threshold 220."
+          "detail": "405 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -7648,7 +7777,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/redirect-analyzer#web-application",
               "name": "Redirect Analyzer",
               "description": "Map URL redirect chains, trace status codes, final destinations, and HTTP-to-HTTPS upgrade behavior.",
@@ -7724,7 +7853,7 @@
         "Organization",
         "WebSite",
         "WebPage",
-        "WebApplication",
+        "SoftwareApplication",
         "FAQPage",
         "BreadcrumbList"
       ],
@@ -7780,7 +7909,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/redirect-analyzer#web-application",
               "name": "Redirect Analyzer",
               "description": "Map URL redirect chains, trace status codes, final destinations, and HTTP-to-HTTPS upgrade behavior.",
@@ -7904,7 +8033,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/redirect-analyzer#web-application",
               "name": "Redirect Analyzer",
               "description": "Map URL redirect chains, trace status codes, final destinations, and HTTP-to-HTTPS upgrade behavior.",
@@ -7984,11 +8113,11 @@
         ],
         "h3s": [
           "When to use Redirect Analyzer",
-          "Simple workflow",
-          "Questions people ask",
+          "How to use this tool",
+          "Frequently asked questions",
           "Related tools"
         ],
-        "wordCount": 322,
+        "wordCount": 325,
         "internalLinkCount": 12,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -8053,13 +8182,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -8101,7 +8230,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "322 visible words; threshold 220."
+          "detail": "325 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -8176,7 +8305,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#web-application",
               "name": "Sitemap Robots Explorer",
               "description": "Explore robots.txt, discover sitemap files, scan URLs, and categorize site structure from one input.",
@@ -8252,7 +8381,7 @@
         "Organization",
         "WebSite",
         "WebPage",
-        "WebApplication",
+        "SoftwareApplication",
         "FAQPage",
         "BreadcrumbList"
       ],
@@ -8308,7 +8437,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#web-application",
               "name": "Sitemap Robots Explorer",
               "description": "Explore robots.txt, discover sitemap files, scan URLs, and categorize site structure from one input.",
@@ -8432,7 +8561,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/sitemap-robots-explorer#web-application",
               "name": "Sitemap Robots Explorer",
               "description": "Explore robots.txt, discover sitemap files, scan URLs, and categorize site structure from one input.",
@@ -8511,11 +8640,11 @@
         ],
         "h3s": [
           "When to use Sitemap Robots Explorer",
-          "Simple workflow",
-          "Questions people ask",
+          "How to use this tool",
+          "Frequently asked questions",
           "Related tools"
         ],
-        "wordCount": 280,
+        "wordCount": 283,
         "internalLinkCount": 11,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -8580,13 +8709,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -8628,7 +8757,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "280 visible words; threshold 220."
+          "detail": "283 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -8703,7 +8832,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#web-application",
               "name": "Modular Wireframe Generator",
               "description": "Compose modular website wireframes, cycle section variations, and export layouts for design planning.",
@@ -8779,7 +8908,7 @@
         "Organization",
         "WebSite",
         "WebPage",
-        "WebApplication",
+        "SoftwareApplication",
         "FAQPage",
         "BreadcrumbList"
       ],
@@ -8835,7 +8964,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#web-application",
               "name": "Modular Wireframe Generator",
               "description": "Compose modular website wireframes, cycle section variations, and export layouts for design planning.",
@@ -8959,7 +9088,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/modular-wireframe-generator#web-application",
               "name": "Modular Wireframe Generator",
               "description": "Compose modular website wireframes, cycle section variations, and export layouts for design planning.",
@@ -9040,11 +9169,11 @@
         ],
         "h3s": [
           "When to use Modular Wireframe Generator",
-          "Simple workflow",
-          "Questions people ask",
+          "How to use this tool",
+          "Frequently asked questions",
           "Related tools"
         ],
-        "wordCount": 287,
+        "wordCount": 295,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -9109,13 +9238,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -9157,7 +9286,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "287 visible words; threshold 220."
+          "detail": "295 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -9232,7 +9361,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/image-converter#web-application",
               "name": "Image Converter",
               "description": "Convert images to JPG, PNG, WebP, or PDF directly in the browser with batch controls and downloads.",
@@ -9308,7 +9437,7 @@
         "Organization",
         "WebSite",
         "WebPage",
-        "WebApplication",
+        "SoftwareApplication",
         "FAQPage",
         "BreadcrumbList"
       ],
@@ -9364,7 +9493,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/image-converter#web-application",
               "name": "Image Converter",
               "description": "Convert images to JPG, PNG, WebP, or PDF directly in the browser with batch controls and downloads.",
@@ -9488,7 +9617,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/image-converter#web-application",
               "name": "Image Converter",
               "description": "Convert images to JPG, PNG, WebP, or PDF directly in the browser with batch controls and downloads.",
@@ -9569,11 +9698,11 @@
         "h3s": [
           "No files added yet",
           "When to use Image Converter",
-          "Simple workflow",
-          "Questions people ask",
+          "How to use this tool",
+          "Frequently asked questions",
           "Related tools"
         ],
-        "wordCount": 308,
+        "wordCount": 310,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -9638,13 +9767,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -9686,7 +9815,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "308 visible words; threshold 220."
+          "detail": "310 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -9761,7 +9890,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/image-extractor#web-application",
               "name": "Image Extractor",
               "description": "Extract images from a webpage, review discovered image URLs and assets, and download individual files or a ZIP.",
@@ -9837,7 +9966,7 @@
         "Organization",
         "WebSite",
         "WebPage",
-        "WebApplication",
+        "SoftwareApplication",
         "FAQPage",
         "BreadcrumbList"
       ],
@@ -9893,7 +10022,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/image-extractor#web-application",
               "name": "Image Extractor",
               "description": "Extract images from a webpage, review discovered image URLs and assets, and download individual files or a ZIP.",
@@ -10017,7 +10146,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/image-extractor#web-application",
               "name": "Image Extractor",
               "description": "Extract images from a webpage, review discovered image URLs and assets, and download individual files or a ZIP.",
@@ -10096,11 +10225,11 @@
         ],
         "h3s": [
           "When to use Image Extractor",
-          "Simple workflow",
-          "Questions people ask",
+          "How to use this tool",
+          "Frequently asked questions",
           "Related tools"
         ],
-        "wordCount": 283,
+        "wordCount": 290,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -10165,13 +10294,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -10213,7 +10342,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "283 visible words; threshold 220."
+          "detail": "290 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -10288,7 +10417,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/font-converter#web-application",
               "name": "Font Converter",
               "description": "Convert font files in bulk between web and desktop formats, then download ready-to-use outputs.",
@@ -10364,7 +10493,7 @@
         "Organization",
         "WebSite",
         "WebPage",
-        "WebApplication",
+        "SoftwareApplication",
         "FAQPage",
         "BreadcrumbList"
       ],
@@ -10420,7 +10549,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/font-converter#web-application",
               "name": "Font Converter",
               "description": "Convert font files in bulk between web and desktop formats, then download ready-to-use outputs.",
@@ -10544,7 +10673,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/font-converter#web-application",
               "name": "Font Converter",
               "description": "Convert font files in bulk between web and desktop formats, then download ready-to-use outputs.",
@@ -10627,11 +10756,11 @@
         ],
         "h3s": [
           "When to use Font Converter",
-          "Simple workflow",
-          "Questions people ask",
+          "How to use this tool",
+          "Frequently asked questions",
           "Related tools"
         ],
-        "wordCount": 351,
+        "wordCount": 359,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -10696,13 +10825,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -10744,7 +10873,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "351 visible words; threshold 220."
+          "detail": "359 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -10819,7 +10948,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/heatmap-tracker#web-application",
               "name": "Heatmap Tracker",
               "description": "Prototype click heatmaps locally by placing hotspots on screenshots, seeding demo data, and exporting JSON.",
@@ -10895,7 +11024,7 @@
         "Organization",
         "WebSite",
         "WebPage",
-        "WebApplication",
+        "SoftwareApplication",
         "FAQPage",
         "BreadcrumbList"
       ],
@@ -10951,7 +11080,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/heatmap-tracker#web-application",
               "name": "Heatmap Tracker",
               "description": "Prototype click heatmaps locally by placing hotspots on screenshots, seeding demo data, and exporting JSON.",
@@ -11075,7 +11204,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/heatmap-tracker#web-application",
               "name": "Heatmap Tracker",
               "description": "Prototype click heatmaps locally by placing hotspots on screenshots, seeding demo data, and exporting JSON.",
@@ -11156,11 +11285,11 @@
         "h3s": [
           "Click The Canvas To Add Heat",
           "When to use Heatmap Tracker",
-          "Simple workflow",
-          "Questions people ask",
+          "How to use this tool",
+          "Frequently asked questions",
           "Related tools"
         ],
-        "wordCount": 429,
+        "wordCount": 437,
         "internalLinkCount": 13,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -11225,13 +11354,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -11273,7 +11402,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "429 visible words; threshold 220."
+          "detail": "437 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -11348,7 +11477,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/dictate#web-application",
               "name": "Dictate",
               "description": "Dictate notes in the browser, edit the transcript, keep local history, and play text back aloud.",
@@ -11424,7 +11553,7 @@
         "Organization",
         "WebSite",
         "WebPage",
-        "WebApplication",
+        "SoftwareApplication",
         "FAQPage",
         "BreadcrumbList"
       ],
@@ -11480,7 +11609,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/dictate#web-application",
               "name": "Dictate",
               "description": "Dictate notes in the browser, edit the transcript, keep local history, and play text back aloud.",
@@ -11604,7 +11733,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/dictate#web-application",
               "name": "Dictate",
               "description": "Dictate notes in the browser, edit the transcript, keep local history, and play text back aloud.",
@@ -11683,11 +11812,11 @@
         ],
         "h3s": [
           "When to use Dictate",
-          "Simple workflow",
-          "Questions people ask",
+          "How to use this tool",
+          "Frequently asked questions",
           "Related tools"
         ],
-        "wordCount": 280,
+        "wordCount": 284,
         "internalLinkCount": 12,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -11752,13 +11881,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -11800,7 +11929,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "280 visible words; threshold 220."
+          "detail": "284 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -11875,7 +12004,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/campaign-url-architect#web-application",
               "name": "Campaign URL Architect",
               "description": "Build clean UTM-tagged campaign URLs, preview every parameter, and keep a local history for reuse.",
@@ -11951,7 +12080,7 @@
         "Organization",
         "WebSite",
         "WebPage",
-        "WebApplication",
+        "SoftwareApplication",
         "FAQPage",
         "BreadcrumbList"
       ],
@@ -12007,7 +12136,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/campaign-url-architect#web-application",
               "name": "Campaign URL Architect",
               "description": "Build clean UTM-tagged campaign URLs, preview every parameter, and keep a local history for reuse.",
@@ -12131,7 +12260,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/campaign-url-architect#web-application",
               "name": "Campaign URL Architect",
               "description": "Build clean UTM-tagged campaign URLs, preview every parameter, and keep a local history for reuse.",
@@ -12212,11 +12341,11 @@
         ],
         "h3s": [
           "When to use Campaign URL Architect",
-          "Simple workflow",
-          "Questions people ask",
+          "How to use this tool",
+          "Frequently asked questions",
           "Related tools"
         ],
-        "wordCount": 332,
+        "wordCount": 335,
         "internalLinkCount": 11,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -12281,13 +12410,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -12329,7 +12458,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "332 visible words; threshold 220."
+          "detail": "335 visible words; threshold 220."
         },
         {
           "id": "internal_links",
@@ -12404,7 +12533,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#web-application",
               "name": "Lorem Ipsum Generator",
               "description": "Generate Lorem Ipsum placeholder text by paragraph, sentence, or word count and copy it quickly.",
@@ -12480,7 +12609,7 @@
         "Organization",
         "WebSite",
         "WebPage",
-        "WebApplication",
+        "SoftwareApplication",
         "FAQPage",
         "BreadcrumbList"
       ],
@@ -12536,7 +12665,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#web-application",
               "name": "Lorem Ipsum Generator",
               "description": "Generate Lorem Ipsum placeholder text by paragraph, sentence, or word count and copy it quickly.",
@@ -12660,7 +12789,7 @@
               }
             },
             {
-              "@type": "WebApplication",
+              "@type": "SoftwareApplication",
               "@id": "https://nogatekeeping.com/tools/lorem-ipsum-generator#web-application",
               "name": "Lorem Ipsum Generator",
               "description": "Generate Lorem Ipsum placeholder text by paragraph, sentence, or word count and copy it quickly.",
@@ -12741,11 +12870,11 @@
           "Result",
           "How it works",
           "When to use Lorem Ipsum Generator",
-          "Simple workflow",
-          "Questions people ask",
+          "How to use this tool",
+          "Frequently asked questions",
           "Related tools"
         ],
-        "wordCount": 333,
+        "wordCount": 337,
         "internalLinkCount": 12,
         "missingImageAltCount": 0,
         "toolContentPresent": true,
@@ -12810,13 +12939,13 @@
           "id": "schema_core_nodes",
           "label": "Schema includes organization and website",
           "status": "pass",
-          "detail": "Organization, WebSite, WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "Organization, WebSite, WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "schema_page_nodes",
           "label": "Schema matches page type",
           "status": "pass",
-          "detail": "WebPage, WebApplication, FAQPage, BreadcrumbList"
+          "detail": "WebPage, SoftwareApplication, FAQPage, BreadcrumbList"
         },
         {
           "id": "sitemap_coverage",
@@ -12858,7 +12987,7 @@
           "id": "visible_content_depth",
           "label": "Visible content has useful depth",
           "status": "pass",
-          "detail": "333 visible words; threshold 220."
+          "detail": "337 visible words; threshold 220."
         },
         {
           "id": "internal_links",

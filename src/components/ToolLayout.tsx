@@ -57,7 +57,7 @@ export default function ToolLayout({
 
             <div className="space-y-3">
               <h1 className="max-w-4xl text-4xl font-black uppercase tracking-tight text-[var(--ng-primary)] sm:text-5xl">
-                {meta.title}
+                {meta.pageHeading ?? meta.title}
               </h1>
               <p className="max-w-3xl text-base font-medium leading-relaxed text-[var(--ng-text-muted)] sm:text-lg">
                 {meta.description}

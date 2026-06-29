@@ -152,10 +152,10 @@ function appendTitleSuffix(title: string, suffix: string) {
 
 function toolApplicationNode(meta: ToolMeta, siteUrl: string): JsonLdNode {
   return {
-    "@type": "WebApplication",
+    "@type": "SoftwareApplication",
     "@id": toolApplicationId(meta, siteUrl),
-    name: meta.title,
-    description: meta.description,
+    name: meta.pageHeading ?? meta.title,
+    description: meta.seoDescription ?? meta.description,
     url: toolUrl(meta, siteUrl),
     applicationCategory: APPLICATION_CATEGORY_BY_TOOL_CATEGORY[meta.category],
     operatingSystem: "Any modern web browser",
@@ -211,7 +211,7 @@ function toolListNode(id: string, name: string, siteUrl: string): JsonLdNode {
       url: absoluteUrl(tool.route, siteUrl),
       item: {
         "@id": toolApplicationId({ slug: tool.id }, siteUrl),
-        "@type": "WebApplication",
+        "@type": "SoftwareApplication",
         name: tool.title,
         description: tool.desc,
         url: absoluteUrl(tool.route, siteUrl),

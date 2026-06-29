@@ -6,26 +6,51 @@
       "title": "Color Picker",
       "category": "Design",
       "url": "/tools/color-picker",
-      "description": "Extract HEX, RGB, and HSL color values from an image with a zoomed picker and one-click copy.",
-      "summary": "Color Picker works as an image-to-hex tool, sampling HEX, RGB, and HSL values from uploaded images with a zoomed canvas so reference colors can move straight into design or development.",
+      "description": "Get a HEX code from an image, inspect nearby pixels with a zoomed picker, and copy HEX, RGB, or HSL color values.",
+      "summary": "This free image color picker samples HEX, RGB, and HSL values from an uploaded screenshot, logo, photo, or graphic so a visual reference can become a usable design value.",
+      "sections": [
+        {
+          "heading": "Find a HEX code from an image",
+          "paragraphs": [
+            "Upload the image, move the picker over the target area, and use the magnified preview to select the exact pixel. The current HEX code appears beside its RGB and HSL equivalents for one-click copying.",
+            "Nearby pixels may differ because of shadows, gradients, anti-aliasing, or image compression. Zooming in before copying helps avoid choosing an edge color by accident."
+          ]
+        },
+        {
+          "heading": "Move image colors into a design system",
+          "paragraphs": [
+            "Use the sampled value in CSS, a design token, a brand palette, or a presentation theme. HEX is convenient for web work, RGB describes the screen color channels, and HSL makes lightness or saturation adjustments easier to reason about."
+          ]
+        }
+      ],
       "useCases": [
         "Matching a HEX color from a screenshot, logo, product photo, or moodboard.",
         "Checking nearby pixels with a magnified view before copying the final value.",
-        "Translating visual references into usable CSS or design-token color formats."
+        "Translating visual references into usable CSS or design-token color formats.",
+        "Comparing a sampled brand color with an existing palette before design handoff."
       ],
       "workflowSteps": [
         "Upload the image or screenshot that contains the color you need to match.",
         "Use the magnified picker to sample the exact pixel or compare nearby options.",
-        "Copy the HEX, RGB, or HSL value into your CSS, design system, or palette notes."
+        "Review the HEX, RGB, and HSL values generated for the selected color.",
+        "Copy the preferred format into your CSS, design system, or palette notes."
       ],
       "faqs": [
         {
-          "question": "Can Color Picker pull a HEX code from a screenshot?",
+          "question": "Can I get a HEX code from a screenshot?",
           "answer": "Yes. Upload the screenshot, sample the target pixel, and copy the HEX value for design or front-end use."
         },
         {
           "question": "Why does one image area produce slightly different colors?",
           "answer": "Anti-aliasing, shadows, compression, and gradients can change nearby pixels. The zoomed picker helps compare those pixels before copying the final value."
+        },
+        {
+          "question": "What image formats can I upload?",
+          "answer": "The image picker accepts common browser image formats including PNG, JPG, WebP, and GIF files."
+        },
+        {
+          "question": "Should I copy HEX, RGB, or HSL?",
+          "answer": "HEX is common in design files and CSS, RGB is useful when channel values matter, and HSL is convenient when you want to adjust hue, saturation, or lightness."
         }
       ]
     },
@@ -34,30 +59,52 @@
       "title": "Case Converter",
       "category": "Text",
       "url": "/tools/case-converter",
-      "description": "Convert uppercase to lowercase, title case, sentence case, camel case, and slug-ready text in one browser cleanup tool.",
-      "summary": "Case Converter reformats pasted text into lowercase, uppercase, title case, sentence case, camel case, and slug-ready formats for content cleanup work.",
+      "description": "Use a free letter case converter for uppercase to lowercase, title case, sentence case, alternating case, and code-friendly formats.",
+      "summary": "This free case converter changes uppercase to lowercase, all caps to lowercase, title case, sentence case, alternating case, and code-friendly formats without retyping the source text.",
+      "sections": [
+        {
+          "heading": "Convert uppercase, lowercase, title case, sentence case, and alternating case",
+          "paragraphs": [
+            "Paste text once, then choose the letter case the destination needs. The converter handles visible copy formats such as lowercase, UPPERCASE, Title Case, Sentence case, Capitalize Each Word, aLtErNaTiNg cAsE, and InVeRsE CaSe.",
+            "For filenames, URLs, variables, and structured labels, the same workspace can produce camelCase, PascalCase, snake_case, kebab-case, and CONSTANT_CASE output."
+          ]
+        },
+        {
+          "heading": "How to convert all caps to lowercase",
+          "paragraphs": [
+            "Copy the all-caps text, paste it into the input field, and select lowercase. The converter uppercase-to-lowercase action preserves the words and punctuation while changing capital letters to lowercase.",
+            "This also covers searches such as cap to lowercase or all caps to lowercase: there is no need to edit each letter by hand, even when the source is a long heading, spreadsheet column, transcript, or CMS export."
+          ]
+        }
+      ],
       "useCases": [
-        "Changing all-caps notes, headings, labels, or exports into readable lowercase text.",
-        "Turning rough notes into title case, sentence case, camel case, or slug-ready text.",
-        "Normalizing lists of labels before moving them into a CMS, design file, or codebase."
+        "Changing all-caps notes, headings, labels, or exports into readable lowercase text before publishing.",
+        "Turning rough copy into title case or sentence case for a document, design, email, or CMS field.",
+        "Creating alternating or inverse case for informal creative text without editing characters individually.",
+        "Normalizing labels into camel case, snake case, kebab case, or constant case before development handoff."
       ],
       "workflowSteps": [
-        "Paste the source text exactly as it came from the note, CMS, spreadsheet, or design file.",
-        "Choose lowercase, uppercase, title case, sentence case, camel case, kebab case, or snake case for the destination system.",
-        "Copy the cleaned output and repeat with the next batch of labels or strings."
+        "Paste the source text exactly as it came from the note, CMS, spreadsheet, transcript, or design file.",
+        "Choose lowercase, uppercase, title case, sentence case, alternating case, or a code-friendly format.",
+        "Review the converted text in the output panel and make any content edits that casing alone cannot solve.",
+        "Copy the cleaned result and repeat with the next paragraph, label list, or group of strings."
       ],
       "faqs": [
         {
-          "question": "Can I convert uppercase text to lowercase?",
-          "answer": "Yes. Paste the all-caps text, choose lowercase, and copy the converted result without changing the original wording."
+          "question": "Can I use this as an uppercase to lowercase converter?",
+          "answer": "Yes. Use it to convert uppercase text to lowercase: paste uppercase or all-caps text, choose lowercase, and copy the result without changing the original words or punctuation."
         },
         {
-          "question": "What casing formats are best for content cleanup?",
-          "answer": "Sentence case and title case are useful for visible copy, while camel case, pascal case, kebab case, and snake case work better for code-adjacent strings and filenames."
+          "question": "What does a letter case converter change?",
+          "answer": "A letter case converter changes capitalization and, for code-friendly formats, word separators. It does not rewrite the meaning or grammar of the source text."
         },
         {
-          "question": "Does Case Converter change the meaning of the text?",
-          "answer": "No. It reformats casing and spacing so copied text can move into another tool without a manual cleanup pass."
+          "question": "Which case should I use for visible copy?",
+          "answer": "Sentence case and title case are common for visible copy. Lowercase and uppercase work for specific styles, while alternating case is usually best reserved for informal or creative text."
+        },
+        {
+          "question": "Can it convert text for code and filenames?",
+          "answer": "Yes. The tool can create camelCase, PascalCase, snake_case, kebab-case, and CONSTANT_CASE strings for code-adjacent labels, URLs, and filenames."
         }
       ]
     },
@@ -68,6 +115,7 @@
       "url": "/tools/proportion-scaler",
       "description": "Scale dimensions proportionally, preserve aspect ratios, and copy resized width and height values.",
       "summary": "Proportion Scaler calculates proportional width and height values from an original size, making aspect-ratio math quick and copyable.",
+      "sections": [],
       "useCases": [
         "Resizing images, embeds, canvases, videos, or design frames without distortion.",
         "Finding a matching dimension when only one side is known.",
@@ -94,17 +142,40 @@
       "title": "Image to Text",
       "category": "Images",
       "url": "/tools/image-to-text",
-      "description": "Extract image text with local OCR, turn screenshots or scans into copyable text, review confidence, and download the result.",
-      "summary": "Image to Text runs OCR locally in the browser to extract words from screenshots, scans, labels, and image-based documents, then gives you copy and download controls.",
+      "description": "Extract text from screenshots, documents, notes, labels, and graphics with local browser OCR, then copy or download the result.",
+      "summary": "This free image-to-text converter runs OCR locally in the browser to extract words from screenshots, documents, notes, labels, and graphics, then returns plain text you can review, copy, or download.",
+      "sections": [
+        {
+          "heading": "Upload or paste an image",
+          "paragraphs": [
+            "Upload a PNG, JPG, or WebP file, drag it into the drop zone, or paste a copied image while the uploader is focused. A clear, high-resolution source gives OCR the best chance of recognizing every line correctly."
+          ]
+        },
+        {
+          "heading": "Extract text from screenshots, documents, notes, and graphics",
+          "paragraphs": [
+            "The image-to-text converter analyzes visible characters and turns image text into editable text. It is useful for screenshots, scanned pages, handwritten or printed notes, product labels, slides, and graphics where the words cannot be selected directly.",
+            "OCR confidence helps identify uncertain lines. Blurry, skewed, low-contrast, or highly stylized source images may need a quick manual correction after extraction."
+          ]
+        },
+        {
+          "heading": "Copy the result as plain text",
+          "paragraphs": [
+            "Review the extracted words, correct any OCR mistakes, then copy the result as plain text or download it for later use. The output can move into notes, documents, spreadsheets, accessibility copy, or content-management fields."
+          ]
+        }
+      ],
       "useCases": [
         "Pulling text from screenshots, scanned notes, labels, photos, or image-based documents.",
         "Turning image text into editable text for notes, content cleanup, or data entry.",
-        "Checking OCR confidence before reusing the extracted result."
+        "Checking OCR confidence before reusing the extracted result.",
+        "Recovering words from slides, social graphics, receipts, or reference images when source copy is unavailable."
       ],
       "workflowSteps": [
-        "Upload the screenshot, scan, label, note, or image-based document.",
-        "Run OCR and review the image-to-text result alongside confidence details.",
-        "Copy or download the cleaned result once the text is ready to reuse."
+        "Upload, drag, or paste the screenshot, scan, label, note, or image-based document.",
+        "Choose the document language so OCR uses the right recognition data.",
+        "Run OCR and compare the image-text-to-text result with the source and confidence details.",
+        "Correct any uncertain characters, then copy or download the plain-text result."
       ],
       "faqs": [
         {
@@ -118,6 +189,10 @@
         {
           "question": "Why check OCR confidence?",
           "answer": "Confidence helps flag areas that may need manual review before the extracted text is reused in content, documentation, or data entry."
+        },
+        {
+          "question": "Is 'imagen to text' the same as image to text?",
+          "answer": "Yes. 'Imagen to text' is a common bilingual or alternate search for the same OCR task: extracting readable text from an image file."
         }
       ]
     },
@@ -126,12 +201,28 @@
       "title": "Image Compressor",
       "category": "Images",
       "url": "/tools/image-compressor",
-      "description": "Compress images, decrease image resolution with max width and height controls, compare savings, and download files or a ZIP.",
-      "summary": "Image Compressor processes image batches in the browser, lowers file size, can decrease image resolution with max width and height controls, and exports files or a ZIP.",
+      "description": "Compress and resize image batches, decrease picture resolution, compare file-size savings, and download optimized files or a ZIP.",
+      "summary": "This free image compressor reduces file size in the browser, can decrease image resolution with maximum width and height controls, and exports optimized images individually or as a ZIP.",
+      "sections": [
+        {
+          "heading": "Decrease picture size and image resolution",
+          "paragraphs": [
+            "Lower the quality setting to reduce file weight, or enter maximum dimensions when the image resolution needs to decrease as well. Width and height stay proportional so the resized result does not stretch.",
+            "A modest resolution decrease is often enough for oversized screenshots, product images, and photos that will be displayed much smaller than their original dimensions."
+          ]
+        },
+        {
+          "heading": "Condense a batch of images in one pass",
+          "paragraphs": [
+            "Add several PNG, JPG, JPEG, or WebP files, apply one set of compression controls, and compare the original and compressed sizes. Download a single result or keep the batch together with ZIP export."
+          ]
+        }
+      ],
       "useCases": [
         "Reducing large images before publishing them to a website, CMS, or product page.",
         "Decreasing picture size or resolution while preserving the original aspect ratio.",
-        "Compressing a batch of screenshots, product images, or content assets together."
+        "Compressing a batch of screenshots, product images, or content assets together.",
+        "Preparing lighter image attachments for email, documentation, or design handoff."
       ],
       "workflowSteps": [
         "Drop in the images that are too heavy for the page, CMS, or handoff.",
@@ -151,6 +242,10 @@
         {
           "question": "Can I condense more than one image at once?",
           "answer": "Yes. Image Compressor supports batch workflows and ZIP export so related assets can be condensed and downloaded together."
+        },
+        {
+          "question": "Does image compression change the dimensions?",
+          "answer": "Only when maximum width or height is set below the original dimensions. Otherwise, the tool can reduce file size while keeping the original width and height."
         }
       ]
     },
@@ -161,6 +256,7 @@
       "url": "/tools/color-palette-generator",
       "description": "Generate, tune, preview, and export color palettes for brand systems, mockups, and design projects.",
       "summary": "Color Palette Generator helps explore color combinations, contrast, gradients, mockups, image inspiration, and saved palettes from one browser workspace.",
+      "sections": [],
       "useCases": [
         "Starting brand, landing page, dashboard, or campaign color exploration.",
         "Previewing how a palette behaves in realistic UI and visual compositions.",
@@ -189,6 +285,7 @@
       "url": "/tools/vectorvault",
       "description": "Search, preview, edit, upload, and export SVG icons from a local vector library.",
       "summary": "Vector Vault provides search, preview, editing, upload, and export flows for SVG icons without turning icon cleanup into a larger asset-management task.",
+      "sections": [],
       "useCases": [
         "Finding and copying reusable SVG icons during interface design or development.",
         "Editing icon details before export or handoff.",
@@ -217,6 +314,7 @@
       "url": "/tools/dns-checker",
       "description": "Check DNS records across public resolvers to compare propagation, response details, and lookup speed.",
       "summary": "DNS Checker queries public resolvers in parallel so domain changes can be compared across record types, response values, and lookup timing.",
+      "sections": [],
       "useCases": [
         "Verifying A, AAAA, MX, TXT, CNAME, or NS records after a DNS change.",
         "Comparing resolver responses when a domain works in one place but not another.",
@@ -245,6 +343,7 @@
       "url": "/tools/redirect-analyzer",
       "description": "Map URL redirect chains, trace status codes, final destinations, and HTTP-to-HTTPS upgrade behavior.",
       "summary": "Redirect Analyzer is a redirect mapping tool that follows a URL through status codes, hops, final destinations, and protocol changes so redirect behavior is easier to debug.",
+      "sections": [],
       "useCases": [
         "Checking whether a campaign, affiliate, or migrated URL lands in the right place.",
         "Finding extra redirect hops with a redirect chain checker before they slow down a page or obscure the final URL.",
@@ -273,6 +372,7 @@
       "url": "/tools/sitemap-robots-explorer",
       "description": "Explore robots.txt, discover sitemap files, scan URLs, and categorize site structure from one input.",
       "summary": "Sitemap Robots Explorer reads a site entry point, discovers sitemap references, scans URLs, and groups discovered paths into useful categories.",
+      "sections": [],
       "useCases": [
         "Getting a fast view of a website's public URL structure.",
         "Checking whether robots.txt exposes expected sitemap locations.",
@@ -301,6 +401,7 @@
       "url": "/tools/modular-wireframe-generator",
       "description": "Compose modular website wireframes, cycle section variations, and export layouts for design planning.",
       "summary": "Modular Wireframe Generator combines common website sections, variation controls, and export options for fast planning of page layouts.",
+      "sections": [],
       "useCases": [
         "Exploring landing page, pricing, feature, gallery, contact, or testimonial structures.",
         "Comparing section variations before committing to a full design pass.",
@@ -329,6 +430,7 @@
       "url": "/tools/image-converter",
       "description": "Convert images to JPG, PNG, WebP, or PDF directly in the browser with batch controls and downloads.",
       "summary": "Image Converter changes images into JPG, PNG, WebP, or PDF outputs with batch controls, file previews, and downloadable results.",
+      "sections": [],
       "useCases": [
         "Preparing images for a platform that requires a specific file type.",
         "Converting several design, screenshot, or content assets in one pass.",
@@ -357,6 +459,7 @@
       "url": "/tools/image-extractor",
       "description": "Extract images from a webpage, review discovered image URLs and assets, and download individual files or a ZIP.",
       "summary": "Image Extractor scans a webpage URL for discoverable image URLs and assets, groups useful results, and supports single-file or ZIP downloads.",
+      "sections": [],
       "useCases": [
         "Reviewing page imagery during content, migration, or redesign work.",
         "Finding source image URLs without manually inspecting page markup.",
@@ -385,6 +488,7 @@
       "url": "/tools/font-converter",
       "description": "Convert font files in bulk between web and desktop formats, then download ready-to-use outputs.",
       "summary": "Font Converter batches font uploads, processes supported formats, and produces ready-to-download outputs for front-end builds, design handoff, or asset cleanup.",
+      "sections": [],
       "useCases": [
         "Preparing font assets for web projects that need browser-friendly formats.",
         "Converting several font files at once instead of running one-off exports.",
@@ -413,6 +517,7 @@
       "url": "/tools/heatmap-tracker",
       "description": "Prototype click heatmaps locally by placing hotspots on screenshots, seeding demo data, and exporting JSON.",
       "summary": "Heatmap Tracker lets you place and export local click hotspots on a screenshot, making it useful for demos, design reviews, and early analytics planning.",
+      "sections": [],
       "useCases": [
         "Mocking up how click activity could look on a page or product screen.",
         "Annotating a screenshot with interaction hotspots during UX review.",
@@ -441,6 +546,7 @@
       "url": "/tools/dictate",
       "description": "Dictate notes in the browser, edit the transcript, keep local history, and play text back aloud.",
       "summary": "Dictate provides a local speech-to-text workspace with editable transcripts, playback, and saved history for drafting notes without opening a heavier writing app.",
+      "sections": [],
       "useCases": [
         "Drafting rough notes, outlines, messages, or reminders by voice.",
         "Reviewing dictated text, making edits, and listening back for flow.",
@@ -469,6 +575,7 @@
       "url": "/tools/campaign-url-architect",
       "description": "Build clean UTM-tagged campaign URLs, preview every parameter, and keep a local history for reuse.",
       "summary": "Campaign URL Architect turns a destination URL and campaign details into a clean tracked link, then keeps recent links in local history so recurring campaigns stay consistent.",
+      "sections": [],
       "useCases": [
         "Preparing paid, email, social, or partner campaign URLs before launch.",
         "Checking that UTM values are present, readable, and free of stray spaces.",
@@ -497,6 +604,7 @@
       "url": "/tools/lorem-ipsum-generator",
       "description": "Generate Lorem Ipsum placeholder text by paragraph, sentence, or word count and copy it quickly.",
       "summary": "Lorem Ipsum Generator creates filler text by paragraph, sentence, or word count so mockups and content slots can be tested quickly.",
+      "sections": [],
       "useCases": [
         "Filling design comps, wireframes, and prototypes with realistic text volume.",
         "Testing layout behavior for short blurbs, long paragraphs, or repeated sections.",
